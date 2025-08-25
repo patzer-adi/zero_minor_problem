@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/adityagowari/Programs/crypto_proj/zero_minor_problem/figuring_out",
+      "program": "/Users/adityagowari/Programs/crypto_proj/zero_minor_problem/figuring_out/build/Debug/outDebug"
+    }
+  ]
+}
