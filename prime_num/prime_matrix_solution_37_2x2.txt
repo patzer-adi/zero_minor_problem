@@ -1,0 +1,5 @@
+Prime Matrix Solution (p=37, n=2)
+Target sum for each row: 36
+
+5	31	
+7	29	

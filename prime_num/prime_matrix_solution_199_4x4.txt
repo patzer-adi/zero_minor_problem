@@ -1,0 +1,7 @@
+Prime Matrix Solution (p=199, n=4)
+Target sum for each row: 198
+
+3	5	11	179	
+7	13	29	149	
+17	19	23	139	
+31	37	41	89	
