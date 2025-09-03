@@ -1,1 +1,0 @@
-// this program is to generate a 4x4 matrix random as well as rule matrix, find their determainants and find their time.
