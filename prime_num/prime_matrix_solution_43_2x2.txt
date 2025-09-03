@@ -1,0 +1,5 @@
+Prime Matrix Solution (p=43, n=2)
+Target sum for each row: 42
+
+5	37	
+11	31	
