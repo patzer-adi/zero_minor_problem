@@ -1,0 +1,3646 @@
+Matrix #1: Non-singular
+1 29 
+2 28 
+All elements unique: YES | Singular: NO
+
+Matrix #2: Non-singular
+1 29 
+28 2 
+All elements unique: YES | Singular: NO
+
+Matrix #3: Non-singular
+1 29 
+3 27 
+All elements unique: YES | Singular: NO
+
+Matrix #4: Non-singular
+1 29 
+27 3 
+All elements unique: YES | Singular: NO
+
+Matrix #5: Non-singular
+1 29 
+4 26 
+All elements unique: YES | Singular: NO
+
+Matrix #6: Non-singular
+1 29 
+26 4 
+All elements unique: YES | Singular: NO
+
+Matrix #7: Non-singular
+1 29 
+5 25 
+All elements unique: YES | Singular: NO
+
+Matrix #8: Non-singular
+1 29 
+25 5 
+All elements unique: YES | Singular: NO
+
+Matrix #9: Non-singular
+1 29 
+6 24 
+All elements unique: YES | Singular: NO
+
+Matrix #10: Non-singular
+1 29 
+24 6 
+All elements unique: YES | Singular: NO
+
+Matrix #11: Non-singular
+1 29 
+7 23 
+All elements unique: YES | Singular: NO
+
+Matrix #12: Non-singular
+1 29 
+23 7 
+All elements unique: YES | Singular: NO
+
+Matrix #13: Non-singular
+1 29 
+8 22 
+All elements unique: YES | Singular: NO
+
+Matrix #14: Non-singular
+1 29 
+22 8 
+All elements unique: YES | Singular: NO
+
+Matrix #15: Non-singular
+1 29 
+9 21 
+All elements unique: YES | Singular: NO
+
+Matrix #16: Non-singular
+1 29 
+21 9 
+All elements unique: YES | Singular: NO
+
+Matrix #17: Non-singular
+1 29 
+10 20 
+All elements unique: YES | Singular: NO
+
+Matrix #18: Non-singular
+1 29 
+20 10 
+All elements unique: YES | Singular: NO
+
+Matrix #19: Non-singular
+1 29 
+11 19 
+All elements unique: YES | Singular: NO
+
+Matrix #20: Non-singular
+1 29 
+19 11 
+All elements unique: YES | Singular: NO
+
+Matrix #21: Non-singular
+1 29 
+12 18 
+All elements unique: YES | Singular: NO
+
+Matrix #22: Non-singular
+1 29 
+18 12 
+All elements unique: YES | Singular: NO
+
+Matrix #23: Non-singular
+1 29 
+13 17 
+All elements unique: YES | Singular: NO
+
+Matrix #24: Non-singular
+1 29 
+17 13 
+All elements unique: YES | Singular: NO
+
+Matrix #25: Non-singular
+1 29 
+14 16 
+All elements unique: YES | Singular: NO
+
+Matrix #26: Non-singular
+1 29 
+16 14 
+All elements unique: YES | Singular: NO
+
+Matrix #27: Non-singular
+29 1 
+2 28 
+All elements unique: YES | Singular: NO
+
+Matrix #28: Non-singular
+29 1 
+28 2 
+All elements unique: YES | Singular: NO
+
+Matrix #29: Non-singular
+29 1 
+3 27 
+All elements unique: YES | Singular: NO
+
+Matrix #30: Non-singular
+29 1 
+27 3 
+All elements unique: YES | Singular: NO
+
+Matrix #31: Non-singular
+29 1 
+4 26 
+All elements unique: YES | Singular: NO
+
+Matrix #32: Non-singular
+29 1 
+26 4 
+All elements unique: YES | Singular: NO
+
+Matrix #33: Non-singular
+29 1 
+5 25 
+All elements unique: YES | Singular: NO
+
+Matrix #34: Non-singular
+29 1 
+25 5 
+All elements unique: YES | Singular: NO
+
+Matrix #35: Non-singular
+29 1 
+6 24 
+All elements unique: YES | Singular: NO
+
+Matrix #36: Non-singular
+29 1 
+24 6 
+All elements unique: YES | Singular: NO
+
+Matrix #37: Non-singular
+29 1 
+7 23 
+All elements unique: YES | Singular: NO
+
+Matrix #38: Non-singular
+29 1 
+23 7 
+All elements unique: YES | Singular: NO
+
+Matrix #39: Non-singular
+29 1 
+8 22 
+All elements unique: YES | Singular: NO
+
+Matrix #40: Non-singular
+29 1 
+22 8 
+All elements unique: YES | Singular: NO
+
+Matrix #41: Non-singular
+29 1 
+9 21 
+All elements unique: YES | Singular: NO
+
+Matrix #42: Non-singular
+29 1 
+21 9 
+All elements unique: YES | Singular: NO
+
+Matrix #43: Non-singular
+29 1 
+10 20 
+All elements unique: YES | Singular: NO
+
+Matrix #44: Non-singular
+29 1 
+20 10 
+All elements unique: YES | Singular: NO
+
+Matrix #45: Non-singular
+29 1 
+11 19 
+All elements unique: YES | Singular: NO
+
+Matrix #46: Non-singular
+29 1 
+19 11 
+All elements unique: YES | Singular: NO
+
+Matrix #47: Non-singular
+29 1 
+12 18 
+All elements unique: YES | Singular: NO
+
+Matrix #48: Non-singular
+29 1 
+18 12 
+All elements unique: YES | Singular: NO
+
+Matrix #49: Non-singular
+29 1 
+13 17 
+All elements unique: YES | Singular: NO
+
+Matrix #50: Non-singular
+29 1 
+17 13 
+All elements unique: YES | Singular: NO
+
+Matrix #51: Non-singular
+29 1 
+14 16 
+All elements unique: YES | Singular: NO
+
+Matrix #52: Non-singular
+29 1 
+16 14 
+All elements unique: YES | Singular: NO
+
+Matrix #53: Non-singular
+2 28 
+1 29 
+All elements unique: YES | Singular: NO
+
+Matrix #54: Non-singular
+2 28 
+29 1 
+All elements unique: YES | Singular: NO
+
+Matrix #55: Non-singular
+2 28 
+3 27 
+All elements unique: YES | Singular: NO
+
+Matrix #56: Non-singular
+2 28 
+27 3 
+All elements unique: YES | Singular: NO
+
+Matrix #57: Non-singular
+2 28 
+4 26 
+All elements unique: YES | Singular: NO
+
+Matrix #58: Non-singular
+2 28 
+26 4 
+All elements unique: YES | Singular: NO
+
+Matrix #59: Non-singular
+2 28 
+5 25 
+All elements unique: YES | Singular: NO
+
+Matrix #60: Non-singular
+2 28 
+25 5 
+All elements unique: YES | Singular: NO
+
+Matrix #61: Non-singular
+2 28 
+6 24 
+All elements unique: YES | Singular: NO
+
+Matrix #62: Non-singular
+2 28 
+24 6 
+All elements unique: YES | Singular: NO
+
+Matrix #63: Non-singular
+2 28 
+7 23 
+All elements unique: YES | Singular: NO
+
+Matrix #64: Non-singular
+2 28 
+23 7 
+All elements unique: YES | Singular: NO
+
+Matrix #65: Non-singular
+2 28 
+8 22 
+All elements unique: YES | Singular: NO
+
+Matrix #66: Non-singular
+2 28 
+22 8 
+All elements unique: YES | Singular: NO
+
+Matrix #67: Non-singular
+2 28 
+9 21 
+All elements unique: YES | Singular: NO
+
+Matrix #68: Non-singular
+2 28 
+21 9 
+All elements unique: YES | Singular: NO
+
+Matrix #69: Non-singular
+2 28 
+10 20 
+All elements unique: YES | Singular: NO
+
+Matrix #70: Non-singular
+2 28 
+20 10 
+All elements unique: YES | Singular: NO
+
+Matrix #71: Non-singular
+2 28 
+11 19 
+All elements unique: YES | Singular: NO
+
+Matrix #72: Non-singular
+2 28 
+19 11 
+All elements unique: YES | Singular: NO
+
+Matrix #73: Non-singular
+2 28 
+12 18 
+All elements unique: YES | Singular: NO
+
+Matrix #74: Non-singular
+2 28 
+18 12 
+All elements unique: YES | Singular: NO
+
+Matrix #75: Non-singular
+2 28 
+13 17 
+All elements unique: YES | Singular: NO
+
+Matrix #76: Non-singular
+2 28 
+17 13 
+All elements unique: YES | Singular: NO
+
+Matrix #77: Non-singular
+2 28 
+14 16 
+All elements unique: YES | Singular: NO
+
+Matrix #78: Non-singular
+2 28 
+16 14 
+All elements unique: YES | Singular: NO
+
+Matrix #79: Non-singular
+28 2 
+1 29 
+All elements unique: YES | Singular: NO
+
+Matrix #80: Non-singular
+28 2 
+29 1 
+All elements unique: YES | Singular: NO
+
+Matrix #81: Non-singular
+28 2 
+3 27 
+All elements unique: YES | Singular: NO
+
+Matrix #82: Non-singular
+28 2 
+27 3 
+All elements unique: YES | Singular: NO
+
+Matrix #83: Non-singular
+28 2 
+4 26 
+All elements unique: YES | Singular: NO
+
+Matrix #84: Non-singular
+28 2 
+26 4 
+All elements unique: YES | Singular: NO
+
+Matrix #85: Non-singular
+28 2 
+5 25 
+All elements unique: YES | Singular: NO
+
+Matrix #86: Non-singular
+28 2 
+25 5 
+All elements unique: YES | Singular: NO
+
+Matrix #87: Non-singular
+28 2 
+6 24 
+All elements unique: YES | Singular: NO
+
+Matrix #88: Non-singular
+28 2 
+24 6 
+All elements unique: YES | Singular: NO
+
+Matrix #89: Non-singular
+28 2 
+7 23 
+All elements unique: YES | Singular: NO
+
+Matrix #90: Non-singular
+28 2 
+23 7 
+All elements unique: YES | Singular: NO
+
+Matrix #91: Non-singular
+28 2 
+8 22 
+All elements unique: YES | Singular: NO
+
+Matrix #92: Non-singular
+28 2 
+22 8 
+All elements unique: YES | Singular: NO
+
+Matrix #93: Non-singular
+28 2 
+9 21 
+All elements unique: YES | Singular: NO
+
+Matrix #94: Non-singular
+28 2 
+21 9 
+All elements unique: YES | Singular: NO
+
+Matrix #95: Non-singular
+28 2 
+10 20 
+All elements unique: YES | Singular: NO
+
+Matrix #96: Non-singular
+28 2 
+20 10 
+All elements unique: YES | Singular: NO
+
+Matrix #97: Non-singular
+28 2 
+11 19 
+All elements unique: YES | Singular: NO
+
+Matrix #98: Non-singular
+28 2 
+19 11 
+All elements unique: YES | Singular: NO
+
+Matrix #99: Non-singular
+28 2 
+12 18 
+All elements unique: YES | Singular: NO
+
+Matrix #100: Non-singular
+28 2 
+18 12 
+All elements unique: YES | Singular: NO
+
+Matrix #101: Non-singular
+28 2 
+13 17 
+All elements unique: YES | Singular: NO
+
+Matrix #102: Non-singular
+28 2 
+17 13 
+All elements unique: YES | Singular: NO
+
+Matrix #103: Non-singular
+28 2 
+14 16 
+All elements unique: YES | Singular: NO
+
+Matrix #104: Non-singular
+28 2 
+16 14 
+All elements unique: YES | Singular: NO
+
+Matrix #105: Non-singular
+3 27 
+1 29 
+All elements unique: YES | Singular: NO
+
+Matrix #106: Non-singular
+3 27 
+29 1 
+All elements unique: YES | Singular: NO
+
+Matrix #107: Non-singular
+3 27 
+2 28 
+All elements unique: YES | Singular: NO
+
+Matrix #108: Non-singular
+3 27 
+28 2 
+All elements unique: YES | Singular: NO
+
+Matrix #109: Non-singular
+3 27 
+4 26 
+All elements unique: YES | Singular: NO
+
+Matrix #110: Non-singular
+3 27 
+26 4 
+All elements unique: YES | Singular: NO
+
+Matrix #111: Non-singular
+3 27 
+5 25 
+All elements unique: YES | Singular: NO
+
+Matrix #112: Non-singular
+3 27 
+25 5 
+All elements unique: YES | Singular: NO
+
+Matrix #113: Non-singular
+3 27 
+6 24 
+All elements unique: YES | Singular: NO
+
+Matrix #114: Non-singular
+3 27 
+24 6 
+All elements unique: YES | Singular: NO
+
+Matrix #115: Non-singular
+3 27 
+7 23 
+All elements unique: YES | Singular: NO
+
+Matrix #116: Non-singular
+3 27 
+23 7 
+All elements unique: YES | Singular: NO
+
+Matrix #117: Non-singular
+3 27 
+8 22 
+All elements unique: YES | Singular: NO
+
+Matrix #118: Non-singular
+3 27 
+22 8 
+All elements unique: YES | Singular: NO
+
+Matrix #119: Non-singular
+3 27 
+9 21 
+All elements unique: YES | Singular: NO
+
+Matrix #120: Non-singular
+3 27 
+21 9 
+All elements unique: YES | Singular: NO
+
+Matrix #121: Non-singular
+3 27 
+10 20 
+All elements unique: YES | Singular: NO
+
+Matrix #122: Non-singular
+3 27 
+20 10 
+All elements unique: YES | Singular: NO
+
+Matrix #123: Non-singular
+3 27 
+11 19 
+All elements unique: YES | Singular: NO
+
+Matrix #124: Non-singular
+3 27 
+19 11 
+All elements unique: YES | Singular: NO
+
+Matrix #125: Non-singular
+3 27 
+12 18 
+All elements unique: YES | Singular: NO
+
+Matrix #126: Non-singular
+3 27 
+18 12 
+All elements unique: YES | Singular: NO
+
+Matrix #127: Non-singular
+3 27 
+13 17 
+All elements unique: YES | Singular: NO
+
+Matrix #128: Non-singular
+3 27 
+17 13 
+All elements unique: YES | Singular: NO
+
+Matrix #129: Non-singular
+3 27 
+14 16 
+All elements unique: YES | Singular: NO
+
+Matrix #130: Non-singular
+3 27 
+16 14 
+All elements unique: YES | Singular: NO
+
+Matrix #131: Non-singular
+27 3 
+1 29 
+All elements unique: YES | Singular: NO
+
+Matrix #132: Non-singular
+27 3 
+29 1 
+All elements unique: YES | Singular: NO
+
+Matrix #133: Non-singular
+27 3 
+2 28 
+All elements unique: YES | Singular: NO
+
+Matrix #134: Non-singular
+27 3 
+28 2 
+All elements unique: YES | Singular: NO
+
+Matrix #135: Non-singular
+27 3 
+4 26 
+All elements unique: YES | Singular: NO
+
+Matrix #136: Non-singular
+27 3 
+26 4 
+All elements unique: YES | Singular: NO
+
+Matrix #137: Non-singular
+27 3 
+5 25 
+All elements unique: YES | Singular: NO
+
+Matrix #138: Non-singular
+27 3 
+25 5 
+All elements unique: YES | Singular: NO
+
+Matrix #139: Non-singular
+27 3 
+6 24 
+All elements unique: YES | Singular: NO
+
+Matrix #140: Non-singular
+27 3 
+24 6 
+All elements unique: YES | Singular: NO
+
+Matrix #141: Non-singular
+27 3 
+7 23 
+All elements unique: YES | Singular: NO
+
+Matrix #142: Non-singular
+27 3 
+23 7 
+All elements unique: YES | Singular: NO
+
+Matrix #143: Non-singular
+27 3 
+8 22 
+All elements unique: YES | Singular: NO
+
+Matrix #144: Non-singular
+27 3 
+22 8 
+All elements unique: YES | Singular: NO
+
+Matrix #145: Non-singular
+27 3 
+9 21 
+All elements unique: YES | Singular: NO
+
+Matrix #146: Non-singular
+27 3 
+21 9 
+All elements unique: YES | Singular: NO
+
+Matrix #147: Non-singular
+27 3 
+10 20 
+All elements unique: YES | Singular: NO
+
+Matrix #148: Non-singular
+27 3 
+20 10 
+All elements unique: YES | Singular: NO
+
+Matrix #149: Non-singular
+27 3 
+11 19 
+All elements unique: YES | Singular: NO
+
+Matrix #150: Non-singular
+27 3 
+19 11 
+All elements unique: YES | Singular: NO
+
+Matrix #151: Non-singular
+27 3 
+12 18 
+All elements unique: YES | Singular: NO
+
+Matrix #152: Non-singular
+27 3 
+18 12 
+All elements unique: YES | Singular: NO
+
+Matrix #153: Non-singular
+27 3 
+13 17 
+All elements unique: YES | Singular: NO
+
+Matrix #154: Non-singular
+27 3 
+17 13 
+All elements unique: YES | Singular: NO
+
+Matrix #155: Non-singular
+27 3 
+14 16 
+All elements unique: YES | Singular: NO
+
+Matrix #156: Non-singular
+27 3 
+16 14 
+All elements unique: YES | Singular: NO
+
+Matrix #157: Non-singular
+4 26 
+1 29 
+All elements unique: YES | Singular: NO
+
+Matrix #158: Non-singular
+4 26 
+29 1 
+All elements unique: YES | Singular: NO
+
+Matrix #159: Non-singular
+4 26 
+2 28 
+All elements unique: YES | Singular: NO
+
+Matrix #160: Non-singular
+4 26 
+28 2 
+All elements unique: YES | Singular: NO
+
+Matrix #161: Non-singular
+4 26 
+3 27 
+All elements unique: YES | Singular: NO
+
+Matrix #162: Non-singular
+4 26 
+27 3 
+All elements unique: YES | Singular: NO
+
+Matrix #163: Non-singular
+4 26 
+5 25 
+All elements unique: YES | Singular: NO
+
+Matrix #164: Non-singular
+4 26 
+25 5 
+All elements unique: YES | Singular: NO
+
+Matrix #165: Non-singular
+4 26 
+6 24 
+All elements unique: YES | Singular: NO
+
+Matrix #166: Non-singular
+4 26 
+24 6 
+All elements unique: YES | Singular: NO
+
+Matrix #167: Non-singular
+4 26 
+7 23 
+All elements unique: YES | Singular: NO
+
+Matrix #168: Non-singular
+4 26 
+23 7 
+All elements unique: YES | Singular: NO
+
+Matrix #169: Non-singular
+4 26 
+8 22 
+All elements unique: YES | Singular: NO
+
+Matrix #170: Non-singular
+4 26 
+22 8 
+All elements unique: YES | Singular: NO
+
+Matrix #171: Non-singular
+4 26 
+9 21 
+All elements unique: YES | Singular: NO
+
+Matrix #172: Non-singular
+4 26 
+21 9 
+All elements unique: YES | Singular: NO
+
+Matrix #173: Non-singular
+4 26 
+10 20 
+All elements unique: YES | Singular: NO
+
+Matrix #174: Non-singular
+4 26 
+20 10 
+All elements unique: YES | Singular: NO
+
+Matrix #175: Non-singular
+4 26 
+11 19 
+All elements unique: YES | Singular: NO
+
+Matrix #176: Non-singular
+4 26 
+19 11 
+All elements unique: YES | Singular: NO
+
+Matrix #177: Non-singular
+4 26 
+12 18 
+All elements unique: YES | Singular: NO
+
+Matrix #178: Non-singular
+4 26 
+18 12 
+All elements unique: YES | Singular: NO
+
+Matrix #179: Non-singular
+4 26 
+13 17 
+All elements unique: YES | Singular: NO
+
+Matrix #180: Non-singular
+4 26 
+17 13 
+All elements unique: YES | Singular: NO
+
+Matrix #181: Non-singular
+4 26 
+14 16 
+All elements unique: YES | Singular: NO
+
+Matrix #182: Non-singular
+4 26 
+16 14 
+All elements unique: YES | Singular: NO
+
+Matrix #183: Non-singular
+26 4 
+1 29 
+All elements unique: YES | Singular: NO
+
+Matrix #184: Non-singular
+26 4 
+29 1 
+All elements unique: YES | Singular: NO
+
+Matrix #185: Non-singular
+26 4 
+2 28 
+All elements unique: YES | Singular: NO
+
+Matrix #186: Non-singular
+26 4 
+28 2 
+All elements unique: YES | Singular: NO
+
+Matrix #187: Non-singular
+26 4 
+3 27 
+All elements unique: YES | Singular: NO
+
+Matrix #188: Non-singular
+26 4 
+27 3 
+All elements unique: YES | Singular: NO
+
+Matrix #189: Non-singular
+26 4 
+5 25 
+All elements unique: YES | Singular: NO
+
+Matrix #190: Non-singular
+26 4 
+25 5 
+All elements unique: YES | Singular: NO
+
+Matrix #191: Non-singular
+26 4 
+6 24 
+All elements unique: YES | Singular: NO
+
+Matrix #192: Non-singular
+26 4 
+24 6 
+All elements unique: YES | Singular: NO
+
+Matrix #193: Non-singular
+26 4 
+7 23 
+All elements unique: YES | Singular: NO
+
+Matrix #194: Non-singular
+26 4 
+23 7 
+All elements unique: YES | Singular: NO
+
+Matrix #195: Non-singular
+26 4 
+8 22 
+All elements unique: YES | Singular: NO
+
+Matrix #196: Non-singular
+26 4 
+22 8 
+All elements unique: YES | Singular: NO
+
+Matrix #197: Non-singular
+26 4 
+9 21 
+All elements unique: YES | Singular: NO
+
+Matrix #198: Non-singular
+26 4 
+21 9 
+All elements unique: YES | Singular: NO
+
+Matrix #199: Non-singular
+26 4 
+10 20 
+All elements unique: YES | Singular: NO
+
+Matrix #200: Non-singular
+26 4 
+20 10 
+All elements unique: YES | Singular: NO
+
+Matrix #201: Non-singular
+26 4 
+11 19 
+All elements unique: YES | Singular: NO
+
+Matrix #202: Non-singular
+26 4 
+19 11 
+All elements unique: YES | Singular: NO
+
+Matrix #203: Non-singular
+26 4 
+12 18 
+All elements unique: YES | Singular: NO
+
+Matrix #204: Non-singular
+26 4 
+18 12 
+All elements unique: YES | Singular: NO
+
+Matrix #205: Non-singular
+26 4 
+13 17 
+All elements unique: YES | Singular: NO
+
+Matrix #206: Non-singular
+26 4 
+17 13 
+All elements unique: YES | Singular: NO
+
+Matrix #207: Non-singular
+26 4 
+14 16 
+All elements unique: YES | Singular: NO
+
+Matrix #208: Non-singular
+26 4 
+16 14 
+All elements unique: YES | Singular: NO
+
+Matrix #209: Non-singular
+5 25 
+1 29 
+All elements unique: YES | Singular: NO
+
+Matrix #210: Non-singular
+5 25 
+29 1 
+All elements unique: YES | Singular: NO
+
+Matrix #211: Non-singular
+5 25 
+2 28 
+All elements unique: YES | Singular: NO
+
+Matrix #212: Non-singular
+5 25 
+28 2 
+All elements unique: YES | Singular: NO
+
+Matrix #213: Non-singular
+5 25 
+3 27 
+All elements unique: YES | Singular: NO
+
+Matrix #214: Non-singular
+5 25 
+27 3 
+All elements unique: YES | Singular: NO
+
+Matrix #215: Non-singular
+5 25 
+4 26 
+All elements unique: YES | Singular: NO
+
+Matrix #216: Non-singular
+5 25 
+26 4 
+All elements unique: YES | Singular: NO
+
+Matrix #217: Non-singular
+5 25 
+6 24 
+All elements unique: YES | Singular: NO
+
+Matrix #218: Non-singular
+5 25 
+24 6 
+All elements unique: YES | Singular: NO
+
+Matrix #219: Non-singular
+5 25 
+7 23 
+All elements unique: YES | Singular: NO
+
+Matrix #220: Non-singular
+5 25 
+23 7 
+All elements unique: YES | Singular: NO
+
+Matrix #221: Non-singular
+5 25 
+8 22 
+All elements unique: YES | Singular: NO
+
+Matrix #222: Non-singular
+5 25 
+22 8 
+All elements unique: YES | Singular: NO
+
+Matrix #223: Non-singular
+5 25 
+9 21 
+All elements unique: YES | Singular: NO
+
+Matrix #224: Non-singular
+5 25 
+21 9 
+All elements unique: YES | Singular: NO
+
+Matrix #225: Non-singular
+5 25 
+10 20 
+All elements unique: YES | Singular: NO
+
+Matrix #226: Non-singular
+5 25 
+20 10 
+All elements unique: YES | Singular: NO
+
+Matrix #227: Non-singular
+5 25 
+11 19 
+All elements unique: YES | Singular: NO
+
+Matrix #228: Non-singular
+5 25 
+19 11 
+All elements unique: YES | Singular: NO
+
+Matrix #229: Non-singular
+5 25 
+12 18 
+All elements unique: YES | Singular: NO
+
+Matrix #230: Non-singular
+5 25 
+18 12 
+All elements unique: YES | Singular: NO
+
+Matrix #231: Non-singular
+5 25 
+13 17 
+All elements unique: YES | Singular: NO
+
+Matrix #232: Non-singular
+5 25 
+17 13 
+All elements unique: YES | Singular: NO
+
+Matrix #233: Non-singular
+5 25 
+14 16 
+All elements unique: YES | Singular: NO
+
+Matrix #234: Non-singular
+5 25 
+16 14 
+All elements unique: YES | Singular: NO
+
+Matrix #235: Non-singular
+25 5 
+1 29 
+All elements unique: YES | Singular: NO
+
+Matrix #236: Non-singular
+25 5 
+29 1 
+All elements unique: YES | Singular: NO
+
+Matrix #237: Non-singular
+25 5 
+2 28 
+All elements unique: YES | Singular: NO
+
+Matrix #238: Non-singular
+25 5 
+28 2 
+All elements unique: YES | Singular: NO
+
+Matrix #239: Non-singular
+25 5 
+3 27 
+All elements unique: YES | Singular: NO
+
+Matrix #240: Non-singular
+25 5 
+27 3 
+All elements unique: YES | Singular: NO
+
+Matrix #241: Non-singular
+25 5 
+4 26 
+All elements unique: YES | Singular: NO
+
+Matrix #242: Non-singular
+25 5 
+26 4 
+All elements unique: YES | Singular: NO
+
+Matrix #243: Non-singular
+25 5 
+6 24 
+All elements unique: YES | Singular: NO
+
+Matrix #244: Non-singular
+25 5 
+24 6 
+All elements unique: YES | Singular: NO
+
+Matrix #245: Non-singular
+25 5 
+7 23 
+All elements unique: YES | Singular: NO
+
+Matrix #246: Non-singular
+25 5 
+23 7 
+All elements unique: YES | Singular: NO
+
+Matrix #247: Non-singular
+25 5 
+8 22 
+All elements unique: YES | Singular: NO
+
+Matrix #248: Non-singular
+25 5 
+22 8 
+All elements unique: YES | Singular: NO
+
+Matrix #249: Non-singular
+25 5 
+9 21 
+All elements unique: YES | Singular: NO
+
+Matrix #250: Non-singular
+25 5 
+21 9 
+All elements unique: YES | Singular: NO
+
+Matrix #251: Non-singular
+25 5 
+10 20 
+All elements unique: YES | Singular: NO
+
+Matrix #252: Non-singular
+25 5 
+20 10 
+All elements unique: YES | Singular: NO
+
+Matrix #253: Non-singular
+25 5 
+11 19 
+All elements unique: YES | Singular: NO
+
+Matrix #254: Non-singular
+25 5 
+19 11 
+All elements unique: YES | Singular: NO
+
+Matrix #255: Non-singular
+25 5 
+12 18 
+All elements unique: YES | Singular: NO
+
+Matrix #256: Non-singular
+25 5 
+18 12 
+All elements unique: YES | Singular: NO
+
+Matrix #257: Non-singular
+25 5 
+13 17 
+All elements unique: YES | Singular: NO
+
+Matrix #258: Non-singular
+25 5 
+17 13 
+All elements unique: YES | Singular: NO
+
+Matrix #259: Non-singular
+25 5 
+14 16 
+All elements unique: YES | Singular: NO
+
+Matrix #260: Non-singular
+25 5 
+16 14 
+All elements unique: YES | Singular: NO
+
+Matrix #261: Non-singular
+6 24 
+1 29 
+All elements unique: YES | Singular: NO
+
+Matrix #262: Non-singular
+6 24 
+29 1 
+All elements unique: YES | Singular: NO
+
+Matrix #263: Non-singular
+6 24 
+2 28 
+All elements unique: YES | Singular: NO
+
+Matrix #264: Non-singular
+6 24 
+28 2 
+All elements unique: YES | Singular: NO
+
+Matrix #265: Non-singular
+6 24 
+3 27 
+All elements unique: YES | Singular: NO
+
+Matrix #266: Non-singular
+6 24 
+27 3 
+All elements unique: YES | Singular: NO
+
+Matrix #267: Non-singular
+6 24 
+4 26 
+All elements unique: YES | Singular: NO
+
+Matrix #268: Non-singular
+6 24 
+26 4 
+All elements unique: YES | Singular: NO
+
+Matrix #269: Non-singular
+6 24 
+5 25 
+All elements unique: YES | Singular: NO
+
+Matrix #270: Non-singular
+6 24 
+25 5 
+All elements unique: YES | Singular: NO
+
+Matrix #271: Non-singular
+6 24 
+7 23 
+All elements unique: YES | Singular: NO
+
+Matrix #272: Non-singular
+6 24 
+23 7 
+All elements unique: YES | Singular: NO
+
+Matrix #273: Non-singular
+6 24 
+8 22 
+All elements unique: YES | Singular: NO
+
+Matrix #274: Non-singular
+6 24 
+22 8 
+All elements unique: YES | Singular: NO
+
+Matrix #275: Non-singular
+6 24 
+9 21 
+All elements unique: YES | Singular: NO
+
+Matrix #276: Non-singular
+6 24 
+21 9 
+All elements unique: YES | Singular: NO
+
+Matrix #277: Non-singular
+6 24 
+10 20 
+All elements unique: YES | Singular: NO
+
+Matrix #278: Non-singular
+6 24 
+20 10 
+All elements unique: YES | Singular: NO
+
+Matrix #279: Non-singular
+6 24 
+11 19 
+All elements unique: YES | Singular: NO
+
+Matrix #280: Non-singular
+6 24 
+19 11 
+All elements unique: YES | Singular: NO
+
+Matrix #281: Non-singular
+6 24 
+12 18 
+All elements unique: YES | Singular: NO
+
+Matrix #282: Non-singular
+6 24 
+18 12 
+All elements unique: YES | Singular: NO
+
+Matrix #283: Non-singular
+6 24 
+13 17 
+All elements unique: YES | Singular: NO
+
+Matrix #284: Non-singular
+6 24 
+17 13 
+All elements unique: YES | Singular: NO
+
+Matrix #285: Non-singular
+6 24 
+14 16 
+All elements unique: YES | Singular: NO
+
+Matrix #286: Non-singular
+6 24 
+16 14 
+All elements unique: YES | Singular: NO
+
+Matrix #287: Non-singular
+24 6 
+1 29 
+All elements unique: YES | Singular: NO
+
+Matrix #288: Non-singular
+24 6 
+29 1 
+All elements unique: YES | Singular: NO
+
+Matrix #289: Non-singular
+24 6 
+2 28 
+All elements unique: YES | Singular: NO
+
+Matrix #290: Non-singular
+24 6 
+28 2 
+All elements unique: YES | Singular: NO
+
+Matrix #291: Non-singular
+24 6 
+3 27 
+All elements unique: YES | Singular: NO
+
+Matrix #292: Non-singular
+24 6 
+27 3 
+All elements unique: YES | Singular: NO
+
+Matrix #293: Non-singular
+24 6 
+4 26 
+All elements unique: YES | Singular: NO
+
+Matrix #294: Non-singular
+24 6 
+26 4 
+All elements unique: YES | Singular: NO
+
+Matrix #295: Non-singular
+24 6 
+5 25 
+All elements unique: YES | Singular: NO
+
+Matrix #296: Non-singular
+24 6 
+25 5 
+All elements unique: YES | Singular: NO
+
+Matrix #297: Non-singular
+24 6 
+7 23 
+All elements unique: YES | Singular: NO
+
+Matrix #298: Non-singular
+24 6 
+23 7 
+All elements unique: YES | Singular: NO
+
+Matrix #299: Non-singular
+24 6 
+8 22 
+All elements unique: YES | Singular: NO
+
+Matrix #300: Non-singular
+24 6 
+22 8 
+All elements unique: YES | Singular: NO
+
+Matrix #301: Non-singular
+24 6 
+9 21 
+All elements unique: YES | Singular: NO
+
+Matrix #302: Non-singular
+24 6 
+21 9 
+All elements unique: YES | Singular: NO
+
+Matrix #303: Non-singular
+24 6 
+10 20 
+All elements unique: YES | Singular: NO
+
+Matrix #304: Non-singular
+24 6 
+20 10 
+All elements unique: YES | Singular: NO
+
+Matrix #305: Non-singular
+24 6 
+11 19 
+All elements unique: YES | Singular: NO
+
+Matrix #306: Non-singular
+24 6 
+19 11 
+All elements unique: YES | Singular: NO
+
+Matrix #307: Non-singular
+24 6 
+12 18 
+All elements unique: YES | Singular: NO
+
+Matrix #308: Non-singular
+24 6 
+18 12 
+All elements unique: YES | Singular: NO
+
+Matrix #309: Non-singular
+24 6 
+13 17 
+All elements unique: YES | Singular: NO
+
+Matrix #310: Non-singular
+24 6 
+17 13 
+All elements unique: YES | Singular: NO
+
+Matrix #311: Non-singular
+24 6 
+14 16 
+All elements unique: YES | Singular: NO
+
+Matrix #312: Non-singular
+24 6 
+16 14 
+All elements unique: YES | Singular: NO
+
+Matrix #313: Non-singular
+7 23 
+1 29 
+All elements unique: YES | Singular: NO
+
+Matrix #314: Non-singular
+7 23 
+29 1 
+All elements unique: YES | Singular: NO
+
+Matrix #315: Non-singular
+7 23 
+2 28 
+All elements unique: YES | Singular: NO
+
+Matrix #316: Non-singular
+7 23 
+28 2 
+All elements unique: YES | Singular: NO
+
+Matrix #317: Non-singular
+7 23 
+3 27 
+All elements unique: YES | Singular: NO
+
+Matrix #318: Non-singular
+7 23 
+27 3 
+All elements unique: YES | Singular: NO
+
+Matrix #319: Non-singular
+7 23 
+4 26 
+All elements unique: YES | Singular: NO
+
+Matrix #320: Non-singular
+7 23 
+26 4 
+All elements unique: YES | Singular: NO
+
+Matrix #321: Non-singular
+7 23 
+5 25 
+All elements unique: YES | Singular: NO
+
+Matrix #322: Non-singular
+7 23 
+25 5 
+All elements unique: YES | Singular: NO
+
+Matrix #323: Non-singular
+7 23 
+6 24 
+All elements unique: YES | Singular: NO
+
+Matrix #324: Non-singular
+7 23 
+24 6 
+All elements unique: YES | Singular: NO
+
+Matrix #325: Non-singular
+7 23 
+8 22 
+All elements unique: YES | Singular: NO
+
+Matrix #326: Non-singular
+7 23 
+22 8 
+All elements unique: YES | Singular: NO
+
+Matrix #327: Non-singular
+7 23 
+9 21 
+All elements unique: YES | Singular: NO
+
+Matrix #328: Non-singular
+7 23 
+21 9 
+All elements unique: YES | Singular: NO
+
+Matrix #329: Non-singular
+7 23 
+10 20 
+All elements unique: YES | Singular: NO
+
+Matrix #330: Non-singular
+7 23 
+20 10 
+All elements unique: YES | Singular: NO
+
+Matrix #331: Non-singular
+7 23 
+11 19 
+All elements unique: YES | Singular: NO
+
+Matrix #332: Non-singular
+7 23 
+19 11 
+All elements unique: YES | Singular: NO
+
+Matrix #333: Non-singular
+7 23 
+12 18 
+All elements unique: YES | Singular: NO
+
+Matrix #334: Non-singular
+7 23 
+18 12 
+All elements unique: YES | Singular: NO
+
+Matrix #335: Non-singular
+7 23 
+13 17 
+All elements unique: YES | Singular: NO
+
+Matrix #336: Non-singular
+7 23 
+17 13 
+All elements unique: YES | Singular: NO
+
+Matrix #337: Non-singular
+7 23 
+14 16 
+All elements unique: YES | Singular: NO
+
+Matrix #338: Non-singular
+7 23 
+16 14 
+All elements unique: YES | Singular: NO
+
+Matrix #339: Non-singular
+23 7 
+1 29 
+All elements unique: YES | Singular: NO
+
+Matrix #340: Non-singular
+23 7 
+29 1 
+All elements unique: YES | Singular: NO
+
+Matrix #341: Non-singular
+23 7 
+2 28 
+All elements unique: YES | Singular: NO
+
+Matrix #342: Non-singular
+23 7 
+28 2 
+All elements unique: YES | Singular: NO
+
+Matrix #343: Non-singular
+23 7 
+3 27 
+All elements unique: YES | Singular: NO
+
+Matrix #344: Non-singular
+23 7 
+27 3 
+All elements unique: YES | Singular: NO
+
+Matrix #345: Non-singular
+23 7 
+4 26 
+All elements unique: YES | Singular: NO
+
+Matrix #346: Non-singular
+23 7 
+26 4 
+All elements unique: YES | Singular: NO
+
+Matrix #347: Non-singular
+23 7 
+5 25 
+All elements unique: YES | Singular: NO
+
+Matrix #348: Non-singular
+23 7 
+25 5 
+All elements unique: YES | Singular: NO
+
+Matrix #349: Non-singular
+23 7 
+6 24 
+All elements unique: YES | Singular: NO
+
+Matrix #350: Non-singular
+23 7 
+24 6 
+All elements unique: YES | Singular: NO
+
+Matrix #351: Non-singular
+23 7 
+8 22 
+All elements unique: YES | Singular: NO
+
+Matrix #352: Non-singular
+23 7 
+22 8 
+All elements unique: YES | Singular: NO
+
+Matrix #353: Non-singular
+23 7 
+9 21 
+All elements unique: YES | Singular: NO
+
+Matrix #354: Non-singular
+23 7 
+21 9 
+All elements unique: YES | Singular: NO
+
+Matrix #355: Non-singular
+23 7 
+10 20 
+All elements unique: YES | Singular: NO
+
+Matrix #356: Non-singular
+23 7 
+20 10 
+All elements unique: YES | Singular: NO
+
+Matrix #357: Non-singular
+23 7 
+11 19 
+All elements unique: YES | Singular: NO
+
+Matrix #358: Non-singular
+23 7 
+19 11 
+All elements unique: YES | Singular: NO
+
+Matrix #359: Non-singular
+23 7 
+12 18 
+All elements unique: YES | Singular: NO
+
+Matrix #360: Non-singular
+23 7 
+18 12 
+All elements unique: YES | Singular: NO
+
+Matrix #361: Non-singular
+23 7 
+13 17 
+All elements unique: YES | Singular: NO
+
+Matrix #362: Non-singular
+23 7 
+17 13 
+All elements unique: YES | Singular: NO
+
+Matrix #363: Non-singular
+23 7 
+14 16 
+All elements unique: YES | Singular: NO
+
+Matrix #364: Non-singular
+23 7 
+16 14 
+All elements unique: YES | Singular: NO
+
+Matrix #365: Non-singular
+8 22 
+1 29 
+All elements unique: YES | Singular: NO
+
+Matrix #366: Non-singular
+8 22 
+29 1 
+All elements unique: YES | Singular: NO
+
+Matrix #367: Non-singular
+8 22 
+2 28 
+All elements unique: YES | Singular: NO
+
+Matrix #368: Non-singular
+8 22 
+28 2 
+All elements unique: YES | Singular: NO
+
+Matrix #369: Non-singular
+8 22 
+3 27 
+All elements unique: YES | Singular: NO
+
+Matrix #370: Non-singular
+8 22 
+27 3 
+All elements unique: YES | Singular: NO
+
+Matrix #371: Non-singular
+8 22 
+4 26 
+All elements unique: YES | Singular: NO
+
+Matrix #372: Non-singular
+8 22 
+26 4 
+All elements unique: YES | Singular: NO
+
+Matrix #373: Non-singular
+8 22 
+5 25 
+All elements unique: YES | Singular: NO
+
+Matrix #374: Non-singular
+8 22 
+25 5 
+All elements unique: YES | Singular: NO
+
+Matrix #375: Non-singular
+8 22 
+6 24 
+All elements unique: YES | Singular: NO
+
+Matrix #376: Non-singular
+8 22 
+24 6 
+All elements unique: YES | Singular: NO
+
+Matrix #377: Non-singular
+8 22 
+7 23 
+All elements unique: YES | Singular: NO
+
+Matrix #378: Non-singular
+8 22 
+23 7 
+All elements unique: YES | Singular: NO
+
+Matrix #379: Non-singular
+8 22 
+9 21 
+All elements unique: YES | Singular: NO
+
+Matrix #380: Non-singular
+8 22 
+21 9 
+All elements unique: YES | Singular: NO
+
+Matrix #381: Non-singular
+8 22 
+10 20 
+All elements unique: YES | Singular: NO
+
+Matrix #382: Non-singular
+8 22 
+20 10 
+All elements unique: YES | Singular: NO
+
+Matrix #383: Non-singular
+8 22 
+11 19 
+All elements unique: YES | Singular: NO
+
+Matrix #384: Non-singular
+8 22 
+19 11 
+All elements unique: YES | Singular: NO
+
+Matrix #385: Non-singular
+8 22 
+12 18 
+All elements unique: YES | Singular: NO
+
+Matrix #386: Non-singular
+8 22 
+18 12 
+All elements unique: YES | Singular: NO
+
+Matrix #387: Non-singular
+8 22 
+13 17 
+All elements unique: YES | Singular: NO
+
+Matrix #388: Non-singular
+8 22 
+17 13 
+All elements unique: YES | Singular: NO
+
+Matrix #389: Non-singular
+8 22 
+14 16 
+All elements unique: YES | Singular: NO
+
+Matrix #390: Non-singular
+8 22 
+16 14 
+All elements unique: YES | Singular: NO
+
+Matrix #391: Non-singular
+22 8 
+1 29 
+All elements unique: YES | Singular: NO
+
+Matrix #392: Non-singular
+22 8 
+29 1 
+All elements unique: YES | Singular: NO
+
+Matrix #393: Non-singular
+22 8 
+2 28 
+All elements unique: YES | Singular: NO
+
+Matrix #394: Non-singular
+22 8 
+28 2 
+All elements unique: YES | Singular: NO
+
+Matrix #395: Non-singular
+22 8 
+3 27 
+All elements unique: YES | Singular: NO
+
+Matrix #396: Non-singular
+22 8 
+27 3 
+All elements unique: YES | Singular: NO
+
+Matrix #397: Non-singular
+22 8 
+4 26 
+All elements unique: YES | Singular: NO
+
+Matrix #398: Non-singular
+22 8 
+26 4 
+All elements unique: YES | Singular: NO
+
+Matrix #399: Non-singular
+22 8 
+5 25 
+All elements unique: YES | Singular: NO
+
+Matrix #400: Non-singular
+22 8 
+25 5 
+All elements unique: YES | Singular: NO
+
+Matrix #401: Non-singular
+22 8 
+6 24 
+All elements unique: YES | Singular: NO
+
+Matrix #402: Non-singular
+22 8 
+24 6 
+All elements unique: YES | Singular: NO
+
+Matrix #403: Non-singular
+22 8 
+7 23 
+All elements unique: YES | Singular: NO
+
+Matrix #404: Non-singular
+22 8 
+23 7 
+All elements unique: YES | Singular: NO
+
+Matrix #405: Non-singular
+22 8 
+9 21 
+All elements unique: YES | Singular: NO
+
+Matrix #406: Non-singular
+22 8 
+21 9 
+All elements unique: YES | Singular: NO
+
+Matrix #407: Non-singular
+22 8 
+10 20 
+All elements unique: YES | Singular: NO
+
+Matrix #408: Non-singular
+22 8 
+20 10 
+All elements unique: YES | Singular: NO
+
+Matrix #409: Non-singular
+22 8 
+11 19 
+All elements unique: YES | Singular: NO
+
+Matrix #410: Non-singular
+22 8 
+19 11 
+All elements unique: YES | Singular: NO
+
+Matrix #411: Non-singular
+22 8 
+12 18 
+All elements unique: YES | Singular: NO
+
+Matrix #412: Non-singular
+22 8 
+18 12 
+All elements unique: YES | Singular: NO
+
+Matrix #413: Non-singular
+22 8 
+13 17 
+All elements unique: YES | Singular: NO
+
+Matrix #414: Non-singular
+22 8 
+17 13 
+All elements unique: YES | Singular: NO
+
+Matrix #415: Non-singular
+22 8 
+14 16 
+All elements unique: YES | Singular: NO
+
+Matrix #416: Non-singular
+22 8 
+16 14 
+All elements unique: YES | Singular: NO
+
+Matrix #417: Non-singular
+9 21 
+1 29 
+All elements unique: YES | Singular: NO
+
+Matrix #418: Non-singular
+9 21 
+29 1 
+All elements unique: YES | Singular: NO
+
+Matrix #419: Non-singular
+9 21 
+2 28 
+All elements unique: YES | Singular: NO
+
+Matrix #420: Non-singular
+9 21 
+28 2 
+All elements unique: YES | Singular: NO
+
+Matrix #421: Non-singular
+9 21 
+3 27 
+All elements unique: YES | Singular: NO
+
+Matrix #422: Non-singular
+9 21 
+27 3 
+All elements unique: YES | Singular: NO
+
+Matrix #423: Non-singular
+9 21 
+4 26 
+All elements unique: YES | Singular: NO
+
+Matrix #424: Non-singular
+9 21 
+26 4 
+All elements unique: YES | Singular: NO
+
+Matrix #425: Non-singular
+9 21 
+5 25 
+All elements unique: YES | Singular: NO
+
+Matrix #426: Non-singular
+9 21 
+25 5 
+All elements unique: YES | Singular: NO
+
+Matrix #427: Non-singular
+9 21 
+6 24 
+All elements unique: YES | Singular: NO
+
+Matrix #428: Non-singular
+9 21 
+24 6 
+All elements unique: YES | Singular: NO
+
+Matrix #429: Non-singular
+9 21 
+7 23 
+All elements unique: YES | Singular: NO
+
+Matrix #430: Non-singular
+9 21 
+23 7 
+All elements unique: YES | Singular: NO
+
+Matrix #431: Non-singular
+9 21 
+8 22 
+All elements unique: YES | Singular: NO
+
+Matrix #432: Non-singular
+9 21 
+22 8 
+All elements unique: YES | Singular: NO
+
+Matrix #433: Non-singular
+9 21 
+10 20 
+All elements unique: YES | Singular: NO
+
+Matrix #434: Non-singular
+9 21 
+20 10 
+All elements unique: YES | Singular: NO
+
+Matrix #435: Non-singular
+9 21 
+11 19 
+All elements unique: YES | Singular: NO
+
+Matrix #436: Non-singular
+9 21 
+19 11 
+All elements unique: YES | Singular: NO
+
+Matrix #437: Non-singular
+9 21 
+12 18 
+All elements unique: YES | Singular: NO
+
+Matrix #438: Non-singular
+9 21 
+18 12 
+All elements unique: YES | Singular: NO
+
+Matrix #439: Non-singular
+9 21 
+13 17 
+All elements unique: YES | Singular: NO
+
+Matrix #440: Non-singular
+9 21 
+17 13 
+All elements unique: YES | Singular: NO
+
+Matrix #441: Non-singular
+9 21 
+14 16 
+All elements unique: YES | Singular: NO
+
+Matrix #442: Non-singular
+9 21 
+16 14 
+All elements unique: YES | Singular: NO
+
+Matrix #443: Non-singular
+21 9 
+1 29 
+All elements unique: YES | Singular: NO
+
+Matrix #444: Non-singular
+21 9 
+29 1 
+All elements unique: YES | Singular: NO
+
+Matrix #445: Non-singular
+21 9 
+2 28 
+All elements unique: YES | Singular: NO
+
+Matrix #446: Non-singular
+21 9 
+28 2 
+All elements unique: YES | Singular: NO
+
+Matrix #447: Non-singular
+21 9 
+3 27 
+All elements unique: YES | Singular: NO
+
+Matrix #448: Non-singular
+21 9 
+27 3 
+All elements unique: YES | Singular: NO
+
+Matrix #449: Non-singular
+21 9 
+4 26 
+All elements unique: YES | Singular: NO
+
+Matrix #450: Non-singular
+21 9 
+26 4 
+All elements unique: YES | Singular: NO
+
+Matrix #451: Non-singular
+21 9 
+5 25 
+All elements unique: YES | Singular: NO
+
+Matrix #452: Non-singular
+21 9 
+25 5 
+All elements unique: YES | Singular: NO
+
+Matrix #453: Non-singular
+21 9 
+6 24 
+All elements unique: YES | Singular: NO
+
+Matrix #454: Non-singular
+21 9 
+24 6 
+All elements unique: YES | Singular: NO
+
+Matrix #455: Non-singular
+21 9 
+7 23 
+All elements unique: YES | Singular: NO
+
+Matrix #456: Non-singular
+21 9 
+23 7 
+All elements unique: YES | Singular: NO
+
+Matrix #457: Non-singular
+21 9 
+8 22 
+All elements unique: YES | Singular: NO
+
+Matrix #458: Non-singular
+21 9 
+22 8 
+All elements unique: YES | Singular: NO
+
+Matrix #459: Non-singular
+21 9 
+10 20 
+All elements unique: YES | Singular: NO
+
+Matrix #460: Non-singular
+21 9 
+20 10 
+All elements unique: YES | Singular: NO
+
+Matrix #461: Non-singular
+21 9 
+11 19 
+All elements unique: YES | Singular: NO
+
+Matrix #462: Non-singular
+21 9 
+19 11 
+All elements unique: YES | Singular: NO
+
+Matrix #463: Non-singular
+21 9 
+12 18 
+All elements unique: YES | Singular: NO
+
+Matrix #464: Non-singular
+21 9 
+18 12 
+All elements unique: YES | Singular: NO
+
+Matrix #465: Non-singular
+21 9 
+13 17 
+All elements unique: YES | Singular: NO
+
+Matrix #466: Non-singular
+21 9 
+17 13 
+All elements unique: YES | Singular: NO
+
+Matrix #467: Non-singular
+21 9 
+14 16 
+All elements unique: YES | Singular: NO
+
+Matrix #468: Non-singular
+21 9 
+16 14 
+All elements unique: YES | Singular: NO
+
+Matrix #469: Non-singular
+10 20 
+1 29 
+All elements unique: YES | Singular: NO
+
+Matrix #470: Non-singular
+10 20 
+29 1 
+All elements unique: YES | Singular: NO
+
+Matrix #471: Non-singular
+10 20 
+2 28 
+All elements unique: YES | Singular: NO
+
+Matrix #472: Non-singular
+10 20 
+28 2 
+All elements unique: YES | Singular: NO
+
+Matrix #473: Non-singular
+10 20 
+3 27 
+All elements unique: YES | Singular: NO
+
+Matrix #474: Non-singular
+10 20 
+27 3 
+All elements unique: YES | Singular: NO
+
+Matrix #475: Non-singular
+10 20 
+4 26 
+All elements unique: YES | Singular: NO
+
+Matrix #476: Non-singular
+10 20 
+26 4 
+All elements unique: YES | Singular: NO
+
+Matrix #477: Non-singular
+10 20 
+5 25 
+All elements unique: YES | Singular: NO
+
+Matrix #478: Non-singular
+10 20 
+25 5 
+All elements unique: YES | Singular: NO
+
+Matrix #479: Non-singular
+10 20 
+6 24 
+All elements unique: YES | Singular: NO
+
+Matrix #480: Non-singular
+10 20 
+24 6 
+All elements unique: YES | Singular: NO
+
+Matrix #481: Non-singular
+10 20 
+7 23 
+All elements unique: YES | Singular: NO
+
+Matrix #482: Non-singular
+10 20 
+23 7 
+All elements unique: YES | Singular: NO
+
+Matrix #483: Non-singular
+10 20 
+8 22 
+All elements unique: YES | Singular: NO
+
+Matrix #484: Non-singular
+10 20 
+22 8 
+All elements unique: YES | Singular: NO
+
+Matrix #485: Non-singular
+10 20 
+9 21 
+All elements unique: YES | Singular: NO
+
+Matrix #486: Non-singular
+10 20 
+21 9 
+All elements unique: YES | Singular: NO
+
+Matrix #487: Non-singular
+10 20 
+11 19 
+All elements unique: YES | Singular: NO
+
+Matrix #488: Non-singular
+10 20 
+19 11 
+All elements unique: YES | Singular: NO
+
+Matrix #489: Non-singular
+10 20 
+12 18 
+All elements unique: YES | Singular: NO
+
+Matrix #490: Non-singular
+10 20 
+18 12 
+All elements unique: YES | Singular: NO
+
+Matrix #491: Non-singular
+10 20 
+13 17 
+All elements unique: YES | Singular: NO
+
+Matrix #492: Non-singular
+10 20 
+17 13 
+All elements unique: YES | Singular: NO
+
+Matrix #493: Non-singular
+10 20 
+14 16 
+All elements unique: YES | Singular: NO
+
+Matrix #494: Non-singular
+10 20 
+16 14 
+All elements unique: YES | Singular: NO
+
+Matrix #495: Non-singular
+20 10 
+1 29 
+All elements unique: YES | Singular: NO
+
+Matrix #496: Non-singular
+20 10 
+29 1 
+All elements unique: YES | Singular: NO
+
+Matrix #497: Non-singular
+20 10 
+2 28 
+All elements unique: YES | Singular: NO
+
+Matrix #498: Non-singular
+20 10 
+28 2 
+All elements unique: YES | Singular: NO
+
+Matrix #499: Non-singular
+20 10 
+3 27 
+All elements unique: YES | Singular: NO
+
+Matrix #500: Non-singular
+20 10 
+27 3 
+All elements unique: YES | Singular: NO
+
+Matrix #501: Non-singular
+20 10 
+4 26 
+All elements unique: YES | Singular: NO
+
+Matrix #502: Non-singular
+20 10 
+26 4 
+All elements unique: YES | Singular: NO
+
+Matrix #503: Non-singular
+20 10 
+5 25 
+All elements unique: YES | Singular: NO
+
+Matrix #504: Non-singular
+20 10 
+25 5 
+All elements unique: YES | Singular: NO
+
+Matrix #505: Non-singular
+20 10 
+6 24 
+All elements unique: YES | Singular: NO
+
+Matrix #506: Non-singular
+20 10 
+24 6 
+All elements unique: YES | Singular: NO
+
+Matrix #507: Non-singular
+20 10 
+7 23 
+All elements unique: YES | Singular: NO
+
+Matrix #508: Non-singular
+20 10 
+23 7 
+All elements unique: YES | Singular: NO
+
+Matrix #509: Non-singular
+20 10 
+8 22 
+All elements unique: YES | Singular: NO
+
+Matrix #510: Non-singular
+20 10 
+22 8 
+All elements unique: YES | Singular: NO
+
+Matrix #511: Non-singular
+20 10 
+9 21 
+All elements unique: YES | Singular: NO
+
+Matrix #512: Non-singular
+20 10 
+21 9 
+All elements unique: YES | Singular: NO
+
+Matrix #513: Non-singular
+20 10 
+11 19 
+All elements unique: YES | Singular: NO
+
+Matrix #514: Non-singular
+20 10 
+19 11 
+All elements unique: YES | Singular: NO
+
+Matrix #515: Non-singular
+20 10 
+12 18 
+All elements unique: YES | Singular: NO
+
+Matrix #516: Non-singular
+20 10 
+18 12 
+All elements unique: YES | Singular: NO
+
+Matrix #517: Non-singular
+20 10 
+13 17 
+All elements unique: YES | Singular: NO
+
+Matrix #518: Non-singular
+20 10 
+17 13 
+All elements unique: YES | Singular: NO
+
+Matrix #519: Non-singular
+20 10 
+14 16 
+All elements unique: YES | Singular: NO
+
+Matrix #520: Non-singular
+20 10 
+16 14 
+All elements unique: YES | Singular: NO
+
+Matrix #521: Non-singular
+11 19 
+1 29 
+All elements unique: YES | Singular: NO
+
+Matrix #522: Non-singular
+11 19 
+29 1 
+All elements unique: YES | Singular: NO
+
+Matrix #523: Non-singular
+11 19 
+2 28 
+All elements unique: YES | Singular: NO
+
+Matrix #524: Non-singular
+11 19 
+28 2 
+All elements unique: YES | Singular: NO
+
+Matrix #525: Non-singular
+11 19 
+3 27 
+All elements unique: YES | Singular: NO
+
+Matrix #526: Non-singular
+11 19 
+27 3 
+All elements unique: YES | Singular: NO
+
+Matrix #527: Non-singular
+11 19 
+4 26 
+All elements unique: YES | Singular: NO
+
+Matrix #528: Non-singular
+11 19 
+26 4 
+All elements unique: YES | Singular: NO
+
+Matrix #529: Non-singular
+11 19 
+5 25 
+All elements unique: YES | Singular: NO
+
+Matrix #530: Non-singular
+11 19 
+25 5 
+All elements unique: YES | Singular: NO
+
+Matrix #531: Non-singular
+11 19 
+6 24 
+All elements unique: YES | Singular: NO
+
+Matrix #532: Non-singular
+11 19 
+24 6 
+All elements unique: YES | Singular: NO
+
+Matrix #533: Non-singular
+11 19 
+7 23 
+All elements unique: YES | Singular: NO
+
+Matrix #534: Non-singular
+11 19 
+23 7 
+All elements unique: YES | Singular: NO
+
+Matrix #535: Non-singular
+11 19 
+8 22 
+All elements unique: YES | Singular: NO
+
+Matrix #536: Non-singular
+11 19 
+22 8 
+All elements unique: YES | Singular: NO
+
+Matrix #537: Non-singular
+11 19 
+9 21 
+All elements unique: YES | Singular: NO
+
+Matrix #538: Non-singular
+11 19 
+21 9 
+All elements unique: YES | Singular: NO
+
+Matrix #539: Non-singular
+11 19 
+10 20 
+All elements unique: YES | Singular: NO
+
+Matrix #540: Non-singular
+11 19 
+20 10 
+All elements unique: YES | Singular: NO
+
+Matrix #541: Non-singular
+11 19 
+12 18 
+All elements unique: YES | Singular: NO
+
+Matrix #542: Non-singular
+11 19 
+18 12 
+All elements unique: YES | Singular: NO
+
+Matrix #543: Non-singular
+11 19 
+13 17 
+All elements unique: YES | Singular: NO
+
+Matrix #544: Non-singular
+11 19 
+17 13 
+All elements unique: YES | Singular: NO
+
+Matrix #545: Non-singular
+11 19 
+14 16 
+All elements unique: YES | Singular: NO
+
+Matrix #546: Non-singular
+11 19 
+16 14 
+All elements unique: YES | Singular: NO
+
+Matrix #547: Non-singular
+19 11 
+1 29 
+All elements unique: YES | Singular: NO
+
+Matrix #548: Non-singular
+19 11 
+29 1 
+All elements unique: YES | Singular: NO
+
+Matrix #549: Non-singular
+19 11 
+2 28 
+All elements unique: YES | Singular: NO
+
+Matrix #550: Non-singular
+19 11 
+28 2 
+All elements unique: YES | Singular: NO
+
+Matrix #551: Non-singular
+19 11 
+3 27 
+All elements unique: YES | Singular: NO
+
+Matrix #552: Non-singular
+19 11 
+27 3 
+All elements unique: YES | Singular: NO
+
+Matrix #553: Non-singular
+19 11 
+4 26 
+All elements unique: YES | Singular: NO
+
+Matrix #554: Non-singular
+19 11 
+26 4 
+All elements unique: YES | Singular: NO
+
+Matrix #555: Non-singular
+19 11 
+5 25 
+All elements unique: YES | Singular: NO
+
+Matrix #556: Non-singular
+19 11 
+25 5 
+All elements unique: YES | Singular: NO
+
+Matrix #557: Non-singular
+19 11 
+6 24 
+All elements unique: YES | Singular: NO
+
+Matrix #558: Non-singular
+19 11 
+24 6 
+All elements unique: YES | Singular: NO
+
+Matrix #559: Non-singular
+19 11 
+7 23 
+All elements unique: YES | Singular: NO
+
+Matrix #560: Non-singular
+19 11 
+23 7 
+All elements unique: YES | Singular: NO
+
+Matrix #561: Non-singular
+19 11 
+8 22 
+All elements unique: YES | Singular: NO
+
+Matrix #562: Non-singular
+19 11 
+22 8 
+All elements unique: YES | Singular: NO
+
+Matrix #563: Non-singular
+19 11 
+9 21 
+All elements unique: YES | Singular: NO
+
+Matrix #564: Non-singular
+19 11 
+21 9 
+All elements unique: YES | Singular: NO
+
+Matrix #565: Non-singular
+19 11 
+10 20 
+All elements unique: YES | Singular: NO
+
+Matrix #566: Non-singular
+19 11 
+20 10 
+All elements unique: YES | Singular: NO
+
+Matrix #567: Non-singular
+19 11 
+12 18 
+All elements unique: YES | Singular: NO
+
+Matrix #568: Non-singular
+19 11 
+18 12 
+All elements unique: YES | Singular: NO
+
+Matrix #569: Non-singular
+19 11 
+13 17 
+All elements unique: YES | Singular: NO
+
+Matrix #570: Non-singular
+19 11 
+17 13 
+All elements unique: YES | Singular: NO
+
+Matrix #571: Non-singular
+19 11 
+14 16 
+All elements unique: YES | Singular: NO
+
+Matrix #572: Non-singular
+19 11 
+16 14 
+All elements unique: YES | Singular: NO
+
+Matrix #573: Non-singular
+12 18 
+1 29 
+All elements unique: YES | Singular: NO
+
+Matrix #574: Non-singular
+12 18 
+29 1 
+All elements unique: YES | Singular: NO
+
+Matrix #575: Non-singular
+12 18 
+2 28 
+All elements unique: YES | Singular: NO
+
+Matrix #576: Non-singular
+12 18 
+28 2 
+All elements unique: YES | Singular: NO
+
+Matrix #577: Non-singular
+12 18 
+3 27 
+All elements unique: YES | Singular: NO
+
+Matrix #578: Non-singular
+12 18 
+27 3 
+All elements unique: YES | Singular: NO
+
+Matrix #579: Non-singular
+12 18 
+4 26 
+All elements unique: YES | Singular: NO
+
+Matrix #580: Non-singular
+12 18 
+26 4 
+All elements unique: YES | Singular: NO
+
+Matrix #581: Non-singular
+12 18 
+5 25 
+All elements unique: YES | Singular: NO
+
+Matrix #582: Non-singular
+12 18 
+25 5 
+All elements unique: YES | Singular: NO
+
+Matrix #583: Non-singular
+12 18 
+6 24 
+All elements unique: YES | Singular: NO
+
+Matrix #584: Non-singular
+12 18 
+24 6 
+All elements unique: YES | Singular: NO
+
+Matrix #585: Non-singular
+12 18 
+7 23 
+All elements unique: YES | Singular: NO
+
+Matrix #586: Non-singular
+12 18 
+23 7 
+All elements unique: YES | Singular: NO
+
+Matrix #587: Non-singular
+12 18 
+8 22 
+All elements unique: YES | Singular: NO
+
+Matrix #588: Non-singular
+12 18 
+22 8 
+All elements unique: YES | Singular: NO
+
+Matrix #589: Non-singular
+12 18 
+9 21 
+All elements unique: YES | Singular: NO
+
+Matrix #590: Non-singular
+12 18 
+21 9 
+All elements unique: YES | Singular: NO
+
+Matrix #591: Non-singular
+12 18 
+10 20 
+All elements unique: YES | Singular: NO
+
+Matrix #592: Non-singular
+12 18 
+20 10 
+All elements unique: YES | Singular: NO
+
+Matrix #593: Non-singular
+12 18 
+11 19 
+All elements unique: YES | Singular: NO
+
+Matrix #594: Non-singular
+12 18 
+19 11 
+All elements unique: YES | Singular: NO
+
+Matrix #595: Non-singular
+12 18 
+13 17 
+All elements unique: YES | Singular: NO
+
+Matrix #596: Non-singular
+12 18 
+17 13 
+All elements unique: YES | Singular: NO
+
+Matrix #597: Non-singular
+12 18 
+14 16 
+All elements unique: YES | Singular: NO
+
+Matrix #598: Non-singular
+12 18 
+16 14 
+All elements unique: YES | Singular: NO
+
+Matrix #599: Non-singular
+18 12 
+1 29 
+All elements unique: YES | Singular: NO
+
+Matrix #600: Non-singular
+18 12 
+29 1 
+All elements unique: YES | Singular: NO
+
+Matrix #601: Non-singular
+18 12 
+2 28 
+All elements unique: YES | Singular: NO
+
+Matrix #602: Non-singular
+18 12 
+28 2 
+All elements unique: YES | Singular: NO
+
+Matrix #603: Non-singular
+18 12 
+3 27 
+All elements unique: YES | Singular: NO
+
+Matrix #604: Non-singular
+18 12 
+27 3 
+All elements unique: YES | Singular: NO
+
+Matrix #605: Non-singular
+18 12 
+4 26 
+All elements unique: YES | Singular: NO
+
+Matrix #606: Non-singular
+18 12 
+26 4 
+All elements unique: YES | Singular: NO
+
+Matrix #607: Non-singular
+18 12 
+5 25 
+All elements unique: YES | Singular: NO
+
+Matrix #608: Non-singular
+18 12 
+25 5 
+All elements unique: YES | Singular: NO
+
+Matrix #609: Non-singular
+18 12 
+6 24 
+All elements unique: YES | Singular: NO
+
+Matrix #610: Non-singular
+18 12 
+24 6 
+All elements unique: YES | Singular: NO
+
+Matrix #611: Non-singular
+18 12 
+7 23 
+All elements unique: YES | Singular: NO
+
+Matrix #612: Non-singular
+18 12 
+23 7 
+All elements unique: YES | Singular: NO
+
+Matrix #613: Non-singular
+18 12 
+8 22 
+All elements unique: YES | Singular: NO
+
+Matrix #614: Non-singular
+18 12 
+22 8 
+All elements unique: YES | Singular: NO
+
+Matrix #615: Non-singular
+18 12 
+9 21 
+All elements unique: YES | Singular: NO
+
+Matrix #616: Non-singular
+18 12 
+21 9 
+All elements unique: YES | Singular: NO
+
+Matrix #617: Non-singular
+18 12 
+10 20 
+All elements unique: YES | Singular: NO
+
+Matrix #618: Non-singular
+18 12 
+20 10 
+All elements unique: YES | Singular: NO
+
+Matrix #619: Non-singular
+18 12 
+11 19 
+All elements unique: YES | Singular: NO
+
+Matrix #620: Non-singular
+18 12 
+19 11 
+All elements unique: YES | Singular: NO
+
+Matrix #621: Non-singular
+18 12 
+13 17 
+All elements unique: YES | Singular: NO
+
+Matrix #622: Non-singular
+18 12 
+17 13 
+All elements unique: YES | Singular: NO
+
+Matrix #623: Non-singular
+18 12 
+14 16 
+All elements unique: YES | Singular: NO
+
+Matrix #624: Non-singular
+18 12 
+16 14 
+All elements unique: YES | Singular: NO
+
+Matrix #625: Non-singular
+13 17 
+1 29 
+All elements unique: YES | Singular: NO
+
+Matrix #626: Non-singular
+13 17 
+29 1 
+All elements unique: YES | Singular: NO
+
+Matrix #627: Non-singular
+13 17 
+2 28 
+All elements unique: YES | Singular: NO
+
+Matrix #628: Non-singular
+13 17 
+28 2 
+All elements unique: YES | Singular: NO
+
+Matrix #629: Non-singular
+13 17 
+3 27 
+All elements unique: YES | Singular: NO
+
+Matrix #630: Non-singular
+13 17 
+27 3 
+All elements unique: YES | Singular: NO
+
+Matrix #631: Non-singular
+13 17 
+4 26 
+All elements unique: YES | Singular: NO
+
+Matrix #632: Non-singular
+13 17 
+26 4 
+All elements unique: YES | Singular: NO
+
+Matrix #633: Non-singular
+13 17 
+5 25 
+All elements unique: YES | Singular: NO
+
+Matrix #634: Non-singular
+13 17 
+25 5 
+All elements unique: YES | Singular: NO
+
+Matrix #635: Non-singular
+13 17 
+6 24 
+All elements unique: YES | Singular: NO
+
+Matrix #636: Non-singular
+13 17 
+24 6 
+All elements unique: YES | Singular: NO
+
+Matrix #637: Non-singular
+13 17 
+7 23 
+All elements unique: YES | Singular: NO
+
+Matrix #638: Non-singular
+13 17 
+23 7 
+All elements unique: YES | Singular: NO
+
+Matrix #639: Non-singular
+13 17 
+8 22 
+All elements unique: YES | Singular: NO
+
+Matrix #640: Non-singular
+13 17 
+22 8 
+All elements unique: YES | Singular: NO
+
+Matrix #641: Non-singular
+13 17 
+9 21 
+All elements unique: YES | Singular: NO
+
+Matrix #642: Non-singular
+13 17 
+21 9 
+All elements unique: YES | Singular: NO
+
+Matrix #643: Non-singular
+13 17 
+10 20 
+All elements unique: YES | Singular: NO
+
+Matrix #644: Non-singular
+13 17 
+20 10 
+All elements unique: YES | Singular: NO
+
+Matrix #645: Non-singular
+13 17 
+11 19 
+All elements unique: YES | Singular: NO
+
+Matrix #646: Non-singular
+13 17 
+19 11 
+All elements unique: YES | Singular: NO
+
+Matrix #647: Non-singular
+13 17 
+12 18 
+All elements unique: YES | Singular: NO
+
+Matrix #648: Non-singular
+13 17 
+18 12 
+All elements unique: YES | Singular: NO
+
+Matrix #649: Non-singular
+13 17 
+14 16 
+All elements unique: YES | Singular: NO
+
+Matrix #650: Non-singular
+13 17 
+16 14 
+All elements unique: YES | Singular: NO
+
+Matrix #651: Non-singular
+17 13 
+1 29 
+All elements unique: YES | Singular: NO
+
+Matrix #652: Non-singular
+17 13 
+29 1 
+All elements unique: YES | Singular: NO
+
+Matrix #653: Non-singular
+17 13 
+2 28 
+All elements unique: YES | Singular: NO
+
+Matrix #654: Non-singular
+17 13 
+28 2 
+All elements unique: YES | Singular: NO
+
+Matrix #655: Non-singular
+17 13 
+3 27 
+All elements unique: YES | Singular: NO
+
+Matrix #656: Non-singular
+17 13 
+27 3 
+All elements unique: YES | Singular: NO
+
+Matrix #657: Non-singular
+17 13 
+4 26 
+All elements unique: YES | Singular: NO
+
+Matrix #658: Non-singular
+17 13 
+26 4 
+All elements unique: YES | Singular: NO
+
+Matrix #659: Non-singular
+17 13 
+5 25 
+All elements unique: YES | Singular: NO
+
+Matrix #660: Non-singular
+17 13 
+25 5 
+All elements unique: YES | Singular: NO
+
+Matrix #661: Non-singular
+17 13 
+6 24 
+All elements unique: YES | Singular: NO
+
+Matrix #662: Non-singular
+17 13 
+24 6 
+All elements unique: YES | Singular: NO
+
+Matrix #663: Non-singular
+17 13 
+7 23 
+All elements unique: YES | Singular: NO
+
+Matrix #664: Non-singular
+17 13 
+23 7 
+All elements unique: YES | Singular: NO
+
+Matrix #665: Non-singular
+17 13 
+8 22 
+All elements unique: YES | Singular: NO
+
+Matrix #666: Non-singular
+17 13 
+22 8 
+All elements unique: YES | Singular: NO
+
+Matrix #667: Non-singular
+17 13 
+9 21 
+All elements unique: YES | Singular: NO
+
+Matrix #668: Non-singular
+17 13 
+21 9 
+All elements unique: YES | Singular: NO
+
+Matrix #669: Non-singular
+17 13 
+10 20 
+All elements unique: YES | Singular: NO
+
+Matrix #670: Non-singular
+17 13 
+20 10 
+All elements unique: YES | Singular: NO
+
+Matrix #671: Non-singular
+17 13 
+11 19 
+All elements unique: YES | Singular: NO
+
+Matrix #672: Non-singular
+17 13 
+19 11 
+All elements unique: YES | Singular: NO
+
+Matrix #673: Non-singular
+17 13 
+12 18 
+All elements unique: YES | Singular: NO
+
+Matrix #674: Non-singular
+17 13 
+18 12 
+All elements unique: YES | Singular: NO
+
+Matrix #675: Non-singular
+17 13 
+14 16 
+All elements unique: YES | Singular: NO
+
+Matrix #676: Non-singular
+17 13 
+16 14 
+All elements unique: YES | Singular: NO
+
+Matrix #677: Non-singular
+14 16 
+1 29 
+All elements unique: YES | Singular: NO
+
+Matrix #678: Non-singular
+14 16 
+29 1 
+All elements unique: YES | Singular: NO
+
+Matrix #679: Non-singular
+14 16 
+2 28 
+All elements unique: YES | Singular: NO
+
+Matrix #680: Non-singular
+14 16 
+28 2 
+All elements unique: YES | Singular: NO
+
+Matrix #681: Non-singular
+14 16 
+3 27 
+All elements unique: YES | Singular: NO
+
+Matrix #682: Non-singular
+14 16 
+27 3 
+All elements unique: YES | Singular: NO
+
+Matrix #683: Non-singular
+14 16 
+4 26 
+All elements unique: YES | Singular: NO
+
+Matrix #684: Non-singular
+14 16 
+26 4 
+All elements unique: YES | Singular: NO
+
+Matrix #685: Non-singular
+14 16 
+5 25 
+All elements unique: YES | Singular: NO
+
+Matrix #686: Non-singular
+14 16 
+25 5 
+All elements unique: YES | Singular: NO
+
+Matrix #687: Non-singular
+14 16 
+6 24 
+All elements unique: YES | Singular: NO
+
+Matrix #688: Non-singular
+14 16 
+24 6 
+All elements unique: YES | Singular: NO
+
+Matrix #689: Non-singular
+14 16 
+7 23 
+All elements unique: YES | Singular: NO
+
+Matrix #690: Non-singular
+14 16 
+23 7 
+All elements unique: YES | Singular: NO
+
+Matrix #691: Non-singular
+14 16 
+8 22 
+All elements unique: YES | Singular: NO
+
+Matrix #692: Non-singular
+14 16 
+22 8 
+All elements unique: YES | Singular: NO
+
+Matrix #693: Non-singular
+14 16 
+9 21 
+All elements unique: YES | Singular: NO
+
+Matrix #694: Non-singular
+14 16 
+21 9 
+All elements unique: YES | Singular: NO
+
+Matrix #695: Non-singular
+14 16 
+10 20 
+All elements unique: YES | Singular: NO
+
+Matrix #696: Non-singular
+14 16 
+20 10 
+All elements unique: YES | Singular: NO
+
+Matrix #697: Non-singular
+14 16 
+11 19 
+All elements unique: YES | Singular: NO
+
+Matrix #698: Non-singular
+14 16 
+19 11 
+All elements unique: YES | Singular: NO
+
+Matrix #699: Non-singular
+14 16 
+12 18 
+All elements unique: YES | Singular: NO
+
+Matrix #700: Non-singular
+14 16 
+18 12 
+All elements unique: YES | Singular: NO
+
+Matrix #701: Non-singular
+14 16 
+13 17 
+All elements unique: YES | Singular: NO
+
+Matrix #702: Non-singular
+14 16 
+17 13 
+All elements unique: YES | Singular: NO
+
+Matrix #703: Non-singular
+16 14 
+1 29 
+All elements unique: YES | Singular: NO
+
+Matrix #704: Non-singular
+16 14 
+29 1 
+All elements unique: YES | Singular: NO
+
+Matrix #705: Non-singular
+16 14 
+2 28 
+All elements unique: YES | Singular: NO
+
+Matrix #706: Non-singular
+16 14 
+28 2 
+All elements unique: YES | Singular: NO
+
+Matrix #707: Non-singular
+16 14 
+3 27 
+All elements unique: YES | Singular: NO
+
+Matrix #708: Non-singular
+16 14 
+27 3 
+All elements unique: YES | Singular: NO
+
+Matrix #709: Non-singular
+16 14 
+4 26 
+All elements unique: YES | Singular: NO
+
+Matrix #710: Non-singular
+16 14 
+26 4 
+All elements unique: YES | Singular: NO
+
+Matrix #711: Non-singular
+16 14 
+5 25 
+All elements unique: YES | Singular: NO
+
+Matrix #712: Non-singular
+16 14 
+25 5 
+All elements unique: YES | Singular: NO
+
+Matrix #713: Non-singular
+16 14 
+6 24 
+All elements unique: YES | Singular: NO
+
+Matrix #714: Non-singular
+16 14 
+24 6 
+All elements unique: YES | Singular: NO
+
+Matrix #715: Non-singular
+16 14 
+7 23 
+All elements unique: YES | Singular: NO
+
+Matrix #716: Non-singular
+16 14 
+23 7 
+All elements unique: YES | Singular: NO
+
+Matrix #717: Non-singular
+16 14 
+8 22 
+All elements unique: YES | Singular: NO
+
+Matrix #718: Non-singular
+16 14 
+22 8 
+All elements unique: YES | Singular: NO
+
+Matrix #719: Non-singular
+16 14 
+9 21 
+All elements unique: YES | Singular: NO
+
+Matrix #720: Non-singular
+16 14 
+21 9 
+All elements unique: YES | Singular: NO
+
+Matrix #721: Non-singular
+16 14 
+10 20 
+All elements unique: YES | Singular: NO
+
+Matrix #722: Non-singular
+16 14 
+20 10 
+All elements unique: YES | Singular: NO
+
+Matrix #723: Non-singular
+16 14 
+11 19 
+All elements unique: YES | Singular: NO
+
+Matrix #724: Non-singular
+16 14 
+19 11 
+All elements unique: YES | Singular: NO
+
+Matrix #725: Non-singular
+16 14 
+12 18 
+All elements unique: YES | Singular: NO
+
+Matrix #726: Non-singular
+16 14 
+18 12 
+All elements unique: YES | Singular: NO
+
+Matrix #727: Non-singular
+16 14 
+13 17 
+All elements unique: YES | Singular: NO
+
+Matrix #728: Non-singular
+16 14 
+17 13 
+All elements unique: YES | Singular: NO
+
+=== SUMMARY ===
+Total matrices generated: 728
+Singular matrices: 0
+Non-singular matrices: 728
+Total rows generated: 28
+Computation time (ms): 5

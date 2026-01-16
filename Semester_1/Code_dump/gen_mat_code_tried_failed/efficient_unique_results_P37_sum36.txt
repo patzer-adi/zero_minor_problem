@@ -1,0 +1,31 @@
+Results Summary for 1000 constrained 4x4 matrices:
+
+Constraints:
+- Matrix entries: 1 to 37
+- Each row sum: 36
+- ALL elements in entire matrix must be unique (16 unique values)
+- All rows unique within each matrix
+- All matrices unique
+
+Theoretical analysis:
+- Required total sum: 144
+- Minimum possible total sum (1+2+...+16): 136
+- Maximum possible total sum: 472
+- Constraint feasibility: FEASIBLE
+
+Generation statistics:
+- Total attempts: 1000
+- Failed generations: 0
+- Failed verifications: 0
+- Success rate: 100.00%
+
+Results:
+Non-singular (det != 0): 993 (99.30%)
+Singular (det == 0): 7 (0.70%)
+Ratio (nonsingular:singular): 993:7
+
+Time taken for generation: 75629 ms
+Total time: 75629 ms
+
+Matrices saved progressively in: efficient_unique_matrices_P37_sum36.txt
+Generation progress logged in: generation_progress_P37_sum36.txt

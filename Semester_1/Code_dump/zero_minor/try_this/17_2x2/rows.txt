@@ -1,0 +1,14 @@
+Row 1: 1 15 Sum=16
+Row 2: 15 1 Sum=16
+Row 3: 2 14 Sum=16
+Row 4: 14 2 Sum=16
+Row 5: 3 13 Sum=16
+Row 6: 13 3 Sum=16
+Row 7: 4 12 Sum=16
+Row 8: 12 4 Sum=16
+Row 9: 5 11 Sum=16
+Row 10: 11 5 Sum=16
+Row 11: 6 10 Sum=16
+Row 12: 10 6 Sum=16
+Row 13: 7 9 Sum=16
+Row 14: 9 7 Sum=16

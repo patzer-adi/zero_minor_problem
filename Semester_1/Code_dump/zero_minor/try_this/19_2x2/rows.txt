@@ -1,0 +1,16 @@
+Row 1: 1 17 Sum=18
+Row 2: 17 1 Sum=18
+Row 3: 2 16 Sum=18
+Row 4: 16 2 Sum=18
+Row 5: 3 15 Sum=18
+Row 6: 15 3 Sum=18
+Row 7: 4 14 Sum=18
+Row 8: 14 4 Sum=18
+Row 9: 5 13 Sum=18
+Row 10: 13 5 Sum=18
+Row 11: 6 12 Sum=18
+Row 12: 12 6 Sum=18
+Row 13: 7 11 Sum=18
+Row 14: 11 7 Sum=18
+Row 15: 8 10 Sum=18
+Row 16: 10 8 Sum=18

@@ -1,0 +1,8 @@
+Summary for 1000 random 4x4 matrices (rows sum = P-1, entries in 1..P):
+
+Non-singular (det != 0): 1000
+Singular (det == 0): 0
+
+Time taken for generation: 10 ms
+Time taken for determinant computations: 5 ms
+Total time: 15 ms

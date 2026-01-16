@@ -1,0 +1,17 @@
+Row 1: 1 35 Sum=36
+Row 2: 2 34 Sum=36
+Row 3: 3 33 Sum=36
+Row 4: 4 32 Sum=36
+Row 5: 5 31 Sum=36
+Row 6: 6 30 Sum=36
+Row 7: 7 29 Sum=36
+Row 8: 8 28 Sum=36
+Row 9: 9 27 Sum=36
+Row 10: 10 26 Sum=36
+Row 11: 11 25 Sum=36
+Row 12: 12 24 Sum=36
+Row 13: 13 23 Sum=36
+Row 14: 14 22 Sum=36
+Row 15: 15 21 Sum=36
+Row 16: 16 20 Sum=36
+Row 17: 17 19 Sum=36

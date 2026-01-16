@@ -1,0 +1,186 @@
+Matrix #1: Non-singular
+1 3 12 
+2 6 8 
+4 5 7 
+All elements unique: YES | Singular: NO
+
+Matrix #2: Non-singular
+1 3 12 
+4 5 7 
+2 6 8 
+All elements unique: YES | Singular: NO
+
+Matrix #3: Singular
+1 4 11 
+2 5 9 
+3 6 7 
+All elements unique: YES | Singular: YES
+
+Matrix #4: Singular
+1 4 11 
+3 6 7 
+2 5 9 
+All elements unique: YES | Singular: YES
+
+Matrix #5: Non-singular
+1 5 10 
+2 6 8 
+3 4 9 
+All elements unique: YES | Singular: NO
+
+Matrix #6: Non-singular
+1 5 10 
+3 4 9 
+2 6 8 
+All elements unique: YES | Singular: NO
+
+Matrix #7: Non-singular
+1 6 9 
+2 3 11 
+4 5 7 
+All elements unique: YES | Singular: NO
+
+Matrix #8: Non-singular
+1 6 9 
+2 4 10 
+3 5 8 
+All elements unique: YES | Singular: NO
+
+Matrix #9: Non-singular
+1 6 9 
+3 5 8 
+2 4 10 
+All elements unique: YES | Singular: NO
+
+Matrix #10: Non-singular
+1 6 9 
+4 5 7 
+2 3 11 
+All elements unique: YES | Singular: NO
+
+Matrix #11: Non-singular
+2 3 11 
+1 6 9 
+4 5 7 
+All elements unique: YES | Singular: NO
+
+Matrix #12: Non-singular
+2 3 11 
+4 5 7 
+1 6 9 
+All elements unique: YES | Singular: NO
+
+Matrix #13: Non-singular
+2 4 10 
+1 6 9 
+3 5 8 
+All elements unique: YES | Singular: NO
+
+Matrix #14: Non-singular
+2 4 10 
+3 5 8 
+1 6 9 
+All elements unique: YES | Singular: NO
+
+Matrix #15: Singular
+2 5 9 
+1 4 11 
+3 6 7 
+All elements unique: YES | Singular: YES
+
+Matrix #16: Singular
+2 5 9 
+3 6 7 
+1 4 11 
+All elements unique: YES | Singular: YES
+
+Matrix #17: Non-singular
+2 6 8 
+1 3 12 
+4 5 7 
+All elements unique: YES | Singular: NO
+
+Matrix #18: Non-singular
+2 6 8 
+1 5 10 
+3 4 9 
+All elements unique: YES | Singular: NO
+
+Matrix #19: Non-singular
+2 6 8 
+3 4 9 
+1 5 10 
+All elements unique: YES | Singular: NO
+
+Matrix #20: Non-singular
+2 6 8 
+4 5 7 
+1 3 12 
+All elements unique: YES | Singular: NO
+
+Matrix #21: Non-singular
+3 4 9 
+1 5 10 
+2 6 8 
+All elements unique: YES | Singular: NO
+
+Matrix #22: Non-singular
+3 4 9 
+2 6 8 
+1 5 10 
+All elements unique: YES | Singular: NO
+
+Matrix #23: Non-singular
+3 5 8 
+1 6 9 
+2 4 10 
+All elements unique: YES | Singular: NO
+
+Matrix #24: Non-singular
+3 5 8 
+2 4 10 
+1 6 9 
+All elements unique: YES | Singular: NO
+
+Matrix #25: Singular
+3 6 7 
+1 4 11 
+2 5 9 
+All elements unique: YES | Singular: YES
+
+Matrix #26: Singular
+3 6 7 
+2 5 9 
+1 4 11 
+All elements unique: YES | Singular: YES
+
+Matrix #27: Non-singular
+4 5 7 
+1 3 12 
+2 6 8 
+All elements unique: YES | Singular: NO
+
+Matrix #28: Non-singular
+4 5 7 
+1 6 9 
+2 3 11 
+All elements unique: YES | Singular: NO
+
+Matrix #29: Non-singular
+4 5 7 
+2 3 11 
+1 6 9 
+All elements unique: YES | Singular: NO
+
+Matrix #30: Non-singular
+4 5 7 
+2 6 8 
+1 3 12 
+All elements unique: YES | Singular: NO
+
+=== SUMMARY ===
+Total matrices generated: 30
+Singular matrices: 6
+Non-singular matrices: 24
+Total rows generated: 14
+Computation time (ms): 1

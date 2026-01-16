@@ -1,0 +1,6005 @@
+Matrix #1: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 10 11 27 
+
+Matrix #2: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 10 12 26 
+
+Matrix #3: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 10 15 23 
+
+Matrix #4: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 10 17 21 
+
+Matrix #5: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 10 18 20 
+
+Matrix #6: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 10 20 18 
+
+Matrix #7: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 10 21 17 
+
+Matrix #8: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 10 23 15 
+
+Matrix #9: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 10 26 12 
+
+Matrix #10: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 10 27 11 
+
+Matrix #11: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 11 10 27 
+
+Matrix #12: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 11 12 25 
+
+Matrix #13: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 11 16 21 
+
+Matrix #14: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 11 17 20 
+
+Matrix #15: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 11 18 19 
+
+Matrix #16: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 11 19 18 
+
+Matrix #17: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 11 20 17 
+
+Matrix #18: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 11 21 16 
+
+Matrix #19: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 11 25 12 
+
+Matrix #20: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 11 27 10 
+
+Matrix #21: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 12 10 26 
+
+Matrix #22: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 12 11 25 
+
+Matrix #23: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 12 15 21 
+
+Matrix #24: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 12 16 20 
+
+Matrix #25: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 12 17 19 
+
+Matrix #26: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 12 19 17 
+
+Matrix #27: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 12 20 16 
+
+Matrix #28: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 12 21 15 
+
+Matrix #29: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 12 25 11 
+
+Matrix #30: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 12 26 10 
+
+Matrix #31: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 15 10 23 
+
+Matrix #32: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 15 12 21 
+
+Matrix #33: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 15 16 17 
+
+Matrix #34: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 15 17 16 
+
+Matrix #35: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 15 21 12 
+
+Matrix #36: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 15 23 10 
+
+Matrix #37: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 16 11 21 
+
+Matrix #38: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 16 12 20 
+
+Matrix #39: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 16 15 17 
+
+Matrix #40: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 16 17 15 
+
+Matrix #41: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 16 20 12 
+
+Matrix #42: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 16 21 11 
+
+Matrix #43: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 17 10 21 
+
+Matrix #44: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 17 11 20 
+
+Matrix #45: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 17 12 19 
+
+Matrix #46: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 17 15 16 
+
+Matrix #47: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 17 16 15 
+
+Matrix #48: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 17 19 12 
+
+Matrix #49: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 17 20 11 
+
+Matrix #50: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 17 21 10 
+
+Matrix #51: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 18 10 20 
+
+Matrix #52: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 18 11 19 
+
+Matrix #53: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 18 19 11 
+
+Matrix #54: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 18 20 10 
+
+Matrix #55: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 19 11 18 
+
+Matrix #56: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 19 12 17 
+
+Matrix #57: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 19 17 12 
+
+Matrix #58: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 19 18 11 
+
+Matrix #59: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 20 10 18 
+
+Matrix #60: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 20 11 17 
+
+Matrix #61: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 20 12 16 
+
+Matrix #62: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 20 16 12 
+
+Matrix #63: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 20 17 11 
+
+Matrix #64: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 20 18 10 
+
+Matrix #65: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 21 10 17 
+
+Matrix #66: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 21 11 16 
+
+Matrix #67: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 21 12 15 
+
+Matrix #68: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 21 15 12 
+
+Matrix #69: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 21 16 11 
+
+Matrix #70: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 21 17 10 
+
+Matrix #71: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 23 10 15 
+
+Matrix #72: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 23 15 10 
+
+Matrix #73: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 24 26 27 
+
+Matrix #74: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 24 27 26 
+
+Matrix #75: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 25 11 12 
+
+Matrix #76: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 25 12 11 
+
+Matrix #77: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 26 10 12 
+
+Matrix #78: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 26 12 10 
+
+Matrix #79: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 26 24 27 
+
+Matrix #80: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 26 27 24 
+
+Matrix #81: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 27 10 11 
+
+Matrix #82: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 27 11 10 
+
+Matrix #83: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 27 24 26 
+
+Matrix #84: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+9 27 26 24 
+
+Matrix #85: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 9 11 27 
+
+Matrix #86: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 9 12 26 
+
+Matrix #87: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 9 15 23 
+
+Matrix #88: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 9 17 21 
+
+Matrix #89: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 9 18 20 
+
+Matrix #90: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 9 20 18 
+
+Matrix #91: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 9 21 17 
+
+Matrix #92: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 9 23 15 
+
+Matrix #93: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 9 26 12 
+
+Matrix #94: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 9 27 11 
+
+Matrix #95: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 11 9 27 
+
+Matrix #96: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 11 12 24 
+
+Matrix #97: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 11 15 21 
+
+Matrix #98: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 11 16 20 
+
+Matrix #99: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 11 17 19 
+
+Matrix #100: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 11 19 17 
+
+Matrix #101: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 11 20 16 
+
+Matrix #102: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 11 21 15 
+
+Matrix #103: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 11 24 12 
+
+Matrix #104: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 11 27 9 
+
+Matrix #105: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 12 9 26 
+
+Matrix #106: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 12 11 24 
+
+Matrix #107: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 12 15 20 
+
+Matrix #108: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 12 16 19 
+
+Matrix #109: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 12 17 18 
+
+Matrix #110: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 12 18 17 
+
+Matrix #111: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 12 19 16 
+
+Matrix #112: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 12 20 15 
+
+Matrix #113: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 12 24 11 
+
+Matrix #114: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 12 26 9 
+
+Matrix #115: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 15 9 23 
+
+Matrix #116: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 15 11 21 
+
+Matrix #117: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 15 12 20 
+
+Matrix #118: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 15 20 12 
+
+Matrix #119: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 15 21 11 
+
+Matrix #120: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 15 23 9 
+
+Matrix #121: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 16 11 20 
+
+Matrix #122: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 16 12 19 
+
+Matrix #123: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 16 19 12 
+
+Matrix #124: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 16 20 11 
+
+Matrix #125: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 17 9 21 
+
+Matrix #126: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 17 11 19 
+
+Matrix #127: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 17 12 18 
+
+Matrix #128: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 17 18 12 
+
+Matrix #129: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 17 19 11 
+
+Matrix #130: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 17 21 9 
+
+Matrix #131: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 18 9 20 
+
+Matrix #132: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 18 12 17 
+
+Matrix #133: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 18 17 12 
+
+Matrix #134: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 18 20 9 
+
+Matrix #135: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 19 11 17 
+
+Matrix #136: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 19 12 16 
+
+Matrix #137: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 19 16 12 
+
+Matrix #138: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 19 17 11 
+
+Matrix #139: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 20 9 18 
+
+Matrix #140: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 20 11 16 
+
+Matrix #141: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 20 12 15 
+
+Matrix #142: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 20 15 12 
+
+Matrix #143: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 20 16 11 
+
+Matrix #144: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 20 18 9 
+
+Matrix #145: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 21 9 17 
+
+Matrix #146: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 21 11 15 
+
+Matrix #147: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 21 15 11 
+
+Matrix #148: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 21 17 9 
+
+Matrix #149: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 23 9 15 
+
+Matrix #150: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 23 15 9 
+
+Matrix #151: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 23 26 27 
+
+Matrix #152: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 23 27 26 
+
+Matrix #153: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 24 11 12 
+
+Matrix #154: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 24 12 11 
+
+Matrix #155: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 24 25 27 
+
+Matrix #156: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 24 27 25 
+
+Matrix #157: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 25 24 27 
+
+Matrix #158: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 25 27 24 
+
+Matrix #159: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 26 9 12 
+
+Matrix #160: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 26 12 9 
+
+Matrix #161: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 26 23 27 
+
+Matrix #162: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 26 27 23 
+
+Matrix #163: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 27 9 11 
+
+Matrix #164: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 27 11 9 
+
+Matrix #165: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 27 23 26 
+
+Matrix #166: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 27 24 25 
+
+Matrix #167: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 27 25 24 
+
+Matrix #168: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+10 27 26 23 
+
+Matrix #169: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 9 10 27 
+
+Matrix #170: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 9 12 25 
+
+Matrix #171: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 9 16 21 
+
+Matrix #172: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 9 17 20 
+
+Matrix #173: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 9 18 19 
+
+Matrix #174: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 9 19 18 
+
+Matrix #175: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 9 20 17 
+
+Matrix #176: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 9 21 16 
+
+Matrix #177: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 9 25 12 
+
+Matrix #178: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 9 27 10 
+
+Matrix #179: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 10 9 27 
+
+Matrix #180: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 10 12 24 
+
+Matrix #181: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 10 15 21 
+
+Matrix #182: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 10 16 20 
+
+Matrix #183: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 10 17 19 
+
+Matrix #184: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 10 19 17 
+
+Matrix #185: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 10 20 16 
+
+Matrix #186: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 10 21 15 
+
+Matrix #187: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 10 24 12 
+
+Matrix #188: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 10 27 9 
+
+Matrix #189: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 12 9 25 
+
+Matrix #190: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 12 10 24 
+
+Matrix #191: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 12 15 19 
+
+Matrix #192: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 12 16 18 
+
+Matrix #193: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 12 18 16 
+
+Matrix #194: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 12 19 15 
+
+Matrix #195: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 12 24 10 
+
+Matrix #196: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 12 25 9 
+
+Matrix #197: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 15 10 21 
+
+Matrix #198: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 15 12 19 
+
+Matrix #199: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 15 19 12 
+
+Matrix #200: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 15 21 10 
+
+Matrix #201: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 16 9 21 
+
+Matrix #202: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 16 10 20 
+
+Matrix #203: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 16 12 18 
+
+Matrix #204: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 16 18 12 
+
+Matrix #205: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 16 20 10 
+
+Matrix #206: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 16 21 9 
+
+Matrix #207: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 17 9 20 
+
+Matrix #208: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 17 10 19 
+
+Matrix #209: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 17 19 10 
+
+Matrix #210: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 17 20 9 
+
+Matrix #211: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 18 9 19 
+
+Matrix #212: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 18 12 16 
+
+Matrix #213: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 18 16 12 
+
+Matrix #214: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 18 19 9 
+
+Matrix #215: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 19 9 18 
+
+Matrix #216: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 19 10 17 
+
+Matrix #217: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 19 12 15 
+
+Matrix #218: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 19 15 12 
+
+Matrix #219: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 19 17 10 
+
+Matrix #220: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 19 18 9 
+
+Matrix #221: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 20 9 17 
+
+Matrix #222: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 20 10 16 
+
+Matrix #223: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 20 16 10 
+
+Matrix #224: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 20 17 9 
+
+Matrix #225: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 21 9 16 
+
+Matrix #226: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 21 10 15 
+
+Matrix #227: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 21 15 10 
+
+Matrix #228: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 21 16 9 
+
+Matrix #229: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 23 25 27 
+
+Matrix #230: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 23 27 25 
+
+Matrix #231: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 24 10 12 
+
+Matrix #232: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 24 12 10 
+
+Matrix #233: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 24 25 26 
+
+Matrix #234: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 24 26 25 
+
+Matrix #235: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 25 9 12 
+
+Matrix #236: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 25 12 9 
+
+Matrix #237: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 25 23 27 
+
+Matrix #238: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 25 24 26 
+
+Matrix #239: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 25 26 24 
+
+Matrix #240: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 25 27 23 
+
+Matrix #241: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 26 24 25 
+
+Matrix #242: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 26 25 24 
+
+Matrix #243: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 27 9 10 
+
+Matrix #244: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 27 10 9 
+
+Matrix #245: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 27 23 25 
+
+Matrix #246: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+11 27 25 23 
+
+Matrix #247: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 9 10 26 
+
+Matrix #248: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 9 11 25 
+
+Matrix #249: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 9 15 21 
+
+Matrix #250: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 9 16 20 
+
+Matrix #251: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 9 17 19 
+
+Matrix #252: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 9 19 17 
+
+Matrix #253: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 9 20 16 
+
+Matrix #254: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 9 21 15 
+
+Matrix #255: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 9 25 11 
+
+Matrix #256: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 9 26 10 
+
+Matrix #257: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 10 9 26 
+
+Matrix #258: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 10 11 24 
+
+Matrix #259: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 10 15 20 
+
+Matrix #260: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 10 16 19 
+
+Matrix #261: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 10 17 18 
+
+Matrix #262: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 10 18 17 
+
+Matrix #263: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 10 19 16 
+
+Matrix #264: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 10 20 15 
+
+Matrix #265: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 10 24 11 
+
+Matrix #266: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 10 26 9 
+
+Matrix #267: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 11 9 25 
+
+Matrix #268: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 11 10 24 
+
+Matrix #269: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 11 15 19 
+
+Matrix #270: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 11 16 18 
+
+Matrix #271: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 11 18 16 
+
+Matrix #272: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 11 19 15 
+
+Matrix #273: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 11 24 10 
+
+Matrix #274: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 11 25 9 
+
+Matrix #275: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 15 9 21 
+
+Matrix #276: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 15 10 20 
+
+Matrix #277: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 15 11 19 
+
+Matrix #278: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 15 19 11 
+
+Matrix #279: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 15 20 10 
+
+Matrix #280: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 15 21 9 
+
+Matrix #281: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 16 9 20 
+
+Matrix #282: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 16 10 19 
+
+Matrix #283: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 16 11 18 
+
+Matrix #284: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 16 18 11 
+
+Matrix #285: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 16 19 10 
+
+Matrix #286: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 16 20 9 
+
+Matrix #287: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 17 9 19 
+
+Matrix #288: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 17 10 18 
+
+Matrix #289: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 17 18 10 
+
+Matrix #290: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 17 19 9 
+
+Matrix #291: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 18 10 17 
+
+Matrix #292: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 18 11 16 
+
+Matrix #293: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 18 16 11 
+
+Matrix #294: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 18 17 10 
+
+Matrix #295: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 19 9 17 
+
+Matrix #296: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 19 10 16 
+
+Matrix #297: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 19 11 15 
+
+Matrix #298: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 19 15 11 
+
+Matrix #299: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 19 16 10 
+
+Matrix #300: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 19 17 9 
+
+Matrix #301: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 20 9 16 
+
+Matrix #302: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 20 10 15 
+
+Matrix #303: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 20 15 10 
+
+Matrix #304: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 20 16 9 
+
+Matrix #305: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 21 9 15 
+
+Matrix #306: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 21 15 9 
+
+Matrix #307: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 21 26 27 
+
+Matrix #308: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 21 27 26 
+
+Matrix #309: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 23 24 27 
+
+Matrix #310: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 23 25 26 
+
+Matrix #311: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 23 26 25 
+
+Matrix #312: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 23 27 24 
+
+Matrix #313: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 24 10 11 
+
+Matrix #314: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 24 11 10 
+
+Matrix #315: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 24 23 27 
+
+Matrix #316: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 24 27 23 
+
+Matrix #317: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 25 9 11 
+
+Matrix #318: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 25 11 9 
+
+Matrix #319: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 25 23 26 
+
+Matrix #320: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 25 26 23 
+
+Matrix #321: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 26 9 10 
+
+Matrix #322: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 26 10 9 
+
+Matrix #323: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 26 21 27 
+
+Matrix #324: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 26 23 25 
+
+Matrix #325: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 26 25 23 
+
+Matrix #326: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 26 27 21 
+
+Matrix #327: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 27 21 26 
+
+Matrix #328: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 27 23 24 
+
+Matrix #329: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 27 24 23 
+
+Matrix #330: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+12 27 26 21 
+
+Matrix #331: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 9 10 23 
+
+Matrix #332: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 9 12 21 
+
+Matrix #333: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 9 16 17 
+
+Matrix #334: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 9 17 16 
+
+Matrix #335: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 9 21 12 
+
+Matrix #336: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 9 23 10 
+
+Matrix #337: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 10 9 23 
+
+Matrix #338: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 10 11 21 
+
+Matrix #339: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 10 12 20 
+
+Matrix #340: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 10 20 12 
+
+Matrix #341: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 10 21 11 
+
+Matrix #342: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 10 23 9 
+
+Matrix #343: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 11 10 21 
+
+Matrix #344: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 11 12 19 
+
+Matrix #345: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 11 19 12 
+
+Matrix #346: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 11 21 10 
+
+Matrix #347: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 12 9 21 
+
+Matrix #348: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 12 10 20 
+
+Matrix #349: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 12 11 19 
+
+Matrix #350: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 12 19 11 
+
+Matrix #351: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 12 20 10 
+
+Matrix #352: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 12 21 9 
+
+Matrix #353: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 16 9 17 
+
+Matrix #354: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 16 17 9 
+
+Matrix #355: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 17 9 16 
+
+Matrix #356: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 17 16 9 
+
+Matrix #357: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 18 26 27 
+
+Matrix #358: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 18 27 26 
+
+Matrix #359: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 19 11 12 
+
+Matrix #360: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 19 12 11 
+
+Matrix #361: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 19 25 27 
+
+Matrix #362: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 19 27 25 
+
+Matrix #363: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 20 10 12 
+
+Matrix #364: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 20 12 10 
+
+Matrix #365: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 20 24 27 
+
+Matrix #366: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 20 25 26 
+
+Matrix #367: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 20 26 25 
+
+Matrix #368: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 20 27 24 
+
+Matrix #369: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 21 9 12 
+
+Matrix #370: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 21 10 11 
+
+Matrix #371: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 21 11 10 
+
+Matrix #372: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 21 12 9 
+
+Matrix #373: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 21 23 27 
+
+Matrix #374: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 21 24 26 
+
+Matrix #375: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 21 26 24 
+
+Matrix #376: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 21 27 23 
+
+Matrix #377: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 23 9 10 
+
+Matrix #378: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 23 10 9 
+
+Matrix #379: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 23 21 27 
+
+Matrix #380: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 23 27 21 
+
+Matrix #381: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 24 20 27 
+
+Matrix #382: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 24 21 26 
+
+Matrix #383: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 24 26 21 
+
+Matrix #384: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 24 27 20 
+
+Matrix #385: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 25 19 27 
+
+Matrix #386: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 25 20 26 
+
+Matrix #387: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 25 26 20 
+
+Matrix #388: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 25 27 19 
+
+Matrix #389: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 26 18 27 
+
+Matrix #390: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 26 20 25 
+
+Matrix #391: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 26 21 24 
+
+Matrix #392: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 26 24 21 
+
+Matrix #393: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 26 25 20 
+
+Matrix #394: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 26 27 18 
+
+Matrix #395: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 27 18 26 
+
+Matrix #396: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 27 19 25 
+
+Matrix #397: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 27 20 24 
+
+Matrix #398: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 27 21 23 
+
+Matrix #399: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 27 23 21 
+
+Matrix #400: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 27 24 20 
+
+Matrix #401: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 27 25 19 
+
+Matrix #402: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+15 27 26 18 
+
+Matrix #403: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 9 11 21 
+
+Matrix #404: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 9 12 20 
+
+Matrix #405: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 9 15 17 
+
+Matrix #406: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 9 17 15 
+
+Matrix #407: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 9 20 12 
+
+Matrix #408: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 9 21 11 
+
+Matrix #409: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 10 11 20 
+
+Matrix #410: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 10 12 19 
+
+Matrix #411: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 10 19 12 
+
+Matrix #412: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 10 20 11 
+
+Matrix #413: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 11 9 21 
+
+Matrix #414: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 11 10 20 
+
+Matrix #415: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 11 12 18 
+
+Matrix #416: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 11 18 12 
+
+Matrix #417: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 11 20 10 
+
+Matrix #418: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 11 21 9 
+
+Matrix #419: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 12 9 20 
+
+Matrix #420: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 12 10 19 
+
+Matrix #421: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 12 11 18 
+
+Matrix #422: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 12 18 11 
+
+Matrix #423: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 12 19 10 
+
+Matrix #424: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 12 20 9 
+
+Matrix #425: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 15 9 17 
+
+Matrix #426: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 15 17 9 
+
+Matrix #427: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 17 9 15 
+
+Matrix #428: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 17 15 9 
+
+Matrix #429: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 17 26 27 
+
+Matrix #430: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 17 27 26 
+
+Matrix #431: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 18 11 12 
+
+Matrix #432: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 18 12 11 
+
+Matrix #433: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 18 25 27 
+
+Matrix #434: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 18 27 25 
+
+Matrix #435: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 19 10 12 
+
+Matrix #436: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 19 12 10 
+
+Matrix #437: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 19 24 27 
+
+Matrix #438: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 19 25 26 
+
+Matrix #439: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 19 26 25 
+
+Matrix #440: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 19 27 24 
+
+Matrix #441: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 20 9 12 
+
+Matrix #442: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 20 10 11 
+
+Matrix #443: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 20 11 10 
+
+Matrix #444: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 20 12 9 
+
+Matrix #445: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 20 23 27 
+
+Matrix #446: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 20 24 26 
+
+Matrix #447: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 20 26 24 
+
+Matrix #448: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 20 27 23 
+
+Matrix #449: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 21 9 11 
+
+Matrix #450: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 21 11 9 
+
+Matrix #451: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 21 23 26 
+
+Matrix #452: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 21 24 25 
+
+Matrix #453: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 21 25 24 
+
+Matrix #454: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 21 26 23 
+
+Matrix #455: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 23 20 27 
+
+Matrix #456: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 23 21 26 
+
+Matrix #457: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 23 26 21 
+
+Matrix #458: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 23 27 20 
+
+Matrix #459: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 24 19 27 
+
+Matrix #460: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 24 20 26 
+
+Matrix #461: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 24 21 25 
+
+Matrix #462: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 24 25 21 
+
+Matrix #463: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 24 26 20 
+
+Matrix #464: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 24 27 19 
+
+Matrix #465: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 25 18 27 
+
+Matrix #466: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 25 19 26 
+
+Matrix #467: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 25 21 24 
+
+Matrix #468: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 25 24 21 
+
+Matrix #469: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 25 26 19 
+
+Matrix #470: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 25 27 18 
+
+Matrix #471: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 26 17 27 
+
+Matrix #472: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 26 19 25 
+
+Matrix #473: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 26 20 24 
+
+Matrix #474: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 26 21 23 
+
+Matrix #475: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 26 23 21 
+
+Matrix #476: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 26 24 20 
+
+Matrix #477: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 26 25 19 
+
+Matrix #478: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 26 27 17 
+
+Matrix #479: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 27 17 26 
+
+Matrix #480: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 27 18 25 
+
+Matrix #481: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 27 19 24 
+
+Matrix #482: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 27 20 23 
+
+Matrix #483: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 27 23 20 
+
+Matrix #484: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 27 24 19 
+
+Matrix #485: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 27 25 18 
+
+Matrix #486: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+16 27 26 17 
+
+Matrix #487: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 9 10 21 
+
+Matrix #488: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 9 11 20 
+
+Matrix #489: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 9 12 19 
+
+Matrix #490: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 9 15 16 
+
+Matrix #491: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 9 16 15 
+
+Matrix #492: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 9 19 12 
+
+Matrix #493: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 9 20 11 
+
+Matrix #494: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 9 21 10 
+
+Matrix #495: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 10 9 21 
+
+Matrix #496: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 10 11 19 
+
+Matrix #497: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 10 12 18 
+
+Matrix #498: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 10 18 12 
+
+Matrix #499: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 10 19 11 
+
+Matrix #500: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 10 21 9 
+
+Matrix #501: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 11 9 20 
+
+Matrix #502: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 11 10 19 
+
+Matrix #503: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 11 19 10 
+
+Matrix #504: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 11 20 9 
+
+Matrix #505: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 12 9 19 
+
+Matrix #506: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 12 10 18 
+
+Matrix #507: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 12 18 10 
+
+Matrix #508: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 12 19 9 
+
+Matrix #509: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 15 9 16 
+
+Matrix #510: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 15 16 9 
+
+Matrix #511: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 16 9 15 
+
+Matrix #512: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 16 15 9 
+
+Matrix #513: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 16 26 27 
+
+Matrix #514: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 16 27 26 
+
+Matrix #515: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 18 10 12 
+
+Matrix #516: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 18 12 10 
+
+Matrix #517: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 18 24 27 
+
+Matrix #518: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 18 25 26 
+
+Matrix #519: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 18 26 25 
+
+Matrix #520: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 18 27 24 
+
+Matrix #521: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 19 9 12 
+
+Matrix #522: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 19 10 11 
+
+Matrix #523: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 19 11 10 
+
+Matrix #524: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 19 12 9 
+
+Matrix #525: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 19 23 27 
+
+Matrix #526: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 19 24 26 
+
+Matrix #527: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 19 26 24 
+
+Matrix #528: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 19 27 23 
+
+Matrix #529: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 20 9 11 
+
+Matrix #530: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 20 11 9 
+
+Matrix #531: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 20 23 26 
+
+Matrix #532: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 20 24 25 
+
+Matrix #533: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 20 25 24 
+
+Matrix #534: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 20 26 23 
+
+Matrix #535: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 21 9 10 
+
+Matrix #536: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 21 10 9 
+
+Matrix #537: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 21 23 25 
+
+Matrix #538: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 21 25 23 
+
+Matrix #539: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 23 19 27 
+
+Matrix #540: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 23 20 26 
+
+Matrix #541: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 23 21 25 
+
+Matrix #542: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 23 25 21 
+
+Matrix #543: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 23 26 20 
+
+Matrix #544: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 23 27 19 
+
+Matrix #545: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 24 18 27 
+
+Matrix #546: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 24 19 26 
+
+Matrix #547: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 24 20 25 
+
+Matrix #548: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 24 25 20 
+
+Matrix #549: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 24 26 19 
+
+Matrix #550: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 24 27 18 
+
+Matrix #551: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 25 18 26 
+
+Matrix #552: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 25 20 24 
+
+Matrix #553: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 25 21 23 
+
+Matrix #554: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 25 23 21 
+
+Matrix #555: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 25 24 20 
+
+Matrix #556: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 25 26 18 
+
+Matrix #557: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 26 16 27 
+
+Matrix #558: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 26 18 25 
+
+Matrix #559: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 26 19 24 
+
+Matrix #560: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 26 20 23 
+
+Matrix #561: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 26 23 20 
+
+Matrix #562: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 26 24 19 
+
+Matrix #563: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 26 25 18 
+
+Matrix #564: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 26 27 16 
+
+Matrix #565: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 27 16 26 
+
+Matrix #566: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 27 18 24 
+
+Matrix #567: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 27 19 23 
+
+Matrix #568: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 27 23 19 
+
+Matrix #569: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 27 24 18 
+
+Matrix #570: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+17 27 26 16 
+
+Matrix #571: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 9 10 20 
+
+Matrix #572: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 9 11 19 
+
+Matrix #573: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 9 19 11 
+
+Matrix #574: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 9 20 10 
+
+Matrix #575: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 10 9 20 
+
+Matrix #576: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 10 12 17 
+
+Matrix #577: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 10 17 12 
+
+Matrix #578: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 10 20 9 
+
+Matrix #579: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 11 9 19 
+
+Matrix #580: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 11 12 16 
+
+Matrix #581: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 11 16 12 
+
+Matrix #582: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 11 19 9 
+
+Matrix #583: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 12 10 17 
+
+Matrix #584: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 12 11 16 
+
+Matrix #585: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 12 16 11 
+
+Matrix #586: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 12 17 10 
+
+Matrix #587: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 15 26 27 
+
+Matrix #588: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 15 27 26 
+
+Matrix #589: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 16 11 12 
+
+Matrix #590: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 16 12 11 
+
+Matrix #591: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 16 25 27 
+
+Matrix #592: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 16 27 25 
+
+Matrix #593: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 17 10 12 
+
+Matrix #594: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 17 12 10 
+
+Matrix #595: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 17 24 27 
+
+Matrix #596: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 17 25 26 
+
+Matrix #597: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 17 26 25 
+
+Matrix #598: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 17 27 24 
+
+Matrix #599: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 19 9 11 
+
+Matrix #600: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 19 11 9 
+
+Matrix #601: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 19 23 26 
+
+Matrix #602: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 19 24 25 
+
+Matrix #603: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 19 25 24 
+
+Matrix #604: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 19 26 23 
+
+Matrix #605: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 20 9 10 
+
+Matrix #606: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 20 10 9 
+
+Matrix #607: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 20 21 27 
+
+Matrix #608: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 20 23 25 
+
+Matrix #609: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 20 25 23 
+
+Matrix #610: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 20 27 21 
+
+Matrix #611: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 21 20 27 
+
+Matrix #612: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 21 23 24 
+
+Matrix #613: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 21 24 23 
+
+Matrix #614: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 21 27 20 
+
+Matrix #615: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 23 19 26 
+
+Matrix #616: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 23 20 25 
+
+Matrix #617: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 23 21 24 
+
+Matrix #618: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 23 24 21 
+
+Matrix #619: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 23 25 20 
+
+Matrix #620: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 23 26 19 
+
+Matrix #621: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 24 17 27 
+
+Matrix #622: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 24 19 25 
+
+Matrix #623: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 24 21 23 
+
+Matrix #624: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 24 23 21 
+
+Matrix #625: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 24 25 19 
+
+Matrix #626: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 24 27 17 
+
+Matrix #627: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 25 16 27 
+
+Matrix #628: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 25 17 26 
+
+Matrix #629: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 25 19 24 
+
+Matrix #630: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 25 20 23 
+
+Matrix #631: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 25 23 20 
+
+Matrix #632: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 25 24 19 
+
+Matrix #633: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 25 26 17 
+
+Matrix #634: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 25 27 16 
+
+Matrix #635: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 26 15 27 
+
+Matrix #636: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 26 17 25 
+
+Matrix #637: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 26 19 23 
+
+Matrix #638: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 26 23 19 
+
+Matrix #639: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 26 25 17 
+
+Matrix #640: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 26 27 15 
+
+Matrix #641: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 27 15 26 
+
+Matrix #642: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 27 16 25 
+
+Matrix #643: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 27 17 24 
+
+Matrix #644: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 27 20 21 
+
+Matrix #645: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 27 21 20 
+
+Matrix #646: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 27 24 17 
+
+Matrix #647: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 27 25 16 
+
+Matrix #648: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+18 27 26 15 
+
+Matrix #649: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 9 11 18 
+
+Matrix #650: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 9 12 17 
+
+Matrix #651: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 9 17 12 
+
+Matrix #652: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 9 18 11 
+
+Matrix #653: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 10 11 17 
+
+Matrix #654: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 10 12 16 
+
+Matrix #655: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 10 16 12 
+
+Matrix #656: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 10 17 11 
+
+Matrix #657: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 11 9 18 
+
+Matrix #658: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 11 10 17 
+
+Matrix #659: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 11 12 15 
+
+Matrix #660: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 11 15 12 
+
+Matrix #661: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 11 17 10 
+
+Matrix #662: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 11 18 9 
+
+Matrix #663: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 12 9 17 
+
+Matrix #664: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 12 10 16 
+
+Matrix #665: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 12 11 15 
+
+Matrix #666: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 12 15 11 
+
+Matrix #667: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 12 16 10 
+
+Matrix #668: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 12 17 9 
+
+Matrix #669: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 15 11 12 
+
+Matrix #670: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 15 12 11 
+
+Matrix #671: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 15 25 27 
+
+Matrix #672: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 15 27 25 
+
+Matrix #673: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 16 10 12 
+
+Matrix #674: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 16 12 10 
+
+Matrix #675: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 16 24 27 
+
+Matrix #676: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 16 25 26 
+
+Matrix #677: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 16 26 25 
+
+Matrix #678: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 16 27 24 
+
+Matrix #679: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 17 9 12 
+
+Matrix #680: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 17 10 11 
+
+Matrix #681: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 17 11 10 
+
+Matrix #682: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 17 12 9 
+
+Matrix #683: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 17 23 27 
+
+Matrix #684: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 17 24 26 
+
+Matrix #685: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 17 26 24 
+
+Matrix #686: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 17 27 23 
+
+Matrix #687: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 18 9 11 
+
+Matrix #688: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 18 11 9 
+
+Matrix #689: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 18 23 26 
+
+Matrix #690: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 18 24 25 
+
+Matrix #691: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 18 25 24 
+
+Matrix #692: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 18 26 23 
+
+Matrix #693: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 20 21 26 
+
+Matrix #694: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 20 23 24 
+
+Matrix #695: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 20 24 23 
+
+Matrix #696: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 20 26 21 
+
+Matrix #697: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 21 20 26 
+
+Matrix #698: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 21 26 20 
+
+Matrix #699: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 23 17 27 
+
+Matrix #700: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 23 18 26 
+
+Matrix #701: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 23 20 24 
+
+Matrix #702: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 23 24 20 
+
+Matrix #703: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 23 26 18 
+
+Matrix #704: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 23 27 17 
+
+Matrix #705: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 24 16 27 
+
+Matrix #706: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 24 17 26 
+
+Matrix #707: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 24 18 25 
+
+Matrix #708: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 24 20 23 
+
+Matrix #709: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 24 23 20 
+
+Matrix #710: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 24 25 18 
+
+Matrix #711: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 24 26 17 
+
+Matrix #712: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 24 27 16 
+
+Matrix #713: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 25 15 27 
+
+Matrix #714: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 25 16 26 
+
+Matrix #715: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 25 18 24 
+
+Matrix #716: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 25 24 18 
+
+Matrix #717: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 25 26 16 
+
+Matrix #718: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 25 27 15 
+
+Matrix #719: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 26 16 25 
+
+Matrix #720: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 26 17 24 
+
+Matrix #721: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 26 18 23 
+
+Matrix #722: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 26 20 21 
+
+Matrix #723: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 26 21 20 
+
+Matrix #724: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 26 23 18 
+
+Matrix #725: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 26 24 17 
+
+Matrix #726: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 26 25 16 
+
+Matrix #727: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 27 15 25 
+
+Matrix #728: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 27 16 24 
+
+Matrix #729: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 27 17 23 
+
+Matrix #730: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 27 23 17 
+
+Matrix #731: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 27 24 16 
+
+Matrix #732: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+19 27 25 15 
+
+Matrix #733: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 9 10 18 
+
+Matrix #734: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 9 11 17 
+
+Matrix #735: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 9 12 16 
+
+Matrix #736: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 9 16 12 
+
+Matrix #737: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 9 17 11 
+
+Matrix #738: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 9 18 10 
+
+Matrix #739: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 10 9 18 
+
+Matrix #740: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 10 11 16 
+
+Matrix #741: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 10 12 15 
+
+Matrix #742: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 10 15 12 
+
+Matrix #743: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 10 16 11 
+
+Matrix #744: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 10 18 9 
+
+Matrix #745: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 11 9 17 
+
+Matrix #746: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 11 10 16 
+
+Matrix #747: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 11 16 10 
+
+Matrix #748: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 11 17 9 
+
+Matrix #749: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 12 9 16 
+
+Matrix #750: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 12 10 15 
+
+Matrix #751: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 12 15 10 
+
+Matrix #752: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 12 16 9 
+
+Matrix #753: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 15 10 12 
+
+Matrix #754: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 15 12 10 
+
+Matrix #755: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 15 24 27 
+
+Matrix #756: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 15 25 26 
+
+Matrix #757: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 15 26 25 
+
+Matrix #758: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 15 27 24 
+
+Matrix #759: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 16 9 12 
+
+Matrix #760: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 16 10 11 
+
+Matrix #761: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 16 11 10 
+
+Matrix #762: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 16 12 9 
+
+Matrix #763: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 16 23 27 
+
+Matrix #764: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 16 24 26 
+
+Matrix #765: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 16 26 24 
+
+Matrix #766: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 16 27 23 
+
+Matrix #767: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 17 9 11 
+
+Matrix #768: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 17 11 9 
+
+Matrix #769: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 17 23 26 
+
+Matrix #770: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 17 24 25 
+
+Matrix #771: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 17 25 24 
+
+Matrix #772: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 17 26 23 
+
+Matrix #773: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 18 9 10 
+
+Matrix #774: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 18 10 9 
+
+Matrix #775: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 18 21 27 
+
+Matrix #776: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 18 23 25 
+
+Matrix #777: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 18 25 23 
+
+Matrix #778: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 18 27 21 
+
+Matrix #779: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 19 21 26 
+
+Matrix #780: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 19 23 24 
+
+Matrix #781: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 19 24 23 
+
+Matrix #782: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 19 26 21 
+
+Matrix #783: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 21 18 27 
+
+Matrix #784: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 21 19 26 
+
+Matrix #785: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 21 26 19 
+
+Matrix #786: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 21 27 18 
+
+Matrix #787: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 23 16 27 
+
+Matrix #788: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 23 17 26 
+
+Matrix #789: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 23 18 25 
+
+Matrix #790: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 23 19 24 
+
+Matrix #791: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 23 24 19 
+
+Matrix #792: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 23 25 18 
+
+Matrix #793: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 23 26 17 
+
+Matrix #794: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 23 27 16 
+
+Matrix #795: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 24 15 27 
+
+Matrix #796: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 24 16 26 
+
+Matrix #797: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 24 17 25 
+
+Matrix #798: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 24 19 23 
+
+Matrix #799: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 24 23 19 
+
+Matrix #800: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 24 25 17 
+
+Matrix #801: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 24 26 16 
+
+Matrix #802: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 24 27 15 
+
+Matrix #803: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 25 15 26 
+
+Matrix #804: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 25 17 24 
+
+Matrix #805: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 25 18 23 
+
+Matrix #806: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 25 23 18 
+
+Matrix #807: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 25 24 17 
+
+Matrix #808: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 25 26 15 
+
+Matrix #809: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 26 15 25 
+
+Matrix #810: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 26 16 24 
+
+Matrix #811: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 26 17 23 
+
+Matrix #812: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 26 19 21 
+
+Matrix #813: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 26 21 19 
+
+Matrix #814: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 26 23 17 
+
+Matrix #815: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 26 24 16 
+
+Matrix #816: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 26 25 15 
+
+Matrix #817: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 27 15 24 
+
+Matrix #818: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 27 16 23 
+
+Matrix #819: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 27 18 21 
+
+Matrix #820: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 27 21 18 
+
+Matrix #821: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 27 23 16 
+
+Matrix #822: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+20 27 24 15 
+
+Matrix #823: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 9 10 17 
+
+Matrix #824: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 9 11 16 
+
+Matrix #825: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 9 12 15 
+
+Matrix #826: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 9 15 12 
+
+Matrix #827: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 9 16 11 
+
+Matrix #828: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 9 17 10 
+
+Matrix #829: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 10 9 17 
+
+Matrix #830: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 10 11 15 
+
+Matrix #831: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 10 15 11 
+
+Matrix #832: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 10 17 9 
+
+Matrix #833: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 11 9 16 
+
+Matrix #834: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 11 10 15 
+
+Matrix #835: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 11 15 10 
+
+Matrix #836: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 11 16 9 
+
+Matrix #837: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 12 9 15 
+
+Matrix #838: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 12 15 9 
+
+Matrix #839: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 12 26 27 
+
+Matrix #840: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 12 27 26 
+
+Matrix #841: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 15 9 12 
+
+Matrix #842: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 15 10 11 
+
+Matrix #843: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 15 11 10 
+
+Matrix #844: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 15 12 9 
+
+Matrix #845: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 15 23 27 
+
+Matrix #846: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 15 24 26 
+
+Matrix #847: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 15 26 24 
+
+Matrix #848: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 15 27 23 
+
+Matrix #849: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 16 9 11 
+
+Matrix #850: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 16 11 9 
+
+Matrix #851: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 16 23 26 
+
+Matrix #852: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 16 24 25 
+
+Matrix #853: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 16 25 24 
+
+Matrix #854: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 16 26 23 
+
+Matrix #855: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 17 9 10 
+
+Matrix #856: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 17 10 9 
+
+Matrix #857: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 17 23 25 
+
+Matrix #858: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 17 25 23 
+
+Matrix #859: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 18 20 27 
+
+Matrix #860: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 18 23 24 
+
+Matrix #861: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 18 24 23 
+
+Matrix #862: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 18 27 20 
+
+Matrix #863: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 19 20 26 
+
+Matrix #864: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 19 26 20 
+
+Matrix #865: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 20 18 27 
+
+Matrix #866: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 20 19 26 
+
+Matrix #867: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 20 26 19 
+
+Matrix #868: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 20 27 18 
+
+Matrix #869: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 23 15 27 
+
+Matrix #870: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 23 16 26 
+
+Matrix #871: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 23 17 25 
+
+Matrix #872: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 23 18 24 
+
+Matrix #873: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 23 24 18 
+
+Matrix #874: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 23 25 17 
+
+Matrix #875: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 23 26 16 
+
+Matrix #876: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 23 27 15 
+
+Matrix #877: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 24 15 26 
+
+Matrix #878: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 24 16 25 
+
+Matrix #879: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 24 18 23 
+
+Matrix #880: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 24 23 18 
+
+Matrix #881: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 24 25 16 
+
+Matrix #882: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 24 26 15 
+
+Matrix #883: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 25 16 24 
+
+Matrix #884: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 25 17 23 
+
+Matrix #885: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 25 23 17 
+
+Matrix #886: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 25 24 16 
+
+Matrix #887: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 26 12 27 
+
+Matrix #888: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 26 15 24 
+
+Matrix #889: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 26 16 23 
+
+Matrix #890: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 26 19 20 
+
+Matrix #891: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 26 20 19 
+
+Matrix #892: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 26 23 16 
+
+Matrix #893: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 26 24 15 
+
+Matrix #894: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 26 27 12 
+
+Matrix #895: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 27 12 26 
+
+Matrix #896: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 27 15 23 
+
+Matrix #897: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 27 18 20 
+
+Matrix #898: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 27 20 18 
+
+Matrix #899: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 27 23 15 
+
+Matrix #900: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+21 27 26 12 
+
+Matrix #901: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 9 10 15 
+
+Matrix #902: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 9 15 10 
+
+Matrix #903: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 10 9 15 
+
+Matrix #904: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 10 15 9 
+
+Matrix #905: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 10 26 27 
+
+Matrix #906: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 10 27 26 
+
+Matrix #907: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 11 25 27 
+
+Matrix #908: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 11 27 25 
+
+Matrix #909: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 12 24 27 
+
+Matrix #910: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 12 25 26 
+
+Matrix #911: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 12 26 25 
+
+Matrix #912: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 12 27 24 
+
+Matrix #913: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 15 9 10 
+
+Matrix #914: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 15 10 9 
+
+Matrix #915: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 15 21 27 
+
+Matrix #916: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 15 27 21 
+
+Matrix #917: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 16 20 27 
+
+Matrix #918: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 16 21 26 
+
+Matrix #919: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 16 26 21 
+
+Matrix #920: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 16 27 20 
+
+Matrix #921: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 17 19 27 
+
+Matrix #922: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 17 20 26 
+
+Matrix #923: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 17 21 25 
+
+Matrix #924: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 17 25 21 
+
+Matrix #925: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 17 26 20 
+
+Matrix #926: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 17 27 19 
+
+Matrix #927: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 18 19 26 
+
+Matrix #928: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 18 20 25 
+
+Matrix #929: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 18 21 24 
+
+Matrix #930: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 18 24 21 
+
+Matrix #931: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 18 25 20 
+
+Matrix #932: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 18 26 19 
+
+Matrix #933: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 19 17 27 
+
+Matrix #934: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 19 18 26 
+
+Matrix #935: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 19 20 24 
+
+Matrix #936: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 19 24 20 
+
+Matrix #937: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 19 26 18 
+
+Matrix #938: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 19 27 17 
+
+Matrix #939: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 20 16 27 
+
+Matrix #940: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 20 17 26 
+
+Matrix #941: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 20 18 25 
+
+Matrix #942: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 20 19 24 
+
+Matrix #943: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 20 24 19 
+
+Matrix #944: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 20 25 18 
+
+Matrix #945: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 20 26 17 
+
+Matrix #946: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 20 27 16 
+
+Matrix #947: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 21 15 27 
+
+Matrix #948: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 21 16 26 
+
+Matrix #949: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 21 17 25 
+
+Matrix #950: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 21 18 24 
+
+Matrix #951: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 21 24 18 
+
+Matrix #952: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 21 25 17 
+
+Matrix #953: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 21 26 16 
+
+Matrix #954: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 21 27 15 
+
+Matrix #955: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 24 12 27 
+
+Matrix #956: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 24 18 21 
+
+Matrix #957: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 24 19 20 
+
+Matrix #958: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 24 20 19 
+
+Matrix #959: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 24 21 18 
+
+Matrix #960: Singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 24 27 12 
+
+Matrix #961: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 25 11 27 
+
+Matrix #962: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 25 12 26 
+
+Matrix #963: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 25 17 21 
+
+Matrix #964: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 25 18 20 
+
+Matrix #965: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 25 20 18 
+
+Matrix #966: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 25 21 17 
+
+Matrix #967: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 25 26 12 
+
+Matrix #968: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 25 27 11 
+
+Matrix #969: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 26 10 27 
+
+Matrix #970: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 26 12 25 
+
+Matrix #971: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 26 16 21 
+
+Matrix #972: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 26 17 20 
+
+Matrix #973: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 26 18 19 
+
+Matrix #974: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 26 19 18 
+
+Matrix #975: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 26 20 17 
+
+Matrix #976: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 26 21 16 
+
+Matrix #977: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 26 25 12 
+
+Matrix #978: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 26 27 10 
+
+Matrix #979: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 27 10 26 
+
+Matrix #980: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 27 11 25 
+
+Matrix #981: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 27 12 24 
+
+Matrix #982: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 27 15 21 
+
+Matrix #983: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 27 16 20 
+
+Matrix #984: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 27 17 19 
+
+Matrix #985: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 27 19 17 
+
+Matrix #986: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 27 20 16 
+
+Matrix #987: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 27 21 15 
+
+Matrix #988: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 27 24 12 
+
+Matrix #989: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 27 25 11 
+
+Matrix #990: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+23 27 26 10 
+
+Matrix #991: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+24 9 26 27 
+
+Matrix #992: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+24 9 27 26 
+
+Matrix #993: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+24 10 11 12 
+
+Matrix #994: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+24 10 12 11 
+
+Matrix #995: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+24 10 25 27 
+
+Matrix #996: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+24 10 27 25 
+
+Matrix #997: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+24 11 10 12 
+
+Matrix #998: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+24 11 12 10 
+
+Matrix #999: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+24 11 25 26 
+
+Matrix #1000: Non-singular
+1 2 3 22 
+4 5 6 13 
+7 8 14 28 
+24 11 26 25 
+
+=== SUMMARY ===
+Total matrices generated: 1000
+Singular matrices: 60
+Non-singular matrices: 940
+Computation time (ms): 1034

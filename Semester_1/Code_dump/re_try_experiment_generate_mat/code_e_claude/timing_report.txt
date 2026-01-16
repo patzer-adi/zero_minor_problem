@@ -1,0 +1,5 @@
+=== TIMING REPORT ===
+Parameters: m=4, p=29, sum=28, n=1000
+Rows generated: 2925
+Time taken: 2041 ms
+Strategy: 1

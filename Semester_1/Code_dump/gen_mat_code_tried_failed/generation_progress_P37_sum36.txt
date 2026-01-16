@@ -1,0 +1,703 @@
+Generation Progress Log (P=37, target sum=36)
+=================================================================
+
+MILESTONE: Generated 10 matrices!
+- Total attempts so far: 10
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 0 seconds
+
+MILESTONE: Generated 20 matrices!
+- Total attempts so far: 20
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 0 seconds
+
+MILESTONE: Generated 30 matrices!
+- Total attempts so far: 30
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 0 seconds
+
+MILESTONE: Generated 40 matrices!
+- Total attempts so far: 40
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 0 seconds
+
+MILESTONE: Generated 50 matrices!
+- Total attempts so far: 50
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 1 seconds
+
+MILESTONE: Generated 60 matrices!
+- Total attempts so far: 60
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 1 seconds
+
+MILESTONE: Generated 70 matrices!
+- Total attempts so far: 70
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 1 seconds
+
+MILESTONE: Generated 80 matrices!
+- Total attempts so far: 80
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 1 seconds
+
+MILESTONE: Generated 90 matrices!
+- Total attempts so far: 90
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 1 seconds
+
+MILESTONE: Generated 100 matrices!
+- Total attempts so far: 100
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 1 seconds
+
+MILESTONE: Generated 110 matrices!
+- Total attempts so far: 110
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 2 seconds
+
+MILESTONE: Generated 120 matrices!
+- Total attempts so far: 120
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 2 seconds
+
+MILESTONE: Generated 130 matrices!
+- Total attempts so far: 130
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 2 seconds
+
+MILESTONE: Generated 140 matrices!
+- Total attempts so far: 140
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 2 seconds
+
+MILESTONE: Generated 150 matrices!
+- Total attempts so far: 150
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 2 seconds
+
+MILESTONE: Generated 160 matrices!
+- Total attempts so far: 160
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 3 seconds
+
+MILESTONE: Generated 170 matrices!
+- Total attempts so far: 170
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 4 seconds
+
+MILESTONE: Generated 180 matrices!
+- Total attempts so far: 180
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 4 seconds
+
+MILESTONE: Generated 190 matrices!
+- Total attempts so far: 190
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 4 seconds
+
+MILESTONE: Generated 200 matrices!
+- Total attempts so far: 200
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 4 seconds
+
+MILESTONE: Generated 210 matrices!
+- Total attempts so far: 210
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 4 seconds
+
+MILESTONE: Generated 220 matrices!
+- Total attempts so far: 220
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 4 seconds
+
+MILESTONE: Generated 230 matrices!
+- Total attempts so far: 230
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 4 seconds
+
+MILESTONE: Generated 240 matrices!
+- Total attempts so far: 240
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 4 seconds
+
+MILESTONE: Generated 250 matrices!
+- Total attempts so far: 250
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 4 seconds
+
+MILESTONE: Generated 260 matrices!
+- Total attempts so far: 260
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 5 seconds
+
+MILESTONE: Generated 270 matrices!
+- Total attempts so far: 270
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 5 seconds
+
+MILESTONE: Generated 280 matrices!
+- Total attempts so far: 280
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 5 seconds
+
+MILESTONE: Generated 290 matrices!
+- Total attempts so far: 290
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 5 seconds
+
+MILESTONE: Generated 300 matrices!
+- Total attempts so far: 300
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 5 seconds
+
+MILESTONE: Generated 310 matrices!
+- Total attempts so far: 310
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 5 seconds
+
+MILESTONE: Generated 320 matrices!
+- Total attempts so far: 320
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 5 seconds
+
+MILESTONE: Generated 330 matrices!
+- Total attempts so far: 330
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 5 seconds
+
+MILESTONE: Generated 340 matrices!
+- Total attempts so far: 340
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 5 seconds
+
+MILESTONE: Generated 350 matrices!
+- Total attempts so far: 350
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 5 seconds
+
+MILESTONE: Generated 360 matrices!
+- Total attempts so far: 360
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 14 seconds
+
+MILESTONE: Generated 370 matrices!
+- Total attempts so far: 370
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 14 seconds
+
+MILESTONE: Generated 380 matrices!
+- Total attempts so far: 380
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 14 seconds
+
+MILESTONE: Generated 390 matrices!
+- Total attempts so far: 390
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 14 seconds
+
+MILESTONE: Generated 400 matrices!
+- Total attempts so far: 400
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 14 seconds
+
+MILESTONE: Generated 410 matrices!
+- Total attempts so far: 410
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 14 seconds
+
+MILESTONE: Generated 420 matrices!
+- Total attempts so far: 420
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 14 seconds
+
+MILESTONE: Generated 430 matrices!
+- Total attempts so far: 430
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 14 seconds
+
+MILESTONE: Generated 440 matrices!
+- Total attempts so far: 440
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 23 seconds
+
+MILESTONE: Generated 450 matrices!
+- Total attempts so far: 450
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 23 seconds
+
+MILESTONE: Generated 460 matrices!
+- Total attempts so far: 460
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 23 seconds
+
+MILESTONE: Generated 470 matrices!
+- Total attempts so far: 470
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 23 seconds
+
+MILESTONE: Generated 480 matrices!
+- Total attempts so far: 480
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 23 seconds
+
+MILESTONE: Generated 490 matrices!
+- Total attempts so far: 490
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 23 seconds
+
+MILESTONE: Generated 500 matrices!
+- Total attempts so far: 500
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 24 seconds
+
+MILESTONE: Generated 510 matrices!
+- Total attempts so far: 510
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 25 seconds
+
+MILESTONE: Generated 520 matrices!
+- Total attempts so far: 520
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 37 seconds
+
+MILESTONE: Generated 530 matrices!
+- Total attempts so far: 530
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 37 seconds
+
+MILESTONE: Generated 540 matrices!
+- Total attempts so far: 540
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 38 seconds
+
+MILESTONE: Generated 550 matrices!
+- Total attempts so far: 550
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 38 seconds
+
+MILESTONE: Generated 560 matrices!
+- Total attempts so far: 560
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 38 seconds
+
+MILESTONE: Generated 570 matrices!
+- Total attempts so far: 570
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 38 seconds
+
+MILESTONE: Generated 580 matrices!
+- Total attempts so far: 580
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 38 seconds
+
+MILESTONE: Generated 590 matrices!
+- Total attempts so far: 590
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 38 seconds
+
+MILESTONE: Generated 600 matrices!
+- Total attempts so far: 600
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 38 seconds
+
+MILESTONE: Generated 610 matrices!
+- Total attempts so far: 610
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 38 seconds
+
+MILESTONE: Generated 620 matrices!
+- Total attempts so far: 620
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 39 seconds
+
+MILESTONE: Generated 630 matrices!
+- Total attempts so far: 630
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 39 seconds
+
+MILESTONE: Generated 640 matrices!
+- Total attempts so far: 640
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 40 seconds
+
+MILESTONE: Generated 650 matrices!
+- Total attempts so far: 650
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 40 seconds
+
+MILESTONE: Generated 660 matrices!
+- Total attempts so far: 660
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 40 seconds
+
+MILESTONE: Generated 670 matrices!
+- Total attempts so far: 670
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 40 seconds
+
+MILESTONE: Generated 680 matrices!
+- Total attempts so far: 680
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 40 seconds
+
+MILESTONE: Generated 690 matrices!
+- Total attempts so far: 690
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 48 seconds
+
+MILESTONE: Generated 700 matrices!
+- Total attempts so far: 700
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 48 seconds
+
+MILESTONE: Generated 710 matrices!
+- Total attempts so far: 710
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 48 seconds
+
+MILESTONE: Generated 720 matrices!
+- Total attempts so far: 720
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 48 seconds
+
+MILESTONE: Generated 730 matrices!
+- Total attempts so far: 730
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 48 seconds
+
+MILESTONE: Generated 740 matrices!
+- Total attempts so far: 740
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 49 seconds
+
+MILESTONE: Generated 750 matrices!
+- Total attempts so far: 750
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 49 seconds
+
+MILESTONE: Generated 760 matrices!
+- Total attempts so far: 760
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 49 seconds
+
+MILESTONE: Generated 770 matrices!
+- Total attempts so far: 770
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 49 seconds
+
+MILESTONE: Generated 780 matrices!
+- Total attempts so far: 780
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 49 seconds
+
+MILESTONE: Generated 790 matrices!
+- Total attempts so far: 790
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 49 seconds
+
+MILESTONE: Generated 800 matrices!
+- Total attempts so far: 800
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 49 seconds
+
+MILESTONE: Generated 810 matrices!
+- Total attempts so far: 810
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 49 seconds
+
+MILESTONE: Generated 820 matrices!
+- Total attempts so far: 820
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 50 seconds
+
+MILESTONE: Generated 830 matrices!
+- Total attempts so far: 830
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 50 seconds
+
+MILESTONE: Generated 840 matrices!
+- Total attempts so far: 840
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 56 seconds
+
+MILESTONE: Generated 850 matrices!
+- Total attempts so far: 850
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 56 seconds
+
+MILESTONE: Generated 860 matrices!
+- Total attempts so far: 860
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 56 seconds
+
+MILESTONE: Generated 870 matrices!
+- Total attempts so far: 870
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 56 seconds
+
+MILESTONE: Generated 880 matrices!
+- Total attempts so far: 880
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 56 seconds
+
+MILESTONE: Generated 890 matrices!
+- Total attempts so far: 890
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 56 seconds
+
+MILESTONE: Generated 900 matrices!
+- Total attempts so far: 900
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 56 seconds
+
+MILESTONE: Generated 910 matrices!
+- Total attempts so far: 910
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 56 seconds
+
+MILESTONE: Generated 920 matrices!
+- Total attempts so far: 920
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 57 seconds
+
+MILESTONE: Generated 930 matrices!
+- Total attempts so far: 930
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 57 seconds
+
+MILESTONE: Generated 940 matrices!
+- Total attempts so far: 940
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 57 seconds
+
+MILESTONE: Generated 950 matrices!
+- Total attempts so far: 950
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 57 seconds
+
+MILESTONE: Generated 960 matrices!
+- Total attempts so far: 960
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 74 seconds
+
+MILESTONE: Generated 970 matrices!
+- Total attempts so far: 970
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 74 seconds
+
+MILESTONE: Generated 980 matrices!
+- Total attempts so far: 980
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 74 seconds
+
+MILESTONE: Generated 990 matrices!
+- Total attempts so far: 990
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 75 seconds
+
+MILESTONE: Generated 1000 matrices!
+- Total attempts so far: 1000
+- Generation failures: 0
+- Verification failures: 0
+- Success rate: 100.00%
+- Time elapsed: 75 seconds
+

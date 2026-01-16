@@ -1,0 +1,10 @@
+Row 1: 1 21 Sum=22
+Row 2: 2 20 Sum=22
+Row 3: 3 19 Sum=22
+Row 4: 4 18 Sum=22
+Row 5: 5 17 Sum=22
+Row 6: 6 16 Sum=22
+Row 7: 7 15 Sum=22
+Row 8: 8 14 Sum=22
+Row 9: 9 13 Sum=22
+Row 10: 10 12 Sum=22

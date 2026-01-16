@@ -1,0 +1,6 @@
+=== SUMMARY ===
+Total matrices generated: 0
+Singular matrices: 0
+Non-singular matrices: 0
+Total rows generated: 216
+Computation time (ms): 7

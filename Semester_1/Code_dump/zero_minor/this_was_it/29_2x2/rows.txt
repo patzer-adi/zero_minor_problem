@@ -1,0 +1,13 @@
+Row 1: 1 27 Sum=28
+Row 2: 2 26 Sum=28
+Row 3: 3 25 Sum=28
+Row 4: 4 24 Sum=28
+Row 5: 5 23 Sum=28
+Row 6: 6 22 Sum=28
+Row 7: 7 21 Sum=28
+Row 8: 8 20 Sum=28
+Row 9: 9 19 Sum=28
+Row 10: 10 18 Sum=28
+Row 11: 11 17 Sum=28
+Row 12: 12 16 Sum=28
+Row 13: 13 15 Sum=28
