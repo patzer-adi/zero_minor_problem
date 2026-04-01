@@ -1,0 +1,158 @@
+# =============================================================================
+# Makefile — APM Exhaustive Search
+# GPU  : GTX 750 Ti  (SM 5.0 / Maxwell)
+# CUDA : 11.4
+# GCC  : 10  (GCC 11 causes __malloc__ errors with CUDA 11.4 on Ubuntu 22.04)
+#
+# Two binaries:
+#   apm3d  — original p_1048573 only   (apm_research_3.cu)
+#   apm4d  — extended multi-prime      (apm_research_4.cu)
+#
+# Execution order for apm4d (three-phase):
+#   Phase 1 — p_1048573 antioffset  (12×12, fast)
+#   Phase 2 — 25_29/{25..29}        (75×75, per-folder prime)
+#   Phase 3 — p_1048573 offset      (larger, slow)
+# =============================================================================
+
+NVCC    := nvcc
+CCBIN   := gcc-10
+
+# ── Original binary (apm_research_3.cu) ──────────────────────────────────────
+BIN     := apm3d
+SRC     := apm_research_3.cu
+PRIME   := 1048573
+
+# ── Extended binary (apm_research_4.cu) ──────────────────────────────────────
+BIN4    := apm4d
+SRC4    := apm_research_4.cu
+
+ARCH    := -gencode arch=compute_50,code=sm_50 \
+           -gencode arch=compute_50,code=compute_50
+
+FLAGS   := -O3 -std=c++14              \
+           -ccbin $(CCBIN)             \
+           -Wno-deprecated-gpu-targets \
+           $(ARCH)
+
+# ─── Build ───────────────────────────────────────────────────────────────────
+
+.PHONY: all clean run run_log run_explicit clean_results clean_all help
+.PHONY: apm4 run4 run4_log clean4 clean4_results clean4_all help4
+
+all: $(BIN)
+
+apm4: $(BIN4)
+
+both: $(BIN) $(BIN4)
+
+$(BIN): $(SRC)
+	@echo "Building $(BIN) ..."
+	$(NVCC) $(FLAGS) $< -o $@ -Xlinker -lstdc++
+	@echo ""
+	@echo "  Build OK"
+	@echo "  Run with:  ./$(BIN) $(PRIME)"
+	@echo "  Or:        make run        (live terminal)"
+	@echo "  Or:        make run_log    (live terminal + saved to run_log.txt)"
+
+$(BIN4): $(SRC4)
+	@echo "Building $(BIN4) ..."
+	$(NVCC) $(FLAGS) $< -o $@ -Xlinker -lstdc++
+	@echo ""
+	@echo "  Build OK  (extended multi-prime version)"
+	@echo "  Run with:  ./$(BIN4)       (no arguments needed)"
+	@echo "  Or:        make run4       (live terminal)"
+	@echo "  Or:        make run4_log   (live terminal + saved to run4_log.txt)"
+
+# ─── Run targets — original apm3d ───────────────────────────────────────────
+
+run: $(BIN)
+	./$(BIN) $(PRIME)
+
+run_log: $(BIN)
+	./$(BIN) $(PRIME) 2>&1 | tee run_log.txt
+
+run_explicit: $(BIN)
+	./$(BIN) $(PRIME) p_$(PRIME)_antioffset=0.2/ p_$(PRIME)_offset=1/
+
+run_explicit_log: $(BIN)
+	./$(BIN) $(PRIME) p_$(PRIME)_antioffset=0.2/ p_$(PRIME)_offset=1/ 2>&1 | tee run_log.txt
+
+# ─── Run targets — extended apm4d ────────────────────────────────────────────
+
+run4: $(BIN4)
+	./$(BIN4)
+
+run4_log: $(BIN4)
+	./$(BIN4) 2>&1 | tee run4_log.txt
+
+# ─── Clean ───────────────────────────────────────────────────────────────────
+
+clean:
+	rm -f $(BIN)
+
+clean4:
+	rm -f $(BIN4)
+
+clean_results:
+	rm -rf Results/ run_log.txt
+
+clean4_results:
+	rm -rf Results/ run4_log.txt
+
+clean_all: clean clean4
+	rm -rf Results/ run_log.txt run4_log.txt
+
+# ─── Help ────────────────────────────────────────────────────────────────────
+
+help:
+	@echo ""
+	@echo "============================================================"
+	@echo " APM Exhaustive Search — Makefile Help"
+	@echo "============================================================"
+	@echo ""
+	@echo "Build targets:"
+	@echo "  make              — compile apm_research_3.cu -> $(BIN)"
+	@echo "  make apm4         — compile apm_research_4.cu -> $(BIN4)"
+	@echo "  make both         — compile both binaries"
+	@echo ""
+	@echo "Run targets (original — p_1048573 only):"
+	@echo "  make run              — compile + run $(BIN)"
+	@echo "  make run_log          — compile + run + save log"
+	@echo "  make run_explicit     — run with hard-coded folder names"
+	@echo "  make run_explicit_log — run_explicit + save log"
+	@echo ""
+	@echo "Run targets (extended — multi-prime, all folders):"
+	@echo "  make run4             — compile + run $(BIN4) (no args needed)"
+	@echo "  make run4_log         — compile + run + save to run4_log.txt"
+	@echo ""
+	@echo "Clean targets:"
+	@echo "  make clean         — remove $(BIN) only"
+	@echo "  make clean4        — remove $(BIN4) only"
+	@echo "  make clean_results — remove Results/ and logs"
+	@echo "  make clean_all     — remove everything"
+	@echo ""
+	@echo "$(BIN4) execution order (three-phase, no arguments):"
+	@echo "  Phase 1: p_1048573 antioffset  (12×12 matrices, fast)"
+	@echo "  Phase 2: 25_29/{25..29}        (75×75 matrices, per-folder prime)"
+	@echo "           25→33554393  26→44923183  27→134217689"
+	@echo "           28→268435399 29→536870909"
+	@echo "  Phase 3: p_1048573 offset      (larger matrices, slow)"
+	@echo ""
+	@echo "Output structure after run4:"
+	@echo "  Results/"
+	@echo "    deviation_2/"
+	@echo "      antioffset/    <- p_1048573 antioffset results"
+	@echo "      25_29_25/      <- subfolder 25 (prime=33554393)"
+	@echo "      25_29_26/      <- subfolder 26 (prime=44923183)"
+	@echo "      25_29_27/      <- subfolder 27 (prime=134217689)"
+	@echo "      25_29_28/      <- subfolder 28 (prime=268435399)"
+	@echo "      25_29_29/      <- subfolder 29 (prime=536870909)"
+	@echo "      offset/        <- p_1048573 offset results"
+	@echo "    deviation_3/ ... (same structure)"
+	@echo "    deviation_4/ ..."
+	@echo "    deviation_5/ ..."
+	@echo ""
+	@echo "Tip: use 'make run4_log' so you can watch live output AND"
+	@echo "     have a full record in run4_log.txt when it finishes."
+	@echo "============================================================"
+	@echo ""
