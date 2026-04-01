@@ -9,6 +9,7 @@
 #include <cstring>
 #include <dirent.h>
 #include <sys/stat.h>
+using namespace std;
 
 // -----------------------------------------------------------------------------
 void FileUtils::mkdir_safe(const std::string &path) {
@@ -16,27 +17,27 @@ void FileUtils::mkdir_safe(const std::string &path) {
 }
 
 // -----------------------------------------------------------------------------
-bool FileUtils::ends_with(const std::string &str, const std::string &suffix) {
+bool FileUtils::ends_with(const string &str, const string &suffix) {
     if (suffix.size() > str.size()) return false;
     return str.compare(str.size() - suffix.size(), suffix.size(), suffix) == 0;
 }
 
 // -----------------------------------------------------------------------------
-bool FileUtils::starts_with(const std::string &str, const std::string &prefix) {
+bool FileUtils::starts_with(const string &str, const string &prefix) {
     if (prefix.size() > str.size()) return false;
     return str.compare(0, prefix.size(), prefix) == 0;
 }
 
 // -----------------------------------------------------------------------------
-std::vector<std::string> FileUtils::collect_files(const std::string &dir_path,
-                                                   const std::string &prefix) {
-    std::vector<std::string> files;
+vector<string> FileUtils::collect_files(const string &dir_path,
+                                                   const string &prefix) {
+    vector<string> files;
     DIR *d = opendir(dir_path.c_str());
     if (!d) return files;
 
     struct dirent *e;
     while ((e = readdir(d)) != NULL) {
-        std::string nm = e->d_name;
+        string nm = e->d_name;
         if (!starts_with(nm, prefix))      continue;
         if (nm.size() <= 4)                continue;
         if (nm.substr(nm.size() - 4) != ".txt") continue;
@@ -44,23 +45,23 @@ std::vector<std::string> FileUtils::collect_files(const std::string &dir_path,
         files.push_back(dir_path + "/" + nm);
     }
     closedir(d);
-    std::sort(files.begin(), files.end());
+    sort(files.begin(), files.end());
     return files;
 }
 
 // -----------------------------------------------------------------------------
-std::string FileUtils::make_out_dir(const std::string &base_dir, int group, int dev) {
+string FileUtils::make_out_dir(const string &base_dir, int group, int dev) {
     mkdir_safe(base_dir);
-    std::string d1 = base_dir + "/" + std::to_string(group);
+    string d1 = base_dir + "/" + to_string(group);
     mkdir_safe(d1);
-    std::string d2 = d1 + "/deviation_" + std::to_string(dev);
+    string d2 = d1 + "/deviation_" + to_string(dev);
     mkdir_safe(d2);
     return d2;
 }
 
 // -----------------------------------------------------------------------------
 double FileUtils::now_ms() {
-    using namespace std::chrono;
+    using namespace chrono;
     return static_cast<double>(
         duration_cast<microseconds>(
             high_resolution_clock::now().time_since_epoch()

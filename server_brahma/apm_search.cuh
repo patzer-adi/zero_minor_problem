@@ -9,6 +9,7 @@
 #include "gpu_buffers.cuh"
 #include <string>
 #include <vector>
+using namespace std;
 
 class ApmSearchEngine {
 public:
@@ -24,7 +25,7 @@ public:
     // minors_tested:    [out] total number of minors tested
     // matrix_start_ms:  timestamp when matrix processing started
     // -------------------------------------------------------------------------
-    static std::vector<ZeroMinor>
+    static vector<ZeroMinor>
     search_matrix(GpuBuffers &gpu, const long long *h_mat, int n,
                   long long prime, int dev, double &minors_tested,
                   double matrix_start_ms);
@@ -42,16 +43,6 @@ public:
     // base_dir:   output base directory (e.g. "Results_brahma")
     // -------------------------------------------------------------------------
     static int run_group_deviation(int group, long long prime, int dev,
-                                   const std::vector<std::string> &files,
+                                   const vector<string> &files,
                                    int n, GpuBuffers &gpu,
-                                   const std::string &base_dir);
-
-private:
-    // Generate all C(pool.size(), r) index sets for one anchor position.
-    // principal: the PM_SIZE indices forming the principal block.
-    static void gen_combos(const std::vector<int> &pool, int r,
-                           const int *principal,
-                           std::vector<IndexSet> &out);
-};
-
-#endif // APM_SEARCH_CUH
+                                   const string &base_dir);

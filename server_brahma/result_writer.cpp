@@ -8,6 +8,7 @@
 #include <cstdio>
 #include <cstdlib>
 #include <string>
+using namespace std;
 
 // =============================================================================
 // Helper: compute display width for a long long value
@@ -86,15 +87,15 @@ void ResultWriter::write_zero_minor_detail(FILE *f, const ZeroMinor &zm,
 // Write per-matrix result file
 // =============================================================================
 
-void ResultWriter::write_result_file(const std::string &out_dir,
-                                      const MatrixData &md,
-                                      long long prime, int dev,
-                                      const std::vector<ZeroMinor> &minors,
+void ResultWriter::write_result_file(const string &out_dir,
+                                       const MatrixData &md,
+                                       long long prime, int dev,
+                                       const vector<ZeroMinor> &minors,
                                       double matrix_ms, double minors_tested) {
-    std::string base = md.filename;
+    string base = md.filename;
     size_t dot = base.rfind('.');
-    if (dot != std::string::npos) base = base.substr(0, dot);
-    std::string outpath = out_dir + "/" + base + "_result.txt";
+    if (dot != string::npos) base = base.substr(0, dot);
+    string outpath = out_dir + "/" + base + "_result.txt";
 
     FILE *f = fopen(outpath.c_str(), "w");
     if (!f) {
@@ -186,13 +187,13 @@ void ResultWriter::write_result_file(const std::string &out_dir,
 // Write group-level result.txt (early-stop tracking)
 // =============================================================================
 
-void ResultWriter::write_group_result(const std::string &base_dir, int group,
+void ResultWriter::write_group_result(const string &base_dir, int group,
                                        int best_dev, int best_hits,
                                        bool reached_100) {
     FileUtils::mkdir_safe(base_dir);
-    std::string dir = base_dir + "/" + std::to_string(group);
+    string dir = base_dir + "/" + to_string(group);
     FileUtils::mkdir_safe(dir);
-    std::string path = dir + "/result.txt";
+    string path = dir + "/result.txt";
 
     FILE *f = fopen(path.c_str(), "w");
     if (!f) {
@@ -234,7 +235,7 @@ void ResultWriter::append_detailed_entry(FILE *det_f, int fi, int total_files,
                                           const MatrixData &md,
                                           double matrix_ms,
                                           double minors_tested,
-                                          const std::vector<ZeroMinor> &found) {
+                                          const vector<ZeroMinor> &found) {
     if (!det_f || found.empty()) return;
 
     fprintf(det_f, "------------------------------------------------------------\n");
@@ -268,13 +269,13 @@ void ResultWriter::append_detailed_entry(FILE *det_f, int fi, int total_files,
 // Write SUMMARY_brief.txt
 // =============================================================================
 
-void ResultWriter::write_summary_brief(const std::string &out_dir, int group,
+void ResultWriter::write_summary_brief(const string &out_dir, int group,
                                         long long prime, int dev, int n,
                                         size_t total_files, int matrices_hit,
                                         double total_minors_tested,
                                         long long total_zero_minors,
                                         double folder_ms) {
-    std::string brief_path = out_dir + "/SUMMARY_brief.txt";
+    string brief_path = out_dir + "/SUMMARY_brief.txt";
     FILE *brief_f = fopen(brief_path.c_str(), "w");
     if (!brief_f) return;
 

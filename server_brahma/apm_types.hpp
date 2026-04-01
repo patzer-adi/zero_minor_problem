@@ -7,6 +7,7 @@
 
 #include <string>
 #include <vector>
+using namespace std;
 
 // =============================================================================
 // Compile-time constants
@@ -29,9 +30,9 @@ struct IndexSet {
 
 // Parsed matrix
 struct MatrixData {
-    std::string filename;
+    string filename;
     int n;
-    std::vector<long long> data; // flat n×n row-major
+    vector<long long> data; // flat n×n row-major
 };
 
 // One recorded zero minor

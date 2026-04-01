@@ -22,17 +22,17 @@ public:
     void print_table() const;
 
     // Get the list of all folder primes.
-    const std::vector<FolderPrime>& primes() const { return primes_; }
+    const vector<FolderPrime>& primes() const { return primes_; }
 
     // Find a prime by group ID. Returns -1 if not found.
     long long get_prime(int group) const;
 
 private:
-    std::vector<FolderPrime> primes_;
+    vector<FolderPrime> primes_;
 
     // Read a prime value from a single file.
     // Returns -1 if file cannot be read or prime not found.
-    static long long read_prime_from_file(const std::string &path);
+    static long long read_prime_from_file(const string &path);
 };
 
 #endif // PRIME_LOADER_HPP

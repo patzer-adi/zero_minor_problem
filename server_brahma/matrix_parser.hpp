@@ -7,12 +7,13 @@
 
 #include "apm_types.hpp"
 #include <string>
+using namespace std;
 
 class MatrixParser {
 public:
     // Parse a matrix file in Sage/Python [[...],[...],...] format.
     // Throws std::runtime_error on failure.
-    static MatrixData parse(const std::string &path);
+    static MatrixData parse(const string &path);
 };
 
 #endif // MATRIX_PARSER_HPP

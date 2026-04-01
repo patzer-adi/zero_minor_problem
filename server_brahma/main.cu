@@ -32,6 +32,7 @@
 #include <cstdlib>
 #include <string>
 #include <sys/stat.h>
+using namespace std;
 
 static const char *RESULT_BASE_DIR = "Results_brahma";
 
@@ -135,7 +136,7 @@ int main(int argc, char **argv) {
     //   Write result.txt with best dev
     // =========================================================================
 
-    const std::vector<FolderPrime> &primes = loader.primes();
+    const vector<FolderPrime> &primes = loader.primes();
 
     for (size_t gi = 0; gi < primes.size(); gi++) {
         int group = primes[gi].folder_id;
@@ -153,12 +154,12 @@ int main(int argc, char **argv) {
         fflush(stdout);
 
         // Collect files
-        std::string input_dir = "kernel_output/" + std::to_string(group);
-        std::string prefix = "kernel_" + std::to_string(group) + "_";
-        std::vector<std::string> files = FileUtils::collect_files(input_dir, prefix);
+        string input_dir = "kernel_output/" + to_string(group);
+        string prefix = "kernel_" + to_string(group) + "_";
+        vector<string> files = FileUtils::collect_files(input_dir, prefix);
 
         if (files.empty()) {
-            std::string alt_prefix = std::to_string(group) + "_";
+            string alt_prefix = to_string(group) + "_";
             files = FileUtils::collect_files(input_dir, alt_prefix);
             if (!files.empty()) {
                 printf("  [INFO] No files matching prefix '%s'. "

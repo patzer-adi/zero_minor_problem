@@ -12,6 +12,7 @@
 #include <cstdio>
 #include <cstdlib>
 #include <vector>
+using namespace std;
 
 // =============================================================================
 // CUDA kernel
@@ -56,13 +57,13 @@ apm_kernel(const long long *d_matrix,   // flat n×n raw integers
 // Generate all C(pool_sz, r) index sets for one anchor position
 // =============================================================================
 
-void ApmSearchEngine::gen_combos(const std::vector<int> &pool, int r,
+void ApmSearchEngine::gen_combos(const vector<int> &pool, int r,
                                   const int *principal,
-                                  std::vector<IndexSet> &out) {
+                                  vector<IndexSet> &out) {
     int psz = static_cast<int>(pool.size());
     if (r > psz) return;
 
-    std::vector<int> cidx(r);
+    vector<int> cidx(r);
     for (int i = 0; i < r; i++) cidx[i] = i;
 
     while (true) {
@@ -72,7 +73,7 @@ void ApmSearchEngine::gen_combos(const std::vector<int> &pool, int r,
             is.idx[i] = principal[i];
         for (int i = 0; i < r; i++)
             is.idx[PM_SIZE + i] = pool[cidx[i]];
-        std::sort(is.idx, is.idx + is.k);
+        sort(is.idx, is.idx + is.k);
         out.push_back(is);
 
         // Advance combination
@@ -90,12 +91,12 @@ void ApmSearchEngine::gen_combos(const std::vector<int> &pool, int r,
 // Search one matrix for the FIRST zero minor (first-hit logic)
 // =============================================================================
 
-std::vector<ZeroMinor>
+vector<ZeroMinor>
 ApmSearchEngine::search_matrix(GpuBuffers &gpu, const long long *h_mat,
                                 int n, long long prime, int dev,
                                 double &minors_tested,
                                 double matrix_start_ms) {
-    std::vector<ZeroMinor> found;
+    vector<ZeroMinor> found;
     minors_tested = 0.0;
 
     const int BLOCK = 256;
@@ -115,7 +116,7 @@ ApmSearchEngine::search_matrix(GpuBuffers &gpu, const long long *h_mat,
             principal[i] = s + i;
 
         // Build deviation pool: all indices NOT in the principal block
-        std::vector<int> pool;
+        vector<int> pool;
         pool.reserve(pool_sz);
         for (int idx = 0; idx < n; idx++) {
             bool in_pm = false;
@@ -126,7 +127,7 @@ ApmSearchEngine::search_matrix(GpuBuffers &gpu, const long long *h_mat,
         }
 
         // Generate all C(pool_sz, dev) index sets
-        std::vector<IndexSet> sets;
+        vector<IndexSet> sets;
         gen_combos(pool, dev, principal, sets);
         int num_sets = static_cast<int>(sets.size());
         if (num_sets == 0) continue;
@@ -147,7 +148,7 @@ ApmSearchEngine::search_matrix(GpuBuffers &gpu, const long long *h_mat,
         bool hit_found = false;
 
         for (int col_start = 0; col_start < num_sets; col_start += chunk_sz) {
-            int col_end = std::min(col_start + chunk_sz, num_sets);
+            int col_end = min(col_start + chunk_sz, num_sets);
             int num_cols_this_chunk = col_end - col_start;
 
             long long total_jobs =
@@ -174,7 +175,7 @@ ApmSearchEngine::search_matrix(GpuBuffers &gpu, const long long *h_mat,
             CK(cudaGetLastError());
 
             // Copy flags back and scan for the FIRST zero only
-            std::vector<int> h_flags(
+            vector<int> h_flags(
                 static_cast<size_t>(num_sets) * num_cols_this_chunk);
             CK(cudaMemcpy(h_flags.data(), gpu.d_zero_flags,
                           h_flags.size() * sizeof(int),
@@ -217,12 +218,12 @@ ApmSearchEngine::search_matrix(GpuBuffers &gpu, const long long *h_mat,
 // =============================================================================
 
 int ApmSearchEngine::run_group_deviation(int group, long long prime, int dev,
-                                          const std::vector<std::string> &files,
+                                          const vector<string> &files,
                                           int n, GpuBuffers &gpu,
-                                          const std::string &base_dir) {
-    std::string out_dir = FileUtils::make_out_dir(base_dir, group, dev);
-    std::string input_dir = "kernel_output/" + std::to_string(group) + "/";
-    std::string prefix = "kernel_" + std::to_string(group) + "_";
+                                          const string &base_dir) {
+    string out_dir = FileUtils::make_out_dir(base_dir, group, dev);
+    string input_dir = "kernel_output/" + to_string(group) + "/";
+    string prefix = "kernel_" + to_string(group) + "_";
 
     // Header
     printf("\n");
@@ -237,7 +238,7 @@ int ApmSearchEngine::run_group_deviation(int group, long long prime, int dev,
     fflush(stdout);
 
     // Open SUMMARY_detailed.txt
-    std::string det_path = out_dir + "/SUMMARY_detailed.txt";
+    string det_path = out_dir + "/SUMMARY_detailed.txt";
     FILE *det_f = fopen(det_path.c_str(), "w");
     if (det_f) {
         fprintf(det_f, "APM Summary\n");
