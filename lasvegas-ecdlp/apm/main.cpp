@@ -278,11 +278,16 @@ void fun_ZZp() {
   // Do NOT use _2.txt _3.txt etc. Do NOT modify any input files
   // Last number before # in each file is the prime used
   // FIX: 25–29 from input/25_29/, 30–35 from input/exp/
+
+/*
   std::vector<std::string> inputFiles = {
       "input/25_29/25_1.txt", "input/25_29/26_1.txt", "input/25_29/27_1.txt",
       "input/25_29/28_1.txt", "input/25_29/29_1.txt", "input/exp/30_1.txt",
       "input/exp/31_1.txt",   "input/exp/32_1.txt",   "input/exp/33_1.txt",
-      "input/exp/34_1.txt",   "input/exp/35_1.txt"};
+      "input/exp/34_1.txt",   "input/exp/35_1.txt"};*/
+
+std::vector<std::string> inputFiles = {
+    "input/36_40/36_1.txt","input/36_40/37_1.txt","input/36_40/38_1.txt","input/36_40/39_1.txt","input/36_40/40_1.txt"};
 
   for (const std::string &fileName : inputFiles) {
     if (processorId == MASTER_NODE)
