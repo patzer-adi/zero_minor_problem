@@ -141,9 +141,14 @@ void makeKernelDB(_EC_Point_ &P, _EC_Point_ &Q, ZZ ordP, ulong _p, const double 
         // ORIGINAL: sprintf(kernelFileName, "kernel_DB/new/kernel_%u_%u.txt", _p, iterationCnt);
         // Output now routed to Kernel_output/<numberOfBits>/ per bit-size
         // FIX: use names Kernel_output/<bits>/kernel_<bits>_<i>.txt
-        sprintf(kernelFileName, "Kernel_output/%lu/kernel_%lu_%lu.txt", _p, _p, iterationCnt);
+        sprintf(kernelFileName, "kernel_output/%lu/kernel_%lu_%lu.txt", _p, _p, iterationCnt);
         cout << " FILE-NAME :: " << kernelFileName << endl;
         ofstream kernelFile(kernelFileName);
+        if (!kernelFile.is_open()) {
+            cerr << " ERROR: Cannot open kernel file: " << kernelFileName << endl;
+            delete[] kernelFileName;
+            continue;
+        }
 
         // ORIGINAL: kernelFile << nonIdentityKernel;  (full r×r matrix)
         // FIX: write only r_target×r_target top-left submatrix
@@ -158,7 +163,7 @@ void makeKernelDB(_EC_Point_ &P, _EC_Point_ &Q, ZZ ordP, ulong _p, const double 
         char *randomNumberfileName = new char[200];
         // ORIGINAL: sprintf(randomNumberfileName, "kernel_DB/new/kernel_%u_%u_RN.txt", _p, iterationCnt);
         // FIX: match kernel naming for RN files as Kernel_output/<bits>/kernel_<bits>_<i>_RN.txt
-        sprintf(randomNumberfileName, "Kernel_output/%lu/kernel_%lu_%lu_RN.txt", _p, _p, iterationCnt);
+        sprintf(randomNumberfileName, "kernel_output/%lu/kernel_%lu_%lu_RN.txt", _p, _p, iterationCnt);
         saveRandomNumberToFile(randomNumberfileName, PQ_randomNumbers, mat_row);
         iterationCnt++;
     }
