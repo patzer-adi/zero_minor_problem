@@ -1,0 +1,54 @@
+
+
+====== Processing file: input/25_29/25_1.txt ======
+
+ Field Size   :: 33554393
+
+ P  :: [26157761 : 14458995 : 1]	 Q  :: [15514940 : 5494941 : 1]
+ Ord          :: 33547861
+ numberOfBits :: 25
+ offset       :: 0.2
+ n            :: 25 (full, not scaled)
+ r            :: 15 (= floor(offset * 3 * n))
+ saved matrix :: 15x15
+
+ Generating 100 kernels on MASTER_NODE => pId :: 0
+
+ iterationCnt :: 1	 numberOfkernesTOGenerate :: 100
+ Processing kernel :: 1
+ FILE-NAME :: Kernel_output/25/25_1.txt
+ Processing kernel :: 2
+ FILE-NAME :: Kernel_output/25/25_2.txt
+ Processing kernel :: 3
+ FILE-NAME :: Kernel_output/25/25_3.txt
+ Processing kernel :: 4
+ FILE-NAME :: Kernel_output/25/25_4.txt
+ Processing kernel :: 5
+ FILE-NAME :: Kernel_output/25/25_5.txt
+ Processing kernel :: 6
+ FILE-NAME :: Kernel_output/25/25_6.txt
+ Processing kernel :: 7
+ FILE-NAME :: Kernel_output/25/25_7.txt
+ Processing kernel :: 8
+ FILE-NAME :: Kernel_output/25/25_8.txt
+ Processing kernel :: 9
+ FILE-NAME :: Kernel_output/25/25_9.txt
+ Processing kernel :: 10
+ FILE-NAME :: Kernel_output/25/25_10.txt
+ Processing kernel :: 11
+ FILE-NAME :: Kernel_output/25/25_11.txt
+ Processing kernel :: 12
+ FILE-NAME :: Kernel_output/25/25_12.txt
+ Processing kernel :: 13
+ FILE-NAME :: Kernel_output/25/25_13.txt
+ Processing kernel :: 14
+ FILE-NAME :: Kernel_output/25/25_14.txt
+ Processing kernel :: 15
+ FILE-NAME :: Kernel_output/25/25_15.txt
+ Processing kernel :: 16
+ FILE-NAME :: Kernel_output/25/25_16.txt
+ Processing kernel :: 17
+ FILE-NAME :: Kernel_output/25/25_17.txt
+ Processing kernel :: 18
+ FILE-NAME :: Kernel_output/25/25_18.txt
+ Processing kernel :: 19
