@@ -5,19 +5,19 @@
  * Created on 28 November, 2017, 11:12 AM  and now updated on 30/3/26, 3:48 PM
  */
 
-#include "dlp_input_2m.hpp"
-#include "dlp_input.hpp"
 #include "EC_GF2E.hpp"
 #include "EC_ZZp.hpp"
 #include "EC_ZZp_Point.hpp"
 #include "constants.hpp"
-#include "lasVegas.tcc"
-#include "hypothesis_A.tcc"
 #include "containment.tcc"
+#include "dlp_input.hpp"
+#include "dlp_input_2m.hpp"
+#include "hypothesis_A.tcc"
+#include "lasVegas.tcc"
 #include "playground.tcc"
 
-#include <mpi.h>
 #include <bits/stdc++.h>
+#include <mpi.h>
 
 using namespace std;
 using namespace NTL;
@@ -262,183 +262,171 @@ void fun_ZZp()
 }
 #endif
 
-void fun_ZZp()
-{
-    int processorId, numberOfProcessors;
-    MPI_Comm_rank(MPI_COMM_WORLD, &processorId);
-    MPI_Comm_size(MPI_COMM_WORLD, &numberOfProcessors);
+void fun_ZZp() {
+  int processorId, numberOfProcessors;
+  MPI_Comm_rank(MPI_COMM_WORLD, &processorId);
+  MPI_Comm_size(MPI_COMM_WORLD, &numberOfProcessors);
 
-    // ORIGINAL: const int offset = 1;
-    // offset=0.2 -> saved matrix is 20% of full size (r = floor(0.2 * 3 * numberOfBits))
-    // e.g. 25-bit: r_full=75 -> r_scaled=15 -> saved matrix 15x15
-    // 27,33,34-bit will have floor truncation (e.g. 0.2*3*27=16.2 -> r=16), this is accepted
-    const double offset = 0.35;
+  // ORIGINAL: const int offset = 1;
+  // offset=0.2 -> saved matrix is 20% of full size (r = floor(0.2 * 3 *
+  // numberOfBits)) e.g. 25-bit: r_full=75 -> r_scaled=15 -> saved matrix 15x15
+  // 27,33,34-bit will have floor truncation (e.g. 0.2*3*27=16.2 -> r=16), this
+  // is accepted
+  const double offset = 0.35;
 
-    // One input file per bit-size only, using _1.txt files
-    // Do NOT use _2.txt _3.txt etc. Do NOT modify any input files
-    // Last number before # in each file is the prime used
-    // FIX: 25–29 from input/25_29/, 30–35 from input/exp/
-    std::vector<std::string> inputFiles = {
-        "input/25_29/25_1.txt",
-        "input/25_29/26_1.txt",
-        "input/25_29/27_1.txt",
-        "input/25_29/28_1.txt",
-        "input/25_29/29_1.txt",
-        "input/exp/30_1.txt",
-        "input/exp/31_1.txt",
-        "input/exp/32_1.txt",
-        "input/exp/33_1.txt",
-        "input/exp/34_1.txt",
-        "input/exp/35_1.txt"
-    };
+  // One input file per bit-size only, using _1.txt files
+  // Do NOT use _2.txt _3.txt etc. Do NOT modify any input files
+  // Last number before # in each file is the prime used
+  // FIX: 25–29 from input/25_29/, 30–35 from input/exp/
+  std::vector<std::string> inputFiles = {
+      "input/25_29/25_1.txt", "input/25_29/26_1.txt", "input/25_29/27_1.txt",
+      "input/25_29/28_1.txt", "input/25_29/29_1.txt", "input/exp/30_1.txt",
+      "input/exp/31_1.txt",   "input/exp/32_1.txt",   "input/exp/33_1.txt",
+      "input/exp/34_1.txt",   "input/exp/35_1.txt"};
 
-    for (const std::string &fileName : inputFiles)
-    {
-        if (processorId == MASTER_NODE)
-            cout << "\n\n====== Processing file: " << fileName << " ======" << endl;
+  for (const std::string &fileName : inputFiles) {
+    if (processorId == MASTER_NODE)
+      cout << "\n\n====== Processing file: " << fileName << " ======" << endl;
 
-        dlp_input dd(fileName);
+    dlp_input dd(fileName);
 
-        if (dd.numberOfInputs < 1)
-        {
-            if (processorId == MASTER_NODE)
-                cout << "\n No inputs found in: " << fileName << ", skipping." << endl;
-            continue;
-        }
-
-        EC_ZZp EC(dd.data[0].p, dd.data[0].a, dd.data[0].b, dd.data[0].ordP);
-        EC_ZZp_Point P, Q;
-
-        P.x = conv<ZZ_p>(dd.data[0].Px);
-        P.y = conv<ZZ_p>(dd.data[0].Py);
-        Q.x = conv<ZZ_p>(dd.data[0].Qx);
-        Q.y = conv<ZZ_p>(dd.data[0].Qy);
-
-        ulong numberOfBits = NumBits(dd.data[0].p);
-
-        if (processorId == MASTER_NODE)
-        {
-            masterPrint(processorId) << "\n Field Size   :: " << dd.data[0].p << endl;
-            P.printPoint("\n P ");
-            Q.printPoint("\t Q ");
-            masterPrint(processorId) << "\n Ord          :: " << dd.data[0].ordP << endl;
-            masterPrint(processorId) << " numberOfBits :: " << numberOfBits << endl;
-            masterPrint(processorId) << " offset       :: " << offset << endl;
-            masterPrint(processorId) << " n            :: " << numberOfBits << " (full, not scaled)" << endl;
-            masterPrint(processorId) << " r            :: " << (ulong)(offset * 3.0 * (double)numberOfBits)
-                                     << " (= floor(offset * 3 * n))" << endl;
-            masterPrint(processorId) << " saved matrix :: "
-                                     << (ulong)(offset * 3.0 * (double)numberOfBits)
-                                     << "x"
-                                     << (ulong)(offset * 3.0 * (double)numberOfBits)
-                                     << endl;
-            // NOTE: for 27,33,34-bit the matrix dimension will not be exactly 20% of full
-            // due to floor truncation. This is expected and accepted.
-        }
-
-        // Create output directory Kernel_output/<numberOfBits>/
-        // Kernels will be saved as Kernel_output/<bits>/<bits>_1.txt to <bits>_100.txt
-        char mkdirCmd[300];
-        sprintf(mkdirCmd, "mkdir -p Kernel_output/%lu", numberOfBits);
-        system(mkdirCmd);
-
-        // ORIGINAL: ZZ ans = lasVegas<EC_ZZp_Point, EC_ZZp, mat_ZZ_p, ZZ_p>(P, Q, dd.data[i].ordP, numberOfBits, 1, EC.address());
-        // Using makeKernelDB instead of lasVegas, with double offset and loop over input files
-        makeKernelDB<EC_ZZp_Point, EC_ZZp, mat_ZZ_p, ZZ_p>(
-            P, Q, dd.data[0].ordP, numberOfBits, offset, EC.address(), numberOfKernelsToGenerate);
-
-        MPI_Barrier(MPI_COMM_WORLD);
+    if (dd.numberOfInputs < 1) {
+      if (processorId == MASTER_NODE)
+        cout << "\n No inputs found in: " << fileName << ", skipping." << endl;
+      continue;
     }
-}
 
-void fun_GF2EX()
-{
-    int processorId, numberOfProcessors;
+    EC_ZZp EC(dd.data[0].p, dd.data[0].a, dd.data[0].b, dd.data[0].ordP);
+    EC_ZZp_Point P, Q;
 
-    MPI_Comm_rank(MPI_COMM_WORLD, &processorId);
-    MPI_Comm_size(MPI_COMM_WORLD, &numberOfProcessors);
-    string fileName = "newNewInput/2_25.txt";
+    P.x = conv<ZZ_p>(dd.data[0].Px);
+    P.y = conv<ZZ_p>(dd.data[0].Py);
+    Q.x = conv<ZZ_p>(dd.data[0].Qx);
+    Q.y = conv<ZZ_p>(dd.data[0].Qy);
 
-    dlp_input_2m dd(fileName);
+    ulong numberOfBits = NumBits(dd.data[0].p);
 
-    for (int i = 0; i < 1; ++i)
-    {
-        // char *fileName = new char[200];
-        // sprintf(fileName, "output/p_%u_%u_%d.txt", processorId, numberOfProcessors, i);
-        // freopen(fileName, "w", stdout);
-
-        masterPrint(processorId) << "\n Processing input :: " << (i + 1) << endl;
-        if (dd.numberOfInputs < i)
-            break;
-
-        EC_GF2E EC(dd.data[i].p, dd.data[i].irrd, dd.data[i].a, dd.data[i].b);
-        EC_GF2E_Point P, Q;
-
-        P.x._GF2E__rep = dd.data[i].Px;
-        P.y._GF2E__rep = dd.data[i].Py;
-
-        Q.x._GF2E__rep = dd.data[i].Qx;
-        Q.y._GF2E__rep = dd.data[i].Qy;
-
-        if (processorId == MASTER_NODE)
-        {
-            cout << "\n Field Size :: 2^" << dd.data[i].p << endl;
-            P.printPoint1("\n P ");
-            Q.printPoint1("\t Q ");
-            cout << "\n\n Ord :: " << dd.data[i].ordP << "\t sqrt(Ord) :: " << SqrRoot(dd.data[i].ordP);
-            cout << "\t m :: " << dd.data[i].e << endl;
-        }
-        ulong numberOfBits = NumBits(dd.data[i].ordP);
-        ZZ ans = lasVegas<EC_GF2E_Point, EC_GF2E, mat_GF2E, GF2E>(P, Q, dd.data[i].ordP, numberOfBits, 1, EC.address());
-        MPI_Barrier(MPI_COMM_WORLD);
+    if (processorId == MASTER_NODE) {
+      masterPrint(processorId) << "\n Field Size   :: " << dd.data[0].p << endl;
+      P.printPoint("\n P ");
+      Q.printPoint("\t Q ");
+      masterPrint(processorId)
+          << "\n Ord          :: " << dd.data[0].ordP << endl;
+      masterPrint(processorId) << " numberOfBits :: " << numberOfBits << endl;
+      masterPrint(processorId) << " offset       :: " << offset << endl;
+      masterPrint(processorId) << " n            :: " << numberOfBits
+                               << " (full, not scaled)" << endl;
+      masterPrint(processorId)
+          << " r            :: " << (ulong)(offset * 3.0 * (double)numberOfBits)
+          << " (= floor(offset * 3 * n))" << endl;
+      masterPrint(processorId)
+          << " saved matrix :: " << (ulong)(offset * 3.0 * (double)numberOfBits)
+          << "x" << (ulong)(offset * 3.0 * (double)numberOfBits) << endl;
+      // NOTE: for 27,33,34-bit the matrix dimension will not be exactly 20% of
+      // full due to floor truncation. This is expected and accepted.
     }
+
+    // Create output directory Kernel_output/<numberOfBits>/
+    // Kernels will be saved as Kernel_output/<bits>/<bits>_1.txt to
+    // <bits>_100.txt
+    char mkdirCmd[300];
+    sprintf(mkdirCmd, "mkdir -p kernel_output/%lu", numberOfBits);
+    system(mkdirCmd);
+
+    // ORIGINAL: ZZ ans = lasVegas<EC_ZZp_Point, EC_ZZp, mat_ZZ_p, ZZ_p>(P, Q,
+    // dd.data[i].ordP, numberOfBits, 1, EC.address()); Using makeKernelDB
+    // instead of lasVegas, with double offset and loop over input files
+    makeKernelDB<EC_ZZp_Point, EC_ZZp, mat_ZZ_p, ZZ_p>(
+        P, Q, dd.data[0].ordP, numberOfBits, offset, EC.address(),
+        numberOfKernelsToGenerate);
+
+    MPI_Barrier(MPI_COMM_WORLD);
+  }
 }
 
-void inverseTest_ZZp()
-{
-    ulong p = 1009;
-    ZZ_p::init(conv<ZZ>(p));
+void fun_GF2EX() {
+  int processorId, numberOfProcessors;
 
-    string fileName = "kernel_DB/1009/kernel_p_1009_2.txt";
-    ifstream kernelFile(fileName);
-    cout << "\n fileName :: " << fileName << endl;
+  MPI_Comm_rank(MPI_COMM_WORLD, &processorId);
+  MPI_Comm_size(MPI_COMM_WORLD, &numberOfProcessors);
+  string fileName = "newNewInput/2_25.txt";
 
-    mat_ZZ_p mat, invMat;
-    kernelFile >> mat;
-    invMat = inv(mat);
+  dlp_input_2m dd(fileName);
 
-    cout << "\n mat :: \n"
-         << mat << endl;
+  for (int i = 0; i < 1; ++i) {
+    // char *fileName = new char[200];
+    // sprintf(fileName, "output/p_%u_%u_%d.txt", processorId,
+    // numberOfProcessors, i); freopen(fileName, "w", stdout);
 
-    cout << "\n invMat :: \n"
-         << invMat << endl;
+    masterPrint(processorId) << "\n Processing input :: " << (i + 1) << endl;
+    if (dd.numberOfInputs < i)
+      break;
 
-    isMinorPresent(mat, 2, 11);
-    cout << "\n++++++++++++++++++++++++++++++++++++\n";
-    isMinorPresent(invMat, 2, 11);
+    EC_GF2E EC(dd.data[i].p, dd.data[i].irrd, dd.data[i].a, dd.data[i].b);
+    EC_GF2E_Point P, Q;
+
+    P.x._GF2E__rep = dd.data[i].Px;
+    P.y._GF2E__rep = dd.data[i].Py;
+
+    Q.x._GF2E__rep = dd.data[i].Qx;
+    Q.y._GF2E__rep = dd.data[i].Qy;
+
+    if (processorId == MASTER_NODE) {
+      cout << "\n Field Size :: 2^" << dd.data[i].p << endl;
+      P.printPoint1("\n P ");
+      Q.printPoint1("\t Q ");
+      cout << "\n\n Ord :: " << dd.data[i].ordP
+           << "\t sqrt(Ord) :: " << SqrRoot(dd.data[i].ordP);
+      cout << "\t m :: " << dd.data[i].e << endl;
+    }
+    ulong numberOfBits = NumBits(dd.data[i].ordP);
+    ZZ ans = lasVegas<EC_GF2E_Point, EC_GF2E, mat_GF2E, GF2E>(
+        P, Q, dd.data[i].ordP, numberOfBits, 1, EC.address());
+    MPI_Barrier(MPI_COMM_WORLD);
+  }
 }
 
-int main(int argc, char **argv)
-{
-    MPI_Init(NULL, NULL);
+void inverseTest_ZZp() {
+  ulong p = 1009;
+  ZZ_p::init(conv<ZZ>(p));
 
-    int numberOfProcessors;
-    int processorId;
+  string fileName = "kernel_DB/1009/kernel_p_1009_2.txt";
+  ifstream kernelFile(fileName);
+  cout << "\n fileName :: " << fileName << endl;
 
-    MPI_Comm_size(MPI_COMM_WORLD, &numberOfProcessors);
-    MPI_Comm_rank(MPI_COMM_WORLD, &processorId);
+  mat_ZZ_p mat, invMat;
+  kernelFile >> mat;
+  invMat = inv(mat);
 
-    // processBigMinors_parallel();
-    // processBiggerMinors();
+  cout << "\n mat :: \n" << mat << endl;
 
-    // LU_Circular_PrincipleMinorTest();
-    // gaussianElimination_multiple();
+  cout << "\n invMat :: \n" << invMat << endl;
 
-    // fun_ZZp();
-    // ORIGINAL: fun_GF2EX();
-    fun_ZZp();
+  isMinorPresent(mat, 2, 11);
+  cout << "\n++++++++++++++++++++++++++++++++++++\n";
+  isMinorPresent(invMat, 2, 11);
+}
 
-    MPI_Finalize();
+int main(int argc, char **argv) {
+  MPI_Init(NULL, NULL);
 
-    return 0;
+  int numberOfProcessors;
+  int processorId;
+
+  MPI_Comm_size(MPI_COMM_WORLD, &numberOfProcessors);
+  MPI_Comm_rank(MPI_COMM_WORLD, &processorId);
+
+  // processBigMinors_parallel();
+  // processBiggerMinors();
+
+  // LU_Circular_PrincipleMinorTest();
+  // gaussianElimination_multiple();
+
+  // fun_ZZp();
+  // ORIGINAL: fun_GF2EX();
+  fun_ZZp();
+
+  MPI_Finalize();
+
+  return 0;
 }
