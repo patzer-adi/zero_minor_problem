@@ -161,7 +161,7 @@ void fun_ZZp()
         // Create output directory Kernel_output/<numberOfBits>/
         // Kernels will be saved as Kernel_output/<bits>/<bits>_1.txt to <bits>_100.txt
         char mkdirCmd[300];
-        sprintf(mkdirCmd, "mkdir -p Kernel_output/%lu", numberOfBits);
+        sprintf(mkdirCmd, "mkdir -p kernel_output/%lu", numberOfBits);
         system(mkdirCmd);
 
         // ORIGINAL: ZZ ans = lasVegas<EC_ZZp_Point, EC_ZZp, mat_ZZ_p, ZZ_p>(P, Q, dd.data[i].ordP, numberOfBits, 1, EC.address());
@@ -245,10 +245,10 @@ void fun_ZZp()
             // Note: for 27,33,34-bit floor truncation gives non-exact 20% - this is expected
         }
 
-        // Create output directory: Kernel_output/<numberOfBits>/
-        // Output files: Kernel_output/<bits>/<bits>_1.txt to <bits>_100.txt
+        // Create output directory: kernel_output/<numberOfBits>/
+        // Output files: kernel_output/<bits>/<bits>_1.txt to <bits>_100.txt
         char mkdirCmd[300];
-        sprintf(mkdirCmd, "mkdir -p Kernel_output/%lu", numberOfBits);
+        sprintf(mkdirCmd, "mkdir -p kernel_output/%lu", numberOfBits);
         system(mkdirCmd);
 
         // ORIGINAL: ZZ ans = lasVegas<EC_ZZp_Point, EC_ZZp, mat_ZZ_p, ZZ_p>(P, Q, dd.data[i].ordP, numberOfBits, 1, EC.address());
