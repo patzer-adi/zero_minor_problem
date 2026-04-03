@@ -1,0 +1,9 @@
+sed -i 's/{35, 34359738337LL},/{35, 34359738337LL},    {36, 68719476503LL},\n    {37, 137438953097LL},  {38, 274877906837LL},   {39, 549755813657LL},\n    {40, 1099511627689LL},/' apm_brahma_2.cu && sed -i 's/NUM_HARDCODED = 11/NUM_HARDCODED = 16/' apm_brahma_2.cu
+
+
+
+and to check:
+
+
+grep -A 2 '{35,' apm_brahma_2.cu && grep 'NUM_HARDCO
+DED' apm_brahma_2.cu
