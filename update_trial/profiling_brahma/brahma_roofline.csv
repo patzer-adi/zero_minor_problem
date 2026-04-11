@@ -1,0 +1,2335 @@
+=================================================================
+ APM Brahma 2 — Single-File First-Hit Search with Early Stop
+ KERNEL_OUTPUT VERSION — prime groups from kernel_output/<g>/
+ GROUP-OUTER, DEVIATION-INNER LOOP
+ STOPS after the FIRST zero minor per matrix
+ EARLY STOP: skips remaining deviations once 100 hits reached
+ PM block size    : 2 (fixed)
+ Max index static : 50
+ Supports primes up to 2^50 (safe modular arithmetic)
+ Runtime VRAM detection via cudaMemGetInfo()
+=================================================================
+
+ Group range     : 25 to 25
+
+==PROF== Connected to process 705927 (/home/aditya/server_brahma_2/apm_brahma_2)
+GPU Information:
+  [GPU 0] NVIDIA GeForce RTX 2080
+           Compute Capability : 7.5
+           Total VRAM         : 8156 MB
+           SM count           : 46
+           Max threads/block   : 1024
+  [GPU 0] Free VRAM: 5265 MB / 8156 MB
+
+Reading primes from files...
+  [PRIME] 25 -> 33554393  (HARDCODED FALLBACK)
+
+Prime table:
+  25 ->        33554393  25 (p=33554393)
+
+
+#################################################################
+# GROUP 25   prime = 33554393
+#################################################################
+  Matrix size n   = 26
+  Files found     = 100
+  Deviation range = 2 to 23
+
+  ===============================================================
+  [group=25 | dev=2/23]  minor=4x4
+  ===============================================================
+    [GPU VRAM] Total: 8156 MB | Free: 5265 MB | Usable (90%): 4739 MB
+    [GPU] Allocating: rows=276  col_chunk=256  flags=70656 (0.3 MB)  matrix=26x26
+
+  +----------------------------------------------------------+
+  |  Group 25  |  Deviation 2  |  100 matrices
+  |  Input : kernel_output/25/  (prefix: kernel_25_)
+  |  Output: Results_brahma_2/25/deviation_2
+  |  Prime : 33554393
+  |  Minor : 4x4
+  +----------------------------------------------------------+
+
+  [1/100] kernel_output/25/kernel_25_1.txt
+    Searching for first zero minor at dev=2 ...
+==ERROR== ERR_NVGPUCTRPERM - The user does not have permission to access NVIDIA GPU Performance Counters on the target device 0. For instructions on enabling permissions and to get more information see https://developer.nvidia.com/ERR_NVGPUCTRPERM
+    Time: 0.296 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_1_result.txt
+
+  [2/100] kernel_output/25/kernel_25_10.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.252 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_10_result.txt
+
+  [3/100] kernel_output/25/kernel_25_100.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.124 s | Tested: 984768 minors | Zero minors: 1
+    [Zero #1] size=4  dev=2  s=12  t=124.30 ms  minors_tested=984768
+      Rows [4]: 8 12 13 24
+      Cols [4]: 12 13 17 19
+      -> Results_brahma_2/25/deviation_2/kernel_25_100_result.txt
+
+  [4/100] kernel_output/25/kernel_25_11.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.144 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_11_result.txt
+
+  [5/100] kernel_output/25/kernel_25_12.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.026 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_12_result.txt
+
+  [6/100] kernel_output/25/kernel_25_13.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.053 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_13_result.txt
+
+  [7/100] kernel_output/25/kernel_25_14.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.071 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_14_result.txt
+
+  [8/100] kernel_output/25/kernel_25_15.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.242 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_15_result.txt
+
+  [9/100] kernel_output/25/kernel_25_16.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.255 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_16_result.txt
+
+  [10/100] kernel_output/25/kernel_25_17.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.247 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_17_result.txt
+
+  [11/100] kernel_output/25/kernel_25_18.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.008 s | Tested: 527712 minors | Zero minors: 1
+    [Zero #1] size=4  dev=2  s=6  t=7.79 ms  minors_tested=527712
+      Rows [4]: 5 6 7 23
+      Cols [4]: 6 7 12 22
+      -> Results_brahma_2/25/deviation_2/kernel_25_18_result.txt
+
+  [12/100] kernel_output/25/kernel_25_19.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.024 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_19_result.txt
+
+  [13/100] kernel_output/25/kernel_25_2.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.023 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_2_result.txt
+
+  [14/100] kernel_output/25/kernel_25_20.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.021 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_20_result.txt
+
+  [15/100] kernel_output/25/kernel_25_21.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.028 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_21_result.txt
+
+  [16/100] kernel_output/25/kernel_25_22.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.027 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_22_result.txt
+
+  [17/100] kernel_output/25/kernel_25_23.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.046 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_23_result.txt
+
+  [18/100] kernel_output/25/kernel_25_24.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.244 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_24_result.txt
+
+  [19/100] kernel_output/25/kernel_25_25.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.248 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_25_result.txt
+
+  [20/100] kernel_output/25/kernel_25_26.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.250 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_26_result.txt
+
+  [21/100] kernel_output/25/kernel_25_27.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.038 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_27_result.txt
+
+  [22/100] kernel_output/25/kernel_25_28.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.028 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_28_result.txt
+
+  [23/100] kernel_output/25/kernel_25_29.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.023 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_29_result.txt
+
+  [24/100] kernel_output/25/kernel_25_3.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.025 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_3_result.txt
+
+  [25/100] kernel_output/25/kernel_25_30.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.027 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_30_result.txt
+
+  [26/100] kernel_output/25/kernel_25_31.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.023 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_31_result.txt
+
+  [27/100] kernel_output/25/kernel_25_32.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.065 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_32_result.txt
+
+  [28/100] kernel_output/25/kernel_25_33.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.248 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_33_result.txt
+
+  [29/100] kernel_output/25/kernel_25_34.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.258 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_34_result.txt
+
+  [30/100] kernel_output/25/kernel_25_35.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.204 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_35_result.txt
+
+  [31/100] kernel_output/25/kernel_25_36.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.042 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_36_result.txt
+
+  [32/100] kernel_output/25/kernel_25_37.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.025 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_37_result.txt
+
+  [33/100] kernel_output/25/kernel_25_38.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.024 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_38_result.txt
+
+  [34/100] kernel_output/25/kernel_25_39.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.032 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_39_result.txt
+
+  [35/100] kernel_output/25/kernel_25_4.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.022 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_4_result.txt
+
+  [36/100] kernel_output/25/kernel_25_40.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.021 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_40_result.txt
+
+  [37/100] kernel_output/25/kernel_25_41.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.195 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_41_result.txt
+
+  [38/100] kernel_output/25/kernel_25_42.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.252 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_42_result.txt
+
+  [39/100] kernel_output/25/kernel_25_43.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.255 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_43_result.txt
+
+  [40/100] kernel_output/25/kernel_25_44.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.069 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_44_result.txt
+
+  [41/100] kernel_output/25/kernel_25_45.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.027 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_45_result.txt
+
+  [42/100] kernel_output/25/kernel_25_46.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.027 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_46_result.txt
+
+  [43/100] kernel_output/25/kernel_25_47.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.026 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_47_result.txt
+
+  [44/100] kernel_output/25/kernel_25_48.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.027 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_48_result.txt
+
+  [45/100] kernel_output/25/kernel_25_49.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.027 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_49_result.txt
+
+  [46/100] kernel_output/25/kernel_25_5.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.025 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_5_result.txt
+
+  [47/100] kernel_output/25/kernel_25_50.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.055 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_50_result.txt
+
+  [48/100] kernel_output/25/kernel_25_51.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.248 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_51_result.txt
+
+  [49/100] kernel_output/25/kernel_25_52.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.256 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_52_result.txt
+
+  [50/100] kernel_output/25/kernel_25_53.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.213 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_53_result.txt
+
+  [51/100] kernel_output/25/kernel_25_54.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.025 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_54_result.txt
+
+  [52/100] kernel_output/25/kernel_25_55.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.029 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_55_result.txt
+
+  [53/100] kernel_output/25/kernel_25_56.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.025 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_56_result.txt
+
+  [54/100] kernel_output/25/kernel_25_57.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.025 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_57_result.txt
+
+  [55/100] kernel_output/25/kernel_25_58.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.027 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_58_result.txt
+
+  [56/100] kernel_output/25/kernel_25_59.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.027 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_59_result.txt
+
+  [57/100] kernel_output/25/kernel_25_6.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.201 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_6_result.txt
+
+  [58/100] kernel_output/25/kernel_25_60.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.248 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_60_result.txt
+
+  [59/100] kernel_output/25/kernel_25_61.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.254 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_61_result.txt
+
+  [60/100] kernel_output/25/kernel_25_62.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.069 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_62_result.txt
+
+  [61/100] kernel_output/25/kernel_25_63.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.027 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_63_result.txt
+
+  [62/100] kernel_output/25/kernel_25_64.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.028 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_64_result.txt
+
+  [63/100] kernel_output/25/kernel_25_65.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.027 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_65_result.txt
+
+  [64/100] kernel_output/25/kernel_25_66.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.033 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_66_result.txt
+
+  [65/100] kernel_output/25/kernel_25_67.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.028 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_67_result.txt
+
+  [66/100] kernel_output/25/kernel_25_68.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.061 s | Tested: 1060944 minors | Zero minors: 1
+    [Zero #1] size=4  dev=2  s=13  t=61.27 ms  minors_tested=1060944
+      Rows [4]: 4 13 14 24
+      Cols [4]: 8 12 13 14
+      -> Results_brahma_2/25/deviation_2/kernel_25_68_result.txt
+
+  [67/100] kernel_output/25/kernel_25_69.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.246 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_69_result.txt
+
+  [68/100] kernel_output/25/kernel_25_7.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.251 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_7_result.txt
+
+  [69/100] kernel_output/25/kernel_25_70.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.198 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_70_result.txt
+
+  [70/100] kernel_output/25/kernel_25_71.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.031 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_71_result.txt
+
+  [71/100] kernel_output/25/kernel_25_72.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.026 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_72_result.txt
+
+  [72/100] kernel_output/25/kernel_25_73.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.026 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_73_result.txt
+
+  [73/100] kernel_output/25/kernel_25_74.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.027 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_74_result.txt
+
+  [74/100] kernel_output/25/kernel_25_75.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.028 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_75_result.txt
+
+  [75/100] kernel_output/25/kernel_25_76.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.027 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_76_result.txt
+
+  [76/100] kernel_output/25/kernel_25_77.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.172 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_77_result.txt
+
+  [77/100] kernel_output/25/kernel_25_78.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.248 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_78_result.txt
+
+  [78/100] kernel_output/25/kernel_25_79.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.256 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_79_result.txt
+
+  [79/100] kernel_output/25/kernel_25_8.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.093 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_8_result.txt
+
+  [80/100] kernel_output/25/kernel_25_80.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.024 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_80_result.txt
+
+  [81/100] kernel_output/25/kernel_25_81.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.023 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_81_result.txt
+
+  [82/100] kernel_output/25/kernel_25_82.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.023 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_82_result.txt
+
+  [83/100] kernel_output/25/kernel_25_83.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.024 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_83_result.txt
+
+  [84/100] kernel_output/25/kernel_25_84.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.019 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_84_result.txt
+
+  [85/100] kernel_output/25/kernel_25_85.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.020 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_85_result.txt
+
+  [86/100] kernel_output/25/kernel_25_86.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.021 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_86_result.txt
+
+  [87/100] kernel_output/25/kernel_25_87.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.227 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_87_result.txt
+
+  [88/100] kernel_output/25/kernel_25_88.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.076 s | Tested: 603888 minors | Zero minors: 1
+    [Zero #1] size=4  dev=2  s=7  t=75.54 ms  minors_tested=603888
+      Rows [4]: 7 8 12 23
+      Cols [4]: 7 8 12 21
+      -> Results_brahma_2/25/deviation_2/kernel_25_88_result.txt
+
+  [89/100] kernel_output/25/kernel_25_89.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.247 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_89_result.txt
+
+  [90/100] kernel_output/25/kernel_25_9.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.204 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_9_result.txt
+
+  [91/100] kernel_output/25/kernel_25_90.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.026 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_90_result.txt
+
+  [92/100] kernel_output/25/kernel_25_91.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.029 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_91_result.txt
+
+  [93/100] kernel_output/25/kernel_25_92.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.026 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_92_result.txt
+
+  [94/100] kernel_output/25/kernel_25_93.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.023 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_93_result.txt
+
+  [95/100] kernel_output/25/kernel_25_94.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.020 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_94_result.txt
+
+  [96/100] kernel_output/25/kernel_25_95.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.020 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_95_result.txt
+
+  [97/100] kernel_output/25/kernel_25_96.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.014 s | Tested: 1365648 minors | Zero minors: 1
+    [Zero #1] size=4  dev=2  s=17  t=14.34 ms  minors_tested=1365648
+      Rows [4]: 10 16 17 18
+      Cols [4]: 1 14 17 18
+      -> Results_brahma_2/25/deviation_2/kernel_25_96_result.txt
+
+  [98/100] kernel_output/25/kernel_25_97.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.191 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_97_result.txt
+
+  [99/100] kernel_output/25/kernel_25_98.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.256 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_98_result.txt
+
+  [100/100] kernel_output/25/kernel_25_99.txt
+    Searching for first zero minor at dev=2 ...
+    Time: 0.249 s | Tested: 1904400 minors | Zero minors: 0
+    -> No zero minor at deviation 2
+      -> Results_brahma_2/25/deviation_2/kernel_25_99_result.txt
+  Summary (detailed) -> Results_brahma_2/25/deviation_2/SUMMARY_detailed.txt
+  Summary (brief)    -> Results_brahma_2/25/deviation_2/SUMMARY_brief.txt
+
+  -- group=25  dev=2 complete --
+  Time           : 9.996 s
+  Matrices       : 100
+  Minors tested  : 185460960
+  Zero minors    : 5
+  Matrices hit   : 5 / 100
+  [group=25  dev=2 done]  hits=5/100
+
+  ===============================================================
+  [group=25 | dev=3/23]  minor=5x5
+  ===============================================================
+    [GPU VRAM] Total: 8156 MB | Free: 3430 MB | Usable (90%): 3087 MB
+    [GPU] Allocating: rows=2024  col_chunk=1024  flags=2072576 (8.3 MB)  matrix=26x26
+
+  +----------------------------------------------------------+
+  |  Group 25  |  Deviation 3  |  100 matrices
+  |  Input : kernel_output/25/  (prefix: kernel_25_)
+  |  Output: Results_brahma_2/25/deviation_3
+  |  Prime : 33554393
+  |  Minor : 5x5
+  +----------------------------------------------------------+
+
+  [1/100] kernel_output/25/kernel_25_1.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.206 s | Tested: 26652032 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=6  t=206.28 ms  minors_tested=26652032
+      Rows [5]: 1 6 7 17 22
+      Cols [5]: 3 6 7 14 19
+      -> Results_brahma_2/25/deviation_3/kernel_25_1_result.txt
+
+  [2/100] kernel_output/25/kernel_25_10.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.422 s | Tested: 43038336 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=10  t=422.02 ms  minors_tested=43038336
+      Rows [5]: 5 10 11 18 20
+      Cols [5]: 3 10 11 14 15
+      -> Results_brahma_2/25/deviation_3/kernel_25_10_result.txt
+
+  [3/100] kernel_output/25/kernel_25_100.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.295 s | Tested: 26652032 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=6  t=294.68 ms  minors_tested=26652032
+      Rows [5]: 2 6 7 10 20
+      Cols [5]: 0 6 7 15 18
+      -> Results_brahma_2/25/deviation_3/kernel_25_100_result.txt
+
+  [4/100] kernel_output/25/kernel_25_11.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.116 s | Tested: 10265728 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=2  t=115.63 ms  minors_tested=10265728
+      Rows [5]: 2 3 8 10 11
+      Cols [5]: 2 3 4 16 24
+      -> Results_brahma_2/25/deviation_3/kernel_25_11_result.txt
+
+  [5/100] kernel_output/25/kernel_25_12.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.068 s | Tested: 6169152 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=1  t=68.02 ms  minors_tested=6169152
+      Rows [5]: 1 2 3 8 18
+      Cols [5]: 1 2 5 21 24
+      -> Results_brahma_2/25/deviation_3/kernel_25_12_result.txt
+
+  [6/100] kernel_output/25/kernel_25_13.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.331 s | Tested: 30748608 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=7  t=331.24 ms  minors_tested=30748608
+      Rows [5]: 1 2 4 7 8
+      Cols [5]: 1 7 8 12 21
+      -> Results_brahma_2/25/deviation_3/kernel_25_13_result.txt
+
+  [7/100] kernel_output/25/kernel_25_14.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.222 s | Tested: 32772608 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=7  t=222.04 ms  minors_tested=32772608
+      Rows [5]: 1 5 7 8 14
+      Cols [5]: 5 7 8 16 19
+      -> Results_brahma_2/25/deviation_3/kernel_25_14_result.txt
+
+  [8/100] kernel_output/25/kernel_25_15.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.482 s | Tested: 43038336 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=10  t=481.55 ms  minors_tested=43038336
+      Rows [5]: 2 4 10 11 20
+      Cols [5]: 2 10 11 24 25
+      -> Results_brahma_2/25/deviation_3/kernel_25_15_result.txt
+
+  [9/100] kernel_output/25/kernel_25_16.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.097 s | Tested: 8193152 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=1  t=97.23 ms  minors_tested=8193152
+      Rows [5]: 1 2 4 19 25
+      Cols [5]: 1 2 13 21 24
+      -> Results_brahma_2/25/deviation_3/kernel_25_16_result.txt
+
+  [10/100] kernel_output/25/kernel_25_17.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.597 s | Tested: 59424640 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=14  t=596.93 ms  minors_tested=59424640
+      Rows [5]: 4 10 14 15 18
+      Cols [5]: 1 9 14 15 22
+      -> Results_brahma_2/25/deviation_3/kernel_25_17_result.txt
+
+  [11/100] kernel_output/25/kernel_25_18.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.096 s | Tested: 16386304 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=3  t=95.73 ms  minors_tested=16386304
+      Rows [5]: 3 4 7 13 15
+      Cols [5]: 3 4 8 9 15
+      -> Results_brahma_2/25/deviation_3/kernel_25_18_result.txt
+
+  [12/100] kernel_output/25/kernel_25_19.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.410 s | Tested: 38941760 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=9  t=410.50 ms  minors_tested=38941760
+      Rows [5]: 0 2 9 10 13
+      Cols [5]: 3 9 10 16 17
+      -> Results_brahma_2/25/deviation_3/kernel_25_19_result.txt
+
+  [13/100] kernel_output/25/kernel_25_2.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.114 s | Tested: 10265728 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=2  t=113.69 ms  minors_tested=10265728
+      Rows [5]: 1 2 3 6 14
+      Cols [5]: 2 3 4 16 21
+      -> Results_brahma_2/25/deviation_3/kernel_25_2_result.txt
+
+  [14/100] kernel_output/25/kernel_25_20.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.026 s | Tested: 2072576 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=0  t=25.56 ms  minors_tested=2072576
+      Rows [5]: 0 1 4 7 21
+      Cols [5]: 0 1 2 12 23
+      -> Results_brahma_2/25/deviation_3/kernel_25_20_result.txt
+
+  [15/100] kernel_output/25/kernel_25_21.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.894 s | Tested: 96293824 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=23  t=894.19 ms  minors_tested=96293824
+      Rows [5]: 4 8 19 23 24
+      Cols [5]: 4 12 19 23 24
+      -> Results_brahma_2/25/deviation_3/kernel_25_21_result.txt
+
+  [16/100] kernel_output/25/kernel_25_22.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.047 s | Tested: 4096576 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=0  t=46.79 ms  minors_tested=4096576
+      Rows [5]: 0 1 5 6 19
+      Cols [5]: 0 1 11 15 23
+      -> Results_brahma_2/25/deviation_3/kernel_25_22_result.txt
+
+  [17/100] kernel_output/25/kernel_25_23.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 1.053 s | Tested: 94221248 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=22  t=1052.90 ms  minors_tested=94221248
+      Rows [5]: 4 7 9 22 23
+      Cols [5]: 6 8 20 22 23
+      -> Results_brahma_2/25/deviation_3/kernel_25_23_result.txt
+
+  [18/100] kernel_output/25/kernel_25_24.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.187 s | Tested: 30748608 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=7  t=187.09 ms  minors_tested=30748608
+      Rows [5]: 0 6 7 8 14
+      Cols [5]: 0 7 8 11 22
+      -> Results_brahma_2/25/deviation_3/kernel_25_24_result.txt
+
+  [19/100] kernel_output/25/kernel_25_25.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.640 s | Tested: 59424640 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=14  t=640.13 ms  minors_tested=59424640
+      Rows [5]: 5 14 15 18 19
+      Cols [5]: 1 11 14 15 16
+      -> Results_brahma_2/25/deviation_3/kernel_25_25_result.txt
+
+  [20/100] kernel_output/25/kernel_25_26.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.115 s | Tested: 10265728 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=2  t=115.42 ms  minors_tested=10265728
+      Rows [5]: 2 3 18 20 25
+      Cols [5]: 2 3 4 5 9
+      -> Results_brahma_2/25/deviation_3/kernel_25_26_result.txt
+
+  [21/100] kernel_output/25/kernel_25_27.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.164 s | Tested: 14362304 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=3  t=164.25 ms  minors_tested=14362304
+      Rows [5]: 3 4 5 12 21
+      Cols [5]: 2 3 4 9 23
+      -> Results_brahma_2/25/deviation_3/kernel_25_27_result.txt
+
+  [22/100] kernel_output/25/kernel_25_28.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.323 s | Tested: 34845184 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=8  t=322.59 ms  minors_tested=34845184
+      Rows [5]: 4 8 9 22 24
+      Cols [5]: 3 4 8 9 15
+      -> Results_brahma_2/25/deviation_3/kernel_25_28_result.txt
+
+  [23/100] kernel_output/25/kernel_25_29.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.037 s | Tested: 6169152 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=1  t=36.55 ms  minors_tested=6169152
+      Rows [5]: 1 2 7 8 23
+      Cols [5]: 0 1 2 15 24
+      -> Results_brahma_2/25/deviation_3/kernel_25_29_result.txt
+
+  [24/100] kernel_output/25/kernel_25_3.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.255 s | Tested: 30748608 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=7  t=254.85 ms  minors_tested=30748608
+      Rows [5]: 7 8 17 23 25
+      Cols [5]: 0 6 7 8 21
+      -> Results_brahma_2/25/deviation_3/kernel_25_3_result.txt
+
+  [25/100] kernel_output/25/kernel_25_30.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.202 s | Tested: 20482880 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=4  t=201.92 ms  minors_tested=20482880
+      Rows [5]: 4 5 15 17 19
+      Cols [5]: 4 5 7 20 25
+      -> Results_brahma_2/25/deviation_3/kernel_25_30_result.txt
+
+  [26/100] kernel_output/25/kernel_25_31.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.778 s | Tested: 73738368 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=17  t=777.53 ms  minors_tested=73738368
+      Rows [5]: 6 14 17 18 22
+      Cols [5]: 6 16 17 18 23
+      -> Results_brahma_2/25/deviation_3/kernel_25_31_result.txt
+
+  [27/100] kernel_output/25/kernel_25_32.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.331 s | Tested: 30748608 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=7  t=330.62 ms  minors_tested=30748608
+      Rows [5]: 7 8 16 20 24
+      Cols [5]: 4 7 8 10 18
+      -> Results_brahma_2/25/deviation_3/kernel_25_32_result.txt
+
+  [28/100] kernel_output/25/kernel_25_33.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.222 s | Tested: 28676032 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=6  t=221.97 ms  minors_tested=28676032
+      Rows [5]: 5 6 7 12 17
+      Cols [5]: 6 7 10 11 12
+      -> Results_brahma_2/25/deviation_3/kernel_25_33_result.txt
+
+  [29/100] kernel_output/25/kernel_25_34.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.325 s | Tested: 34845184 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=8  t=325.06 ms  minors_tested=34845184
+      Rows [5]: 0 8 9 13 22
+      Cols [5]: 2 8 9 19 21
+      -> Results_brahma_2/25/deviation_3/kernel_25_34_result.txt
+
+  [30/100] kernel_output/25/kernel_25_35.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.168 s | Tested: 14362304 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=3  t=167.95 ms  minors_tested=14362304
+      Rows [5]: 0 2 3 4 17
+      Cols [5]: 3 4 5 8 23
+      -> Results_brahma_2/25/deviation_3/kernel_25_35_result.txt
+
+  [31/100] kernel_output/25/kernel_25_36.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.402 s | Tested: 36869184 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=8  t=402.17 ms  minors_tested=36869184
+      Rows [5]: 8 9 10 18 24
+      Cols [5]: 8 9 12 19 21
+      -> Results_brahma_2/25/deviation_3/kernel_25_36_result.txt
+
+  [32/100] kernel_output/25/kernel_25_37.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.483 s | Tested: 55328064 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=13  t=482.67 ms  minors_tested=55328064
+      Rows [5]: 1 13 14 16 20
+      Cols [5]: 3 6 13 14 18
+      -> Results_brahma_2/25/deviation_3/kernel_25_37_result.txt
+
+  [33/100] kernel_output/25/kernel_25_38.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.110 s | Tested: 14362304 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=3  t=110.13 ms  minors_tested=14362304
+      Rows [5]: 3 4 5 11 17
+      Cols [5]: 3 4 5 15 22
+      -> Results_brahma_2/25/deviation_3/kernel_25_38_result.txt
+
+  [34/100] kernel_output/25/kernel_25_39.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.158 s | Tested: 14362304 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=3  t=157.78 ms  minors_tested=14362304
+      Rows [5]: 3 4 22 24 25
+      Cols [5]: 1 2 3 4 5
+      -> Results_brahma_2/25/deviation_3/kernel_25_39_result.txt
+
+  [35/100] kernel_output/25/kernel_25_4.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.179 s | Tested: 16386304 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=3  t=179.08 ms  minors_tested=16386304
+      Rows [5]: 0 3 4 9 25
+      Cols [5]: 3 4 7 17 21
+      -> Results_brahma_2/25/deviation_3/kernel_25_4_result.txt
+
+  [36/100] kernel_output/25/kernel_25_40.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.047 s | Tested: 4096576 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=0  t=46.98 ms  minors_tested=4096576
+      Rows [5]: 0 1 14 20 22
+      Cols [5]: 0 1 16 22 24
+      -> Results_brahma_2/25/deviation_3/kernel_25_40_result.txt
+
+  [37/100] kernel_output/25/kernel_25_41.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.026 s | Tested: 2072576 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=0  t=26.02 ms  minors_tested=2072576
+      Rows [5]: 0 1 14 23 25
+      Cols [5]: 0 1 4 7 8
+      -> Results_brahma_2/25/deviation_3/kernel_25_41_result.txt
+
+  [38/100] kernel_output/25/kernel_25_42.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.677 s | Tested: 61448640 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=14  t=676.92 ms  minors_tested=61448640
+      Rows [5]: 5 10 14 15 17
+      Cols [5]: 5 12 14 15 23
+      -> Results_brahma_2/25/deviation_3/kernel_25_42_result.txt
+
+  [39/100] kernel_output/25/kernel_25_43.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.429 s | Tested: 53255488 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=12  t=429.25 ms  minors_tested=53255488
+      Rows [5]: 9 11 12 13 18
+      Cols [5]: 12 13 14 19 25
+      -> Results_brahma_2/25/deviation_3/kernel_25_43_result.txt
+
+  [40/100] kernel_output/25/kernel_25_44.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.026 s | Tested: 2072576 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=0  t=26.05 ms  minors_tested=2072576
+      Rows [5]: 0 1 15 20 24
+      Cols [5]: 0 1 3 9 16
+      -> Results_brahma_2/25/deviation_3/kernel_25_44_result.txt
+
+  [41/100] kernel_output/25/kernel_25_45.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.198 s | Tested: 18458880 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=4  t=198.16 ms  minors_tested=18458880
+      Rows [5]: 3 4 5 11 23
+      Cols [5]: 0 1 4 5 10
+      -> Results_brahma_2/25/deviation_3/kernel_25_45_result.txt
+
+  [42/100] kernel_output/25/kernel_25_46.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.134 s | Tested: 12289728 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=2  t=134.06 ms  minors_tested=12289728
+      Rows [5]: 2 3 10 15 18
+      Cols [5]: 2 3 9 17 20
+      -> Results_brahma_2/25/deviation_3/kernel_25_46_result.txt
+
+  [43/100] kernel_output/25/kernel_25_47.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.089 s | Tested: 8193152 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=1  t=88.66 ms  minors_tested=8193152
+      Rows [5]: 1 2 5 6 15
+      Cols [5]: 1 2 9 13 17
+      -> Results_brahma_2/25/deviation_3/kernel_25_47_result.txt
+
+  [44/100] kernel_output/25/kernel_25_48.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.973 s | Tested: 98317824 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=23  t=973.19 ms  minors_tested=98317824
+      Rows [5]: 4 10 11 23 24
+      Cols [5]: 7 10 20 23 24
+      -> Results_brahma_2/25/deviation_3/kernel_25_48_result.txt
+
+  [45/100] kernel_output/25/kernel_25_49.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.119 s | Tested: 10265728 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=2  t=118.54 ms  minors_tested=10265728
+      Rows [5]: 2 3 9 12 23
+      Cols [5]: 1 2 3 9 23
+      -> Results_brahma_2/25/deviation_3/kernel_25_49_result.txt
+
+  [46/100] kernel_output/25/kernel_25_5.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.137 s | Tested: 12289728 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=2  t=137.40 ms  minors_tested=12289728
+      Rows [5]: 1 2 3 21 24
+      Cols [5]: 2 3 8 17 18
+      -> Results_brahma_2/25/deviation_3/kernel_25_5_result.txt
+
+  [47/100] kernel_output/25/kernel_25_50.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.560 s | Tested: 51231488 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=12  t=559.96 ms  minors_tested=51231488
+      Rows [5]: 6 12 13 20 25
+      Cols [5]: 4 11 12 13 17
+      -> Results_brahma_2/25/deviation_3/kernel_25_50_result.txt
+
+  [48/100] kernel_output/25/kernel_25_51.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.470 s | Tested: 55328064 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=13  t=469.65 ms  minors_tested=55328064
+      Rows [5]: 3 6 13 14 22
+      Cols [5]: 1 6 13 14 18
+      -> Results_brahma_2/25/deviation_3/kernel_25_51_result.txt
+
+  [49/100] kernel_output/25/kernel_25_52.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.115 s | Tested: 10265728 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=2  t=114.97 ms  minors_tested=10265728
+      Rows [5]: 0 2 3 11 13
+      Cols [5]: 1 2 3 12 24
+      -> Results_brahma_2/25/deviation_3/kernel_25_52_result.txt
+
+  [50/100] kernel_output/25/kernel_25_53.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.114 s | Tested: 10265728 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=2  t=114.25 ms  minors_tested=10265728
+      Rows [5]: 2 3 21 22 25
+      Cols [5]: 2 3 6 13 22
+      -> Results_brahma_2/25/deviation_3/kernel_25_53_result.txt
+
+  [51/100] kernel_output/25/kernel_25_54.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.386 s | Tested: 34845184 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=8  t=386.02 ms  minors_tested=34845184
+      Rows [5]: 6 7 8 9 18
+      Cols [5]: 0 8 9 10 22
+      -> Results_brahma_2/25/deviation_3/kernel_25_54_result.txt
+
+  [52/100] kernel_output/25/kernel_25_55.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.709 s | Tested: 77834944 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=18  t=708.53 ms  minors_tested=77834944
+      Rows [5]: 14 15 18 19 24
+      Cols [5]: 7 18 19 22 25
+      -> Results_brahma_2/25/deviation_3/kernel_25_55_result.txt
+
+  [53/100] kernel_output/25/kernel_25_56.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.097 s | Tested: 8193152 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=1  t=97.40 ms  minors_tested=8193152
+      Rows [5]: 0 1 2 4 19
+      Cols [5]: 1 2 8 11 21
+      -> Results_brahma_2/25/deviation_3/kernel_25_56_result.txt
+
+  [54/100] kernel_output/25/kernel_25_57.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.134 s | Tested: 12289728 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=2  t=133.58 ms  minors_tested=12289728
+      Rows [5]: 2 3 4 6 25
+      Cols [5]: 2 3 7 17 18
+      -> Results_brahma_2/25/deviation_3/kernel_25_57_result.txt
+
+  [55/100] kernel_output/25/kernel_25_58.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.890 s | Tested: 92197248 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=22  t=890.32 ms  minors_tested=92197248
+      Rows [5]: 10 18 22 23 25
+      Cols [5]: 3 4 18 22 23
+      -> Results_brahma_2/25/deviation_3/kernel_25_58_result.txt
+
+  [56/100] kernel_output/25/kernel_25_59.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.047 s | Tested: 4096576 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=0  t=46.92 ms  minors_tested=4096576
+      Rows [5]: 0 1 13 16 17
+      Cols [5]: 0 1 16 18 24
+      -> Results_brahma_2/25/deviation_3/kernel_25_59_result.txt
+
+  [57/100] kernel_output/25/kernel_25_6.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.025 s | Tested: 2072576 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=0  t=25.49 ms  minors_tested=2072576
+      Rows [5]: 0 1 5 13 21
+      Cols [5]: 0 1 5 17 24
+      -> Results_brahma_2/25/deviation_3/kernel_25_6_result.txt
+
+  [58/100] kernel_output/25/kernel_25_60.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.359 s | Tested: 32772608 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=7  t=358.63 ms  minors_tested=32772608
+      Rows [5]: 0 7 8 17 22
+      Cols [5]: 7 8 11 13 16
+      -> Results_brahma_2/25/deviation_3/kernel_25_60_result.txt
+
+  [59/100] kernel_output/25/kernel_25_61.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.270 s | Tested: 24579456 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=5  t=270.40 ms  minors_tested=24579456
+      Rows [5]: 5 6 9 18 22
+      Cols [5]: 5 6 14 21 22
+      -> Results_brahma_2/25/deviation_3/kernel_25_61_result.txt
+
+  [60/100] kernel_output/25/kernel_25_62.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.156 s | Tested: 14362304 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=3  t=156.29 ms  minors_tested=14362304
+      Rows [5]: 3 4 18 20 25
+      Cols [5]: 3 4 5 10 11
+      -> Results_brahma_2/25/deviation_3/kernel_25_62_result.txt
+
+  [61/100] kernel_output/25/kernel_25_63.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.219 s | Tested: 20482880 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=4  t=219.45 ms  minors_tested=20482880
+      Rows [5]: 3 4 5 9 10
+      Cols [5]: 4 5 11 12 24
+      -> Results_brahma_2/25/deviation_3/kernel_25_63_result.txt
+
+  [62/100] kernel_output/25/kernel_25_64.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.230 s | Tested: 32772608 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=7  t=229.51 ms  minors_tested=32772608
+      Rows [5]: 4 7 8 18 23
+      Cols [5]: 7 8 10 15 25
+      -> Results_brahma_2/25/deviation_3/kernel_25_64_result.txt
+
+  [63/100] kernel_output/25/kernel_25_65.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.362 s | Tested: 32772608 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=7  t=362.07 ms  minors_tested=32772608
+      Rows [5]: 4 7 8 20 25
+      Cols [5]: 7 8 11 17 20
+      -> Results_brahma_2/25/deviation_3/kernel_25_65_result.txt
+
+  [64/100] kernel_output/25/kernel_25_66.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.181 s | Tested: 16386304 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=3  t=180.77 ms  minors_tested=16386304
+      Rows [5]: 3 4 5 17 24
+      Cols [5]: 3 4 8 13 17
+      -> Results_brahma_2/25/deviation_3/kernel_25_66_result.txt
+
+  [65/100] kernel_output/25/kernel_25_67.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.157 s | Tested: 14362304 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=3  t=156.97 ms  minors_tested=14362304
+      Rows [5]: 0 3 4 16 18
+      Cols [5]: 2 3 4 7 25
+      -> Results_brahma_2/25/deviation_3/kernel_25_67_result.txt
+
+  [66/100] kernel_output/25/kernel_25_68.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.157 s | Tested: 14362304 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=3  t=156.63 ms  minors_tested=14362304
+      Rows [5]: 3 4 5 19 23
+      Cols [5]: 2 3 4 6 19
+      -> Results_brahma_2/25/deviation_3/kernel_25_68_result.txt
+
+  [67/100] kernel_output/25/kernel_25_69.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.230 s | Tested: 20482880 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=4  t=230.50 ms  minors_tested=20482880
+      Rows [5]: 4 5 11 14 23
+      Cols [5]: 4 5 14 22 24
+      -> Results_brahma_2/25/deviation_3/kernel_25_69_result.txt
+
+  [68/100] kernel_output/25/kernel_25_7.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.455 s | Tested: 75810944 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=18  t=454.66 ms  minors_tested=75810944
+      Rows [5]: 14 16 18 19 23
+      Cols [5]: 4 7 13 18 19
+      -> Results_brahma_2/25/deviation_3/kernel_25_7_result.txt
+
+  [69/100] kernel_output/25/kernel_25_70.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.080 s | Tested: 14362304 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=3  t=79.96 ms  minors_tested=14362304
+      Rows [5]: 1 2 3 4 18
+      Cols [5]: 0 3 4 8 14
+      -> Results_brahma_2/25/deviation_3/kernel_25_70_result.txt
+
+  [70/100] kernel_output/25/kernel_25_71.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.348 s | Tested: 59424640 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=14  t=347.83 ms  minors_tested=59424640
+      Rows [5]: 1 14 15 19 21
+      Cols [5]: 0 2 12 14 15
+      -> Results_brahma_2/25/deviation_3/kernel_25_71_result.txt
+
+  [71/100] kernel_output/25/kernel_25_72.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.481 s | Tested: 73738368 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=17  t=481.11 ms  minors_tested=73738368
+      Rows [5]: 6 12 13 17 18
+      Cols [5]: 6 8 16 17 18
+      -> Results_brahma_2/25/deviation_3/kernel_25_72_result.txt
+
+  [72/100] kernel_output/25/kernel_25_73.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.166 s | Tested: 22555456 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=5  t=165.95 ms  minors_tested=22555456
+      Rows [5]: 5 6 11 13 19
+      Cols [5]: 3 5 6 8 21
+      -> Results_brahma_2/25/deviation_3/kernel_25_73_result.txt
+
+  [73/100] kernel_output/25/kernel_25_74.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.087 s | Tested: 12289728 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=2  t=87.41 ms  minors_tested=12289728
+      Rows [5]: 2 3 7 14 24
+      Cols [5]: 2 3 9 16 21
+      -> Results_brahma_2/25/deviation_3/kernel_25_74_result.txt
+
+  [74/100] kernel_output/25/kernel_25_75.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.298 s | Tested: 40965760 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=9  t=297.63 ms  minors_tested=40965760
+      Rows [5]: 6 8 9 10 20
+      Cols [5]: 7 9 10 17 24
+      -> Results_brahma_2/25/deviation_3/kernel_25_75_result.txt
+
+  [75/100] kernel_output/25/kernel_25_76.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.297 s | Tested: 45062336 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=10  t=296.72 ms  minors_tested=45062336
+      Rows [5]: 4 10 11 13 19
+      Cols [5]: 10 11 12 17 23
+      -> Results_brahma_2/25/deviation_3/kernel_25_76_result.txt
+
+  [76/100] kernel_output/25/kernel_25_77.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.093 s | Tested: 14362304 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=3  t=92.81 ms  minors_tested=14362304
+      Rows [5]: 3 4 8 9 20
+      Cols [5]: 3 4 5 19 20
+      -> Results_brahma_2/25/deviation_3/kernel_25_77_result.txt
+
+  [77/100] kernel_output/25/kernel_25_78.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.312 s | Tested: 47134912 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=11  t=311.67 ms  minors_tested=47134912
+      Rows [5]: 2 11 12 17 25
+      Cols [5]: 1 11 12 19 23
+      -> Results_brahma_2/25/deviation_3/kernel_25_78_result.txt
+
+  [78/100] kernel_output/25/kernel_25_79.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.027 s | Tested: 4096576 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=0  t=26.64 ms  minors_tested=4096576
+      Rows [5]: 0 1 14 15 20
+      Cols [5]: 0 1 12 18 20
+      -> Results_brahma_2/25/deviation_3/kernel_25_79_result.txt
+
+  [79/100] kernel_output/25/kernel_25_8.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.079 s | Tested: 12289728 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=2  t=78.89 ms  minors_tested=12289728
+      Rows [5]: 2 3 6 7 13
+      Cols [5]: 2 3 14 19 23
+      -> Results_brahma_2/25/deviation_3/kernel_25_8_result.txt
+
+  [80/100] kernel_output/25/kernel_25_80.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.013 s | Tested: 2072576 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=0  t=13.30 ms  minors_tested=2072576
+      Rows [5]: 0 1 10 15 19
+      Cols [5]: 0 1 4 6 17
+      -> Results_brahma_2/25/deviation_3/kernel_25_80_result.txt
+
+  [81/100] kernel_output/25/kernel_25_81.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.078 s | Tested: 12289728 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=2  t=78.37 ms  minors_tested=12289728
+      Rows [5]: 0 2 3 6 9
+      Cols [5]: 2 3 8 21 24
+      -> Results_brahma_2/25/deviation_3/kernel_25_81_result.txt
+
+  [82/100] kernel_output/25/kernel_25_82.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.324 s | Tested: 49158912 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=11  t=324.19 ms  minors_tested=49158912
+      Rows [5]: 2 11 12 13 24
+      Cols [5]: 11 12 13 24 25
+      -> Results_brahma_2/25/deviation_3/kernel_25_82_result.txt
+
+  [83/100] kernel_output/25/kernel_25_83.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.416 s | Tested: 61448640 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=14  t=415.93 ms  minors_tested=61448640
+      Rows [5]: 5 14 15 21 25
+      Cols [5]: 6 7 14 15 25
+      -> Results_brahma_2/25/deviation_3/kernel_25_83_result.txt
+
+  [84/100] kernel_output/25/kernel_25_84.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.499 s | Tested: 67617792 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=16  t=499.26 ms  minors_tested=67617792
+      Rows [5]: 0 1 3 16 17
+      Cols [5]: 0 2 16 17 21
+      -> Results_brahma_2/25/deviation_3/kernel_25_84_result.txt
+
+  [85/100] kernel_output/25/kernel_25_85.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.654 s | Tested: 92197248 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=22  t=654.17 ms  minors_tested=92197248
+      Rows [5]: 4 8 20 22 23
+      Cols [5]: 0 14 22 23 25
+      -> Results_brahma_2/25/deviation_3/kernel_25_85_result.txt
+
+  [86/100] kernel_output/25/kernel_25_86.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.014 s | Tested: 2072576 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=0  t=13.80 ms  minors_tested=2072576
+      Rows [5]: 0 1 14 18 23
+      Cols [5]: 0 1 6 16 23
+      -> Results_brahma_2/25/deviation_3/kernel_25_86_result.txt
+
+  [87/100] kernel_output/25/kernel_25_87.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.364 s | Tested: 53255488 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=12  t=363.78 ms  minors_tested=53255488
+      Rows [5]: 3 12 13 23 24
+      Cols [5]: 7 8 11 12 13
+      -> Results_brahma_2/25/deviation_3/kernel_25_87_result.txt
+
+  [88/100] kernel_output/25/kernel_25_88.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.092 s | Tested: 14362304 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=3  t=92.37 ms  minors_tested=14362304
+      Rows [5]: 1 3 4 9 23
+      Cols [5]: 0 3 4 20 25
+      -> Results_brahma_2/25/deviation_3/kernel_25_88_result.txt
+
+  [89/100] kernel_output/25/kernel_25_89.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.561 s | Tested: 84004096 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=20  t=560.93 ms  minors_tested=84004096
+      Rows [5]: 7 12 16 20 21
+      Cols [5]: 1 15 20 21 22
+      -> Results_brahma_2/25/deviation_3/kernel_25_89_result.txt
+
+  [90/100] kernel_output/25/kernel_25_9.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.095 s | Tested: 12289728 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=2  t=94.63 ms  minors_tested=12289728
+      Rows [5]: 2 3 6 18 23
+      Cols [5]: 2 3 10 18 21
+      -> Results_brahma_2/25/deviation_3/kernel_25_9_result.txt
+
+  [91/100] kernel_output/25/kernel_25_90.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.111 s | Tested: 16386304 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=3  t=111.21 ms  minors_tested=16386304
+      Rows [5]: 2 3 4 21 24
+      Cols [5]: 3 4 18 19 24
+      -> Results_brahma_2/25/deviation_3/kernel_25_90_result.txt
+
+  [92/100] kernel_output/25/kernel_25_91.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.673 s | Tested: 102414400 minors | Zero minors: 0
+    -> No zero minor at deviation 3
+      -> Results_brahma_2/25/deviation_3/kernel_25_91_result.txt
+
+  [93/100] kernel_output/25/kernel_25_92.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.414 s | Tested: 61448640 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=14  t=414.24 ms  minors_tested=61448640
+      Rows [5]: 8 10 12 14 15
+      Cols [5]: 10 11 14 15 20
+      -> Results_brahma_2/25/deviation_3/kernel_25_92_result.txt
+
+  [94/100] kernel_output/25/kernel_25_93.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.039 s | Tested: 6169152 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=1  t=39.48 ms  minors_tested=6169152
+      Rows [5]: 1 2 5 9 10
+      Cols [5]: 1 2 5 9 10
+      -> Results_brahma_2/25/deviation_3/kernel_25_93_result.txt
+
+  [95/100] kernel_output/25/kernel_25_94.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.067 s | Tested: 10265728 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=2  t=66.74 ms  minors_tested=10265728
+      Rows [5]: 2 3 13 16 21
+      Cols [5]: 1 2 3 19 21
+      -> Results_brahma_2/25/deviation_3/kernel_25_94_result.txt
+
+  [96/100] kernel_output/25/kernel_25_95.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.427 s | Tested: 65545216 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=15  t=427.19 ms  minors_tested=65545216
+      Rows [5]: 4 15 16 23 25
+      Cols [5]: 6 15 16 17 24
+      -> Results_brahma_2/25/deviation_3/kernel_25_95_result.txt
+
+  [97/100] kernel_output/25/kernel_25_96.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.110 s | Tested: 16386304 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=3  t=110.29 ms  minors_tested=16386304
+      Rows [5]: 3 4 7 13 24
+      Cols [5]: 3 4 8 9 22
+      -> Results_brahma_2/25/deviation_3/kernel_25_96_result.txt
+
+  [98/100] kernel_output/25/kernel_25_97.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.344 s | Tested: 51231488 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=12  t=344.33 ms  minors_tested=51231488
+      Rows [5]: 10 12 13 22 24
+      Cols [5]: 1 12 13 16 24
+      -> Results_brahma_2/25/deviation_3/kernel_25_97_result.txt
+
+  [99/100] kernel_output/25/kernel_25_98.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.150 s | Tested: 22555456 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=5  t=150.13 ms  minors_tested=22555456
+      Rows [5]: 4 5 6 7 22
+      Cols [5]: 1 5 6 8 22
+      -> Results_brahma_2/25/deviation_3/kernel_25_98_result.txt
+
+  [100/100] kernel_output/25/kernel_25_99.txt
+    Searching for first zero minor at dev=3 ...
+    Time: 0.040 s | Tested: 6169152 minors | Zero minors: 1
+    [Zero #1] size=5  dev=3  s=1  t=40.45 ms  minors_tested=6169152
+      Rows [5]: 1 2 3 9 23
+      Cols [5]: 1 2 5 12 19
+      -> Results_brahma_2/25/deviation_3/kernel_25_99_result.txt
+  Summary (detailed) -> Results_brahma_2/25/deviation_3/SUMMARY_detailed.txt
+  Summary (brief)    -> Results_brahma_2/25/deviation_3/SUMMARY_brief.txt
+
+  -- group=25  dev=3 complete --
+  Time           : 27.524 s
+  Matrices       : 100
+  Minors tested  : 3172109952
+  Zero minors    : 99
+  Matrices hit   : 99 / 100
+  [group=25  dev=3 done]  hits=99/100
+
+  ===============================================================
+  [group=25 | dev=4/23]  minor=6x6
+  ===============================================================
+    [GPU VRAM] Total: 8156 MB | Free: 5768 MB | Usable (90%): 5192 MB
+    [GPU] Allocating: rows=10626  col_chunk=8192  flags=87048192 (348.2 MB)  matrix=26x26
+
+  +----------------------------------------------------------+
+  |  Group 25  |  Deviation 4  |  100 matrices
+  |  Input : kernel_output/25/  (prefix: kernel_25_)
+  |  Output: Results_brahma_2/25/deviation_4
+  |  Prime : 33554393
+  |  Minor : 6x6
+  +----------------------------------------------------------+
+
+  [1/100] kernel_output/25/kernel_25_1.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.759 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=758.30 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 9 12 25
+      Cols [6]: 0 1 5 13 18 21
+      -> Results_brahma_2/25/deviation_4/kernel_25_1_result.txt
+
+  [2/100] kernel_output/25/kernel_25_10.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.876 s | Tested: 199960068 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=1  t=1875.35 ms  minors_tested=199960068
+      Rows [6]: 1 2 3 5 12 14
+      Cols [6]: 1 2 3 12 19 24
+      -> Results_brahma_2/25/deviation_4/kernel_25_10_result.txt
+
+  [3/100] kernel_output/25/kernel_25_100.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.824 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=823.36 ms  minors_tested=87048192
+      Rows [6]: 0 1 8 14 19 20
+      Cols [6]: 0 1 2 16 21 23
+      -> Results_brahma_2/25/deviation_4/kernel_25_100_result.txt
+
+  [4/100] kernel_output/25/kernel_25_11.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.816 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=815.18 ms  minors_tested=87048192
+      Rows [6]: 0 1 5 6 18 23
+      Cols [6]: 0 1 4 9 11 19
+      -> Results_brahma_2/25/deviation_4/kernel_25_11_result.txt
+
+  [5/100] kernel_output/25/kernel_25_12.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.800 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=799.38 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 8 10 25
+      Cols [6]: 0 1 3 9 16 22
+      -> Results_brahma_2/25/deviation_4/kernel_25_12_result.txt
+
+  [6/100] kernel_output/25/kernel_25_13.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.813 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=812.59 ms  minors_tested=87048192
+      Rows [6]: 0 1 5 15 20 25
+      Cols [6]: 0 1 8 9 17 19
+      -> Results_brahma_2/25/deviation_4/kernel_25_13_result.txt
+
+  [7/100] kernel_output/25/kernel_25_14.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.815 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=813.87 ms  minors_tested=87048192
+      Rows [6]: 0 1 6 9 18 21
+      Cols [6]: 0 1 5 10 16 17
+      -> Results_brahma_2/25/deviation_4/kernel_25_14_result.txt
+
+  [8/100] kernel_output/25/kernel_25_15.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.792 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=791.71 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 3 7 11
+      Cols [6]: 0 1 6 7 12 21
+      -> Results_brahma_2/25/deviation_4/kernel_25_15_result.txt
+
+  [9/100] kernel_output/25/kernel_25_16.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.827 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=825.91 ms  minors_tested=87048192
+      Rows [6]: 0 1 7 9 12 18
+      Cols [6]: 0 1 8 17 22 23
+      -> Results_brahma_2/25/deviation_4/kernel_25_16_result.txt
+
+  [10/100] kernel_output/25/kernel_25_17.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.073 s | Tested: 112911876 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1072.76 ms  minors_tested=112911876
+      Rows [6]: 0 1 7 9 14 17
+      Cols [6]: 0 1 12 14 20 21
+      -> Results_brahma_2/25/deviation_4/kernel_25_17_result.txt
+
+  [11/100] kernel_output/25/kernel_25_18.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.801 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=800.51 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 4 9 25
+      Cols [6]: 0 1 3 13 18 25
+      -> Results_brahma_2/25/deviation_4/kernel_25_18_result.txt
+
+  [12/100] kernel_output/25/kernel_25_19.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.794 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=793.51 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 7 12 14
+      Cols [6]: 0 1 7 8 9 22
+      -> Results_brahma_2/25/deviation_4/kernel_25_19_result.txt
+
+  [13/100] kernel_output/25/kernel_25_2.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.865 s | Tested: 199960068 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=1  t=1863.92 ms  minors_tested=199960068
+      Rows [6]: 0 1 2 10 11 18
+      Cols [6]: 1 2 4 8 18 24
+      -> Results_brahma_2/25/deviation_4/kernel_25_2_result.txt
+
+  [14/100] kernel_output/25/kernel_25_20.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.806 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=805.30 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 9 10 11
+      Cols [6]: 0 1 3 5 12 25
+      -> Results_brahma_2/25/deviation_4/kernel_25_20_result.txt
+
+  [15/100] kernel_output/25/kernel_25_21.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.799 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=798.14 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 3 6 22
+      Cols [6]: 0 1 7 14 22 25
+      -> Results_brahma_2/25/deviation_4/kernel_25_21_result.txt
+
+  [16/100] kernel_output/25/kernel_25_22.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.810 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=809.11 ms  minors_tested=87048192
+      Rows [6]: 0 1 3 19 22 25
+      Cols [6]: 0 1 2 17 23 25
+      -> Results_brahma_2/25/deviation_4/kernel_25_22_result.txt
+
+  [17/100] kernel_output/25/kernel_25_23.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.827 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=826.32 ms  minors_tested=87048192
+      Rows [6]: 0 1 9 15 19 23
+      Cols [6]: 0 1 6 16 20 25
+      -> Results_brahma_2/25/deviation_4/kernel_25_23_result.txt
+
+  [18/100] kernel_output/25/kernel_25_24.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.807 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=806.29 ms  minors_tested=87048192
+      Rows [6]: 0 1 3 16 18 25
+      Cols [6]: 0 1 2 9 19 23
+      -> Results_brahma_2/25/deviation_4/kernel_25_24_result.txt
+
+  [19/100] kernel_output/25/kernel_25_25.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.821 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=820.61 ms  minors_tested=87048192
+      Rows [6]: 0 1 5 6 10 15
+      Cols [6]: 0 1 2 9 19 23
+      -> Results_brahma_2/25/deviation_4/kernel_25_25_result.txt
+
+  [20/100] kernel_output/25/kernel_25_26.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.863 s | Tested: 199960068 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=1  t=1862.00 ms  minors_tested=199960068
+      Rows [6]: 0 1 2 11 12 25
+      Cols [6]: 1 2 6 7 9 17
+      -> Results_brahma_2/25/deviation_4/kernel_25_26_result.txt
+
+  [21/100] kernel_output/25/kernel_25_27.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.804 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=803.30 ms  minors_tested=87048192
+      Rows [6]: 0 1 3 12 19 23
+      Cols [6]: 0 1 3 6 9 11
+      -> Results_brahma_2/25/deviation_4/kernel_25_27_result.txt
+
+  [22/100] kernel_output/25/kernel_25_28.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.814 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=812.71 ms  minors_tested=87048192
+      Rows [6]: 0 1 6 8 13 20
+      Cols [6]: 0 1 2 6 15 20
+      -> Results_brahma_2/25/deviation_4/kernel_25_28_result.txt
+
+  [23/100] kernel_output/25/kernel_25_29.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.815 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=813.79 ms  minors_tested=87048192
+      Rows [6]: 0 1 4 7 8 22
+      Cols [6]: 0 1 2 7 11 22
+      -> Results_brahma_2/25/deviation_4/kernel_25_29_result.txt
+
+  [24/100] kernel_output/25/kernel_25_3.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.838 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=837.15 ms  minors_tested=87048192
+      Rows [6]: 0 1 16 20 21 23
+      Cols [6]: 0 1 5 9 16 21
+      -> Results_brahma_2/25/deviation_4/kernel_25_3_result.txt
+
+  [25/100] kernel_output/25/kernel_25_30.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.811 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=809.86 ms  minors_tested=87048192
+      Rows [6]: 0 1 3 13 22 25
+      Cols [6]: 0 1 3 12 13 25
+      -> Results_brahma_2/25/deviation_4/kernel_25_30_result.txt
+
+  [26/100] kernel_output/25/kernel_25_31.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.823 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=822.28 ms  minors_tested=87048192
+      Rows [6]: 0 1 9 17 20 25
+      Cols [6]: 0 1 7 18 19 25
+      -> Results_brahma_2/25/deviation_4/kernel_25_31_result.txt
+
+  [27/100] kernel_output/25/kernel_25_32.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.805 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=804.59 ms  minors_tested=87048192
+      Rows [6]: 0 1 3 6 10 11
+      Cols [6]: 0 1 3 4 6 8
+      -> Results_brahma_2/25/deviation_4/kernel_25_32_result.txt
+
+  [28/100] kernel_output/25/kernel_25_33.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.828 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=827.36 ms  minors_tested=87048192
+      Rows [6]: 0 1 7 18 22 23
+      Cols [6]: 0 1 4 6 19 21
+      -> Results_brahma_2/25/deviation_4/kernel_25_33_result.txt
+
+  [29/100] kernel_output/25/kernel_25_34.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.802 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=801.36 ms  minors_tested=87048192
+      Rows [6]: 0 1 3 6 11 13
+      Cols [6]: 0 1 8 11 13 14
+      -> Results_brahma_2/25/deviation_4/kernel_25_34_result.txt
+
+  [30/100] kernel_output/25/kernel_25_35.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.815 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=814.38 ms  minors_tested=87048192
+      Rows [6]: 0 1 4 8 9 23
+      Cols [6]: 0 1 6 8 10 11
+      -> Results_brahma_2/25/deviation_4/kernel_25_35_result.txt
+
+  [31/100] kernel_output/25/kernel_25_36.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.809 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=807.95 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 10 18 21
+      Cols [6]: 0 1 4 9 14 24
+      -> Results_brahma_2/25/deviation_4/kernel_25_36_result.txt
+
+  [32/100] kernel_output/25/kernel_25_37.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.808 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=806.76 ms  minors_tested=87048192
+      Rows [6]: 0 1 3 7 17 25
+      Cols [6]: 0 1 2 6 12 21
+      -> Results_brahma_2/25/deviation_4/kernel_25_37_result.txt
+
+  [33/100] kernel_output/25/kernel_25_38.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.805 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=803.83 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 5 14 22
+      Cols [6]: 0 1 8 12 15 18
+      -> Results_brahma_2/25/deviation_4/kernel_25_38_result.txt
+
+  [34/100] kernel_output/25/kernel_25_39.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.803 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=802.62 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 10 18 19
+      Cols [6]: 0 1 2 20 21 25
+      -> Results_brahma_2/25/deviation_4/kernel_25_39_result.txt
+
+  [35/100] kernel_output/25/kernel_25_4.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.920 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=919.16 ms  minors_tested=87048192
+      Rows [6]: 0 1 3 16 18 24
+      Cols [6]: 0 1 2 10 12 13
+      -> Results_brahma_2/25/deviation_4/kernel_25_4_result.txt
+
+  [36/100] kernel_output/25/kernel_25_40.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.940 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=938.77 ms  minors_tested=87048192
+      Rows [6]: 0 1 4 6 15 16
+      Cols [6]: 0 1 7 12 20 21
+      -> Results_brahma_2/25/deviation_4/kernel_25_40_result.txt
+
+  [37/100] kernel_output/25/kernel_25_41.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.946 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=945.57 ms  minors_tested=87048192
+      Rows [6]: 0 1 5 7 12 21
+      Cols [6]: 0 1 3 9 10 13
+      -> Results_brahma_2/25/deviation_4/kernel_25_41_result.txt
+
+  [38/100] kernel_output/25/kernel_25_42.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.932 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=931.24 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 15 16 21
+      Cols [6]: 0 1 4 7 13 20
+      -> Results_brahma_2/25/deviation_4/kernel_25_42_result.txt
+
+  [39/100] kernel_output/25/kernel_25_43.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.935 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=933.77 ms  minors_tested=87048192
+      Rows [6]: 0 1 3 7 15 19
+      Cols [6]: 0 1 2 5 10 12
+      -> Results_brahma_2/25/deviation_4/kernel_25_43_result.txt
+
+  [40/100] kernel_output/25/kernel_25_44.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 0.927 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=926.27 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 7 15 17
+      Cols [6]: 0 1 8 9 15 17
+      -> Results_brahma_2/25/deviation_4/kernel_25_44_result.txt
+
+  [41/100] kernel_output/25/kernel_25_45.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.363 s | Tested: 112911876 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1362.52 ms  minors_tested=112911876
+      Rows [6]: 0 1 8 18 24 25
+      Cols [6]: 0 1 13 17 22 25
+      -> Results_brahma_2/25/deviation_4/kernel_25_45_result.txt
+
+  [42/100] kernel_output/25/kernel_25_46.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.427 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1425.82 ms  minors_tested=87048192
+      Rows [6]: 0 1 4 10 13 24
+      Cols [6]: 0 1 2 6 7 23
+      -> Results_brahma_2/25/deviation_4/kernel_25_46_result.txt
+
+  [43/100] kernel_output/25/kernel_25_47.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.434 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1433.25 ms  minors_tested=87048192
+      Rows [6]: 0 1 8 10 13 24
+      Cols [6]: 0 1 7 12 20 25
+      -> Results_brahma_2/25/deviation_4/kernel_25_47_result.txt
+
+  [44/100] kernel_output/25/kernel_25_48.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.414 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1413.39 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 5 8 21
+      Cols [6]: 0 1 2 12 15 21
+      -> Results_brahma_2/25/deviation_4/kernel_25_48_result.txt
+
+  [45/100] kernel_output/25/kernel_25_49.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.432 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1430.92 ms  minors_tested=87048192
+      Rows [6]: 0 1 10 15 16 20
+      Cols [6]: 0 1 6 16 22 24
+      -> Results_brahma_2/25/deviation_4/kernel_25_49_result.txt
+
+  [46/100] kernel_output/25/kernel_25_5.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.412 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1411.37 ms  minors_tested=87048192
+      Rows [6]: 0 1 3 4 19 25
+      Cols [6]: 0 1 4 18 20 22
+      -> Results_brahma_2/25/deviation_4/kernel_25_5_result.txt
+
+  [47/100] kernel_output/25/kernel_25_50.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.422 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1421.65 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 4 7 16
+      Cols [6]: 0 1 6 19 22 23
+      -> Results_brahma_2/25/deviation_4/kernel_25_50_result.txt
+
+  [48/100] kernel_output/25/kernel_25_51.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.404 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1403.08 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 3 4 20
+      Cols [6]: 0 1 5 7 10 11
+      -> Results_brahma_2/25/deviation_4/kernel_25_51_result.txt
+
+  [49/100] kernel_output/25/kernel_25_52.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.427 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1426.38 ms  minors_tested=87048192
+      Rows [6]: 0 1 7 13 19 22
+      Cols [6]: 0 1 2 5 14 18
+      -> Results_brahma_2/25/deviation_4/kernel_25_52_result.txt
+
+  [50/100] kernel_output/25/kernel_25_53.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.185 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1178.88 ms  minors_tested=87048192
+      Rows [6]: 0 1 3 4 10 19
+      Cols [6]: 0 1 2 5 7 24
+      -> Results_brahma_2/25/deviation_4/kernel_25_53_result.txt
+
+  [51/100] kernel_output/25/kernel_25_54.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.173 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1172.21 ms  minors_tested=87048192
+      Rows [6]: 0 1 7 10 20 22
+      Cols [6]: 0 1 4 6 12 14
+      -> Results_brahma_2/25/deviation_4/kernel_25_54_result.txt
+
+  [52/100] kernel_output/25/kernel_25_55.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.249 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1248.21 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 20 21 23
+      Cols [6]: 0 1 8 13 14 25
+      -> Results_brahma_2/25/deviation_4/kernel_25_55_result.txt
+
+  [53/100] kernel_output/25/kernel_25_56.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.335 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1333.75 ms  minors_tested=87048192
+      Rows [6]: 0 1 6 11 19 23
+      Cols [6]: 0 1 4 10 19 24
+      -> Results_brahma_2/25/deviation_4/kernel_25_56_result.txt
+
+  [54/100] kernel_output/25/kernel_25_57.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.424 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1423.18 ms  minors_tested=87048192
+      Rows [6]: 0 1 5 8 16 25
+      Cols [6]: 0 1 6 7 12 16
+      -> Results_brahma_2/25/deviation_4/kernel_25_57_result.txt
+
+  [55/100] kernel_output/25/kernel_25_58.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.392 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1390.72 ms  minors_tested=87048192
+      Rows [6]: 0 1 6 15 20 24
+      Cols [6]: 0 1 6 8 10 24
+      -> Results_brahma_2/25/deviation_4/kernel_25_58_result.txt
+
+  [56/100] kernel_output/25/kernel_25_59.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.380 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1379.10 ms  minors_tested=87048192
+      Rows [6]: 0 1 14 17 19 22
+      Cols [6]: 0 1 3 5 12 15
+      -> Results_brahma_2/25/deviation_4/kernel_25_59_result.txt
+
+  [57/100] kernel_output/25/kernel_25_6.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.276 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1274.93 ms  minors_tested=87048192
+      Rows [6]: 0 1 4 7 13 23
+      Cols [6]: 0 1 2 14 22 23
+      -> Results_brahma_2/25/deviation_4/kernel_25_6_result.txt
+
+  [58/100] kernel_output/25/kernel_25_60.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.430 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1429.29 ms  minors_tested=87048192
+      Rows [6]: 0 1 12 15 21 25
+      Cols [6]: 0 1 7 10 13 24
+      -> Results_brahma_2/25/deviation_4/kernel_25_60_result.txt
+
+  [59/100] kernel_output/25/kernel_25_61.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.420 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1419.57 ms  minors_tested=87048192
+      Rows [6]: 0 1 4 8 23 25
+      Cols [6]: 0 1 6 8 17 18
+      -> Results_brahma_2/25/deviation_4/kernel_25_61_result.txt
+
+  [60/100] kernel_output/25/kernel_25_62.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.411 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1410.22 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 14 20 22
+      Cols [6]: 0 1 3 12 18 19
+      -> Results_brahma_2/25/deviation_4/kernel_25_62_result.txt
+
+  [61/100] kernel_output/25/kernel_25_63.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.407 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1405.78 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 3 5 20
+      Cols [6]: 0 1 2 4 7 21
+      -> Results_brahma_2/25/deviation_4/kernel_25_63_result.txt
+
+  [62/100] kernel_output/25/kernel_25_64.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.442 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1440.89 ms  minors_tested=87048192
+      Rows [6]: 0 1 11 21 22 23
+      Cols [6]: 0 1 3 4 5 23
+      -> Results_brahma_2/25/deviation_4/kernel_25_64_result.txt
+
+  [63/100] kernel_output/25/kernel_25_65.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.507 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1505.88 ms  minors_tested=87048192
+      Rows [6]: 0 1 7 10 11 21
+      Cols [6]: 0 1 2 5 9 15
+      -> Results_brahma_2/25/deviation_4/kernel_25_65_result.txt
+
+  [64/100] kernel_output/25/kernel_25_66.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.414 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1413.43 ms  minors_tested=87048192
+      Rows [6]: 0 1 4 14 15 20
+      Cols [6]: 0 1 4 5 8 10
+      -> Results_brahma_2/25/deviation_4/kernel_25_66_result.txt
+
+  [65/100] kernel_output/25/kernel_25_67.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.302 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1300.96 ms  minors_tested=87048192
+      Rows [6]: 0 1 3 20 21 24
+      Cols [6]: 0 1 7 9 23 25
+      -> Results_brahma_2/25/deviation_4/kernel_25_67_result.txt
+
+  [66/100] kernel_output/25/kernel_25_68.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.397 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1396.17 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 7 13 15
+      Cols [6]: 0 1 2 11 12 22
+      -> Results_brahma_2/25/deviation_4/kernel_25_68_result.txt
+
+  [67/100] kernel_output/25/kernel_25_69.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.375 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1374.67 ms  minors_tested=87048192
+      Rows [6]: 0 1 3 6 11 23
+      Cols [6]: 0 1 7 13 24 25
+      -> Results_brahma_2/25/deviation_4/kernel_25_69_result.txt
+
+  [68/100] kernel_output/25/kernel_25_7.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.426 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1424.67 ms  minors_tested=87048192
+      Rows [6]: 0 1 4 10 15 21
+      Cols [6]: 0 1 3 16 20 22
+      -> Results_brahma_2/25/deviation_4/kernel_25_7_result.txt
+
+  [69/100] kernel_output/25/kernel_25_70.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.398 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1396.76 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 6 9 18
+      Cols [6]: 0 1 3 8 11 19
+      -> Results_brahma_2/25/deviation_4/kernel_25_70_result.txt
+
+  [70/100] kernel_output/25/kernel_25_71.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.415 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1414.04 ms  minors_tested=87048192
+      Rows [6]: 0 1 10 13 16 21
+      Cols [6]: 0 1 5 9 12 16
+      -> Results_brahma_2/25/deviation_4/kernel_25_71_result.txt
+
+  [71/100] kernel_output/25/kernel_25_72.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.641 s | Tested: 112911876 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1640.43 ms  minors_tested=112911876
+      Rows [6]: 0 1 5 14 16 21
+      Cols [6]: 0 1 9 12 17 23
+      -> Results_brahma_2/25/deviation_4/kernel_25_72_result.txt
+
+  [72/100] kernel_output/25/kernel_25_73.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.448 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1444.61 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 8 16 17
+      Cols [6]: 0 1 5 13 20 23
+      -> Results_brahma_2/25/deviation_4/kernel_25_73_result.txt
+
+  [73/100] kernel_output/25/kernel_25_74.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.480 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1472.80 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 4 5 15
+      Cols [6]: 0 1 3 4 12 19
+      -> Results_brahma_2/25/deviation_4/kernel_25_74_result.txt
+
+  [74/100] kernel_output/25/kernel_25_75.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.483 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1481.79 ms  minors_tested=87048192
+      Rows [6]: 0 1 4 8 17 24
+      Cols [6]: 0 1 2 8 9 25
+      -> Results_brahma_2/25/deviation_4/kernel_25_75_result.txt
+
+  [75/100] kernel_output/25/kernel_25_76.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.382 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1381.25 ms  minors_tested=87048192
+      Rows [6]: 0 1 3 11 17 25
+      Cols [6]: 0 1 5 10 12 14
+      -> Results_brahma_2/25/deviation_4/kernel_25_76_result.txt
+
+  [76/100] kernel_output/25/kernel_25_77.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.394 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1392.94 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 5 6 17
+      Cols [6]: 0 1 3 9 12 23
+      -> Results_brahma_2/25/deviation_4/kernel_25_77_result.txt
+
+  [77/100] kernel_output/25/kernel_25_78.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.300 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1299.62 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 4 16 17
+      Cols [6]: 0 1 7 8 14 19
+      -> Results_brahma_2/25/deviation_4/kernel_25_78_result.txt
+
+  [78/100] kernel_output/25/kernel_25_79.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.367 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1366.55 ms  minors_tested=87048192
+      Rows [6]: 0 1 3 8 14 17
+      Cols [6]: 0 1 3 8 24 25
+      -> Results_brahma_2/25/deviation_4/kernel_25_79_result.txt
+
+  [79/100] kernel_output/25/kernel_25_8.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.314 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1313.35 ms  minors_tested=87048192
+      Rows [6]: 0 1 5 7 15 24
+      Cols [6]: 0 1 2 16 20 23
+      -> Results_brahma_2/25/deviation_4/kernel_25_8_result.txt
+
+  [80/100] kernel_output/25/kernel_25_80.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.371 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1370.54 ms  minors_tested=87048192
+      Rows [6]: 0 1 3 11 20 21
+      Cols [6]: 0 1 2 8 20 21
+      -> Results_brahma_2/25/deviation_4/kernel_25_80_result.txt
+
+  [81/100] kernel_output/25/kernel_25_81.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.385 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1383.77 ms  minors_tested=87048192
+      Rows [6]: 0 1 13 17 22 24
+      Cols [6]: 0 1 4 11 16 19
+      -> Results_brahma_2/25/deviation_4/kernel_25_81_result.txt
+
+  [82/100] kernel_output/25/kernel_25_82.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.328 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1327.32 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 3 8 25
+      Cols [6]: 0 1 6 14 15 21
+      -> Results_brahma_2/25/deviation_4/kernel_25_82_result.txt
+
+  [83/100] kernel_output/25/kernel_25_83.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.357 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1356.33 ms  minors_tested=87048192
+      Rows [6]: 0 1 3 6 21 22
+      Cols [6]: 0 1 4 5 7 20
+      -> Results_brahma_2/25/deviation_4/kernel_25_83_result.txt
+
+  [84/100] kernel_output/25/kernel_25_84.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.354 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1353.52 ms  minors_tested=87048192
+      Rows [6]: 0 1 3 6 14 20
+      Cols [6]: 0 1 4 17 18 20
+      -> Results_brahma_2/25/deviation_4/kernel_25_84_result.txt
+
+  [85/100] kernel_output/25/kernel_25_85.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.257 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1256.39 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 7 13 24
+      Cols [6]: 0 1 2 6 17 18
+      -> Results_brahma_2/25/deviation_4/kernel_25_85_result.txt
+
+  [86/100] kernel_output/25/kernel_25_86.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.359 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1358.34 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 10 13 25
+      Cols [6]: 0 1 6 16 21 23
+      -> Results_brahma_2/25/deviation_4/kernel_25_86_result.txt
+
+  [87/100] kernel_output/25/kernel_25_87.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.371 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1370.19 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 10 11 15
+      Cols [6]: 0 1 3 8 13 23
+      -> Results_brahma_2/25/deviation_4/kernel_25_87_result.txt
+
+  [88/100] kernel_output/25/kernel_25_88.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.340 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1339.03 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 3 8 23
+      Cols [6]: 0 1 6 10 13 14
+      -> Results_brahma_2/25/deviation_4/kernel_25_88_result.txt
+
+  [89/100] kernel_output/25/kernel_25_89.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.370 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1369.27 ms  minors_tested=87048192
+      Rows [6]: 0 1 5 7 10 16
+      Cols [6]: 0 1 3 7 11 16
+      -> Results_brahma_2/25/deviation_4/kernel_25_89_result.txt
+
+  [90/100] kernel_output/25/kernel_25_9.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.359 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1357.92 ms  minors_tested=87048192
+      Rows [6]: 0 1 5 14 19 25
+      Cols [6]: 0 1 2 11 12 17
+      -> Results_brahma_2/25/deviation_4/kernel_25_9_result.txt
+
+  [91/100] kernel_output/25/kernel_25_90.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.362 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1361.29 ms  minors_tested=87048192
+      Rows [6]: 0 1 4 11 13 17
+      Cols [6]: 0 1 3 10 15 22
+      -> Results_brahma_2/25/deviation_4/kernel_25_90_result.txt
+
+  [92/100] kernel_output/25/kernel_25_91.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 3.162 s | Tested: 199960068 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=1  t=3161.12 ms  minors_tested=199960068
+      Rows [6]: 0 1 2 12 20 22
+      Cols [6]: 1 2 4 8 20 23
+      -> Results_brahma_2/25/deviation_4/kernel_25_91_result.txt
+
+  [93/100] kernel_output/25/kernel_25_92.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.356 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1354.72 ms  minors_tested=87048192
+      Rows [6]: 0 1 5 11 12 17
+      Cols [6]: 0 1 3 5 11 15
+      -> Results_brahma_2/25/deviation_4/kernel_25_92_result.txt
+
+  [94/100] kernel_output/25/kernel_25_93.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.374 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1373.36 ms  minors_tested=87048192
+      Rows [6]: 0 1 5 9 10 18
+      Cols [6]: 0 1 6 8 13 24
+      -> Results_brahma_2/25/deviation_4/kernel_25_93_result.txt
+
+  [95/100] kernel_output/25/kernel_25_94.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.352 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1351.46 ms  minors_tested=87048192
+      Rows [6]: 0 1 2 7 8 21
+      Cols [6]: 0 1 2 4 7 18
+      -> Results_brahma_2/25/deviation_4/kernel_25_94_result.txt
+
+  [96/100] kernel_output/25/kernel_25_95.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.380 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1379.05 ms  minors_tested=87048192
+      Rows [6]: 0 1 6 7 12 20
+      Cols [6]: 0 1 2 4 5 21
+      -> Results_brahma_2/25/deviation_4/kernel_25_95_result.txt
+
+  [97/100] kernel_output/25/kernel_25_96.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.368 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1367.17 ms  minors_tested=87048192
+      Rows [6]: 0 1 4 8 13 20
+      Cols [6]: 0 1 5 10 14 17
+      -> Results_brahma_2/25/deviation_4/kernel_25_96_result.txt
+
+  [98/100] kernel_output/25/kernel_25_97.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.381 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1380.63 ms  minors_tested=87048192
+      Rows [6]: 0 1 3 9 18 22
+      Cols [6]: 0 1 5 10 14 19
+      -> Results_brahma_2/25/deviation_4/kernel_25_97_result.txt
+
+  [99/100] kernel_output/25/kernel_25_98.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.370 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1369.52 ms  minors_tested=87048192
+      Rows [6]: 0 1 4 5 15 24
+      Cols [6]: 0 1 6 14 23 25
+      -> Results_brahma_2/25/deviation_4/kernel_25_98_result.txt
+
+  [100/100] kernel_output/25/kernel_25_99.txt
+    Searching for first zero minor at dev=4 ...
+    Time: 1.366 s | Tested: 87048192 minors | Zero minors: 1
+    [Zero #1] size=6  dev=4  s=0  t=1365.49 ms  minors_tested=87048192
+      Rows [6]: 0 1 4 5 16 24
+      Cols [6]: 0 1 4 5 6 10
+      -> Results_brahma_2/25/deviation_4/kernel_25_99_result.txt
+  Summary (detailed) -> Results_brahma_2/25/deviation_4/SUMMARY_detailed.txt
+  Summary (brief)    -> Results_brahma_2/25/deviation_4/SUMMARY_brief.txt
+
+  -- group=25  dev=4 complete --
+  Time           : 121.707 s
+  Matrices       : 100
+  Minors tested  : 9234057756
+  Zero minors    : 100
+  Matrices hit   : 100 / 100
+  [group=25  dev=4 done]  hits=100/100
+
+  *** 100 HITS REACHED at deviation 4! ***
+  *** Skipping remaining deviations for group 25 ***
+  -> result.txt written: Results_brahma_2/25/result.txt
+
+#################################################################
+# GROUP 25 COMPLETE   (2.65 min)
+# EARLY STOP at deviation 4 (100 hits)
+#################################################################
+
+=================================================================
+ ALL DONE
+ Total wall time : 159.230 s  (2.65 min)
+
+ Results in: Results_brahma_2/<group>/
+ Each group has a result.txt with the best deviation.
+=================================================================
+==PROF== Disconnected from process 705927
