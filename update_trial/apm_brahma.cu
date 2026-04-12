@@ -554,7 +554,7 @@ struct GPUBufs {
       : d_row_sets(NULL), d_col_sets(NULL), d_matrix(NULL), d_zero_flags(NULL),
         d_found(NULL), cap_rows(0), col_chunk(0), flag_cap(0) {}
 
-  void alloc(int n, int dev) {
+  bool alloc(int n, int dev) {
     free_all();
 
     // ── RUNTIME VRAM DETECTION ──
@@ -574,11 +574,10 @@ struct GPUBufs {
     size_t fixed = cap_rows * sizeof(IndexSet) +
                    static_cast<size_t>(n) * n * sizeof(long long);
     if (fixed >= avail_bytes) {
-      fprintf(
-          stderr,
-          "[ERROR] Fixed allocations (%zu MB) exceed available VRAM (%zu MB)\n",
-          fixed / (1024 * 1024), avail_bytes / (1024 * 1024));
-      exit(1);
+      printf("    [SKIP] dev=%d needs %zu MB for index sets but only %zu MB "
+             "available — skipping\n",
+             dev, fixed / (1024 * 1024), avail_bytes / (1024 * 1024));
+      return false;
     }
     size_t remain = avail_bytes - fixed;
 
@@ -609,6 +608,7 @@ struct GPUBufs {
     CK(cudaMalloc(&d_matrix, static_cast<size_t>(n) * n * sizeof(long long)));
     CK(cudaMalloc(&d_zero_flags, flag_cap * sizeof(int)));
     CK(cudaMalloc(&d_found, sizeof(int)));
+    return true;
   }
 
   void free_all() {
@@ -1339,7 +1339,13 @@ int main(int argc, char **argv) {
       fflush(stdout);
 
       GPUBufs gpu;
-      gpu.alloc(n, dev);
+      if (!gpu.alloc(n, dev)) {
+        printf("  [SKIP] Insufficient VRAM for dev=%d (C(%d,%d) = %lld sets)\n",
+               dev, n - PM_SIZE, dev, nCr(n - PM_SIZE, dev));
+        printf("  [STOP] All higher deviations will also exceed VRAM — stopping "
+               "group %d\n", group);
+        break;  // higher deviations are strictly larger, no point continuing
+      }
 
       int hits = run_group_deviation(group, prime, dev, files, n, gpu);
       printf("  [group=%d  dev=%d done]  hits=%d/%zu\n", group, dev, hits,
