@@ -1,17 +1,22 @@
 // =============================================================================
 // apm_brahma.cu
 //
-// APM Brahma — V100-OPTIMIZED FLAT-ARRAY VERSION
+// APM Brahma — V100-OPTIMIZED, TEMPLATED KERNEL, FLAT-ARRAY VERSION
 //
-// V100-specific optimizations over changed_entire/:
-//   1. __constant__ memory for pow2_64 (L1-cached on Volta, removes
+// V100-specific optimizations:
+//   1. TEMPLATED KERNEL: apm_kernel_k<K> sizes sub[K*K] at compile time.
+//      Stack frame is exactly K*K*8 bytes — not the fixed 50*50*8 = 20KB.
+//      For k=4 (dev=2): 128 bytes → 100% occupancy on V100.
+//      For k=10 (dev=8): 800 bytes → 100% occupancy on V100.
+//      For k=27 (dev=25): 5832 bytes → ~68% occupancy on V100.
+//      For k=50 (dev=48): 20000 bytes → ~20% occupancy (same as before).
+//      47 template instantiations (k=4..50) compiled to separate .cubin.
+//   2. __constant__ memory for pow2_64 (L1-cached on Volta, removes
 //      parameter from mod_mul→det_mod→kernel chain, reduces register pressure)
-//   2. Plain *d_found read instead of atomicAdd(d_found,0) (free on Volta,
-//      avoids unnecessary atomic bus transaction)
-//   3. reserve() on host vectors before filling (avoids reallocation)
-//   4. Flat int[] index arrays (same as changed_entire — 5-8x VRAM savings)
-//   5. Graceful OOM skip with break (same as changed_entire)
-//   6. Removed redundant cudaGetLastError after cudaDeviceSynchronize
+//   3. Plain *d_found read instead of atomicAdd(d_found,0) (free on Volta)
+//   4. reserve() on host vectors before filling (avoids reallocation)
+//   5. Flat int[] index arrays (5-8x VRAM savings vs IndexSet structs)
+//   6. Graceful OOM skip with break
 //
 // All-in-one CUDA file combining:
 //   - First-hit search (stops after 1st zero minor per matrix)
@@ -49,7 +54,7 @@ using namespace std;
 
 static const int PM_SIZE = 2;
 static const int MIN_DEV = 2;
-static const int MAX_IDX_STATIC = 50;
+static const int MAX_IDX_STATIC = 60;  // supports up to 62×62 matrices (group 60)
 static const int EARLY_STOP_HIT = 100;
 static const char *RESULT_BASE_DIR = "Results_brahma";
 
@@ -103,7 +108,7 @@ struct FolderPrime {
 };
 
 // =============================================================================
-// Hardcoded fallback primes for groups 10-50
+// Hardcoded fallback primes for groups 10-60
 // =============================================================================
 
 static const struct {
@@ -124,6 +129,12 @@ static const struct {
     {43, 8796093022151LL}, {44, 17592186044399LL},{45, 35184372088777LL},
     {46, 70368744177643LL},{47, 140737488355213LL},{48, 281474976710597LL},
     {49, 562949953421231LL},{50, 1125899906842597LL},
+    // Groups 51-60: primes near 2^51 through 2^60
+    {51, 2251799813685119LL},  {52, 4503599627370449LL},
+    {53, 9007199254740881LL},  {54, 18014398509481951LL},
+    {55, 36028797018963913LL}, {56, 72057594037927931LL},
+    {57, 144115188075855859LL},{58, 288230376151711717LL},
+    {59, 576460752303423433LL},{60, 1152921504606846883LL},
 };
 static const int NUM_HARDCODED = sizeof(HARDCODED_PRIMES) / sizeof(HARDCODED_PRIMES[0]);
 
@@ -136,12 +147,15 @@ __device__ inline long long mod_sub(long long a, long long b, long long p) {
   return (r < 0) ? r + p : r;
 }
 
-// Safe modular multiplication for primes up to 2^50.
+// Safe modular multiplication for primes up to 2^60.
 // Uses __umul64hi intrinsic for hardware 64×64→128 bit multiply.
 // Reads c_pow2_64 from __constant__ memory (L1-cached, zero param overhead).
 //
-// Fast path: hi == 0 → single lo % p (no loop).
-// Slow path: ≤ 36 iterations of addition-doubling for hi-part reduction.
+// Three paths:
+//   1. hi == 0 → single lo % p (most calls for small primes)
+//   2. p < 2^40 (groups 25-39): single multiply hi*c_pow2_64 (no loop at all)
+//      Proof: hi < 2^(2×40-64) = 2^16, c_pow2_64 < 2^40, product < 2^56 ✓
+//   3. p >= 2^40 (groups 40-60): binary loop on hi (≤56 iters for p < 2^60)
 __device__ inline long long mod_mul(long long a, long long b, long long p) {
   unsigned long long ua = (unsigned long long)((a % p + p) % p);
   unsigned long long ub = (unsigned long long)((b % p + p) % p);
@@ -150,21 +164,32 @@ __device__ inline long long mod_mul(long long a, long long b, long long p) {
   unsigned long long lo = ua * ub;
   unsigned long long hi = __umul64hi(ua, ub);
 
+  // Fast path 1: no overflow — most calls end here for groups 25-31
   if (hi == 0) return (long long)(lo % up);
 
-  // hi * c_pow2_64 mod p via binary method
+  // Fast path 2: single multiply for p < 2^40 (groups 25-39)
+  // hi < 2^16, c_pow2_64 < 2^40 → product < 2^56, fits in uint64
+  if (up < (1ULL << 40)) {
+    return (long long)((hi * c_pow2_64 % up + lo % up) % up);
+  }
+
+  // Slow path: binary loop for p >= 2^40 (groups 40-60)
+  // hi < 2^(2*60-64) = 2^56, loop runs ≤ 56 iterations
   unsigned long long hi_mod = 0;
   unsigned long long hbase = c_pow2_64;  // from __constant__ memory
   while (hi) {
     if (hi & 1) hi_mod = (hi_mod + hbase) % up;
-    hbase = (hbase + hbase) % up;
+    hbase = (hbase + hbase) % up;  // safe: hbase < p < 2^60, sum < 2^61
     hi >>= 1;
   }
 
   return (long long)((hi_mod + lo % up) % up);
 }
 
-// Extended Euclidean — all long long
+// Extended Euclidean — all long long.
+// Safe for p up to 2^62: the intermediate product q*nt is bounded by 2p
+// (property of the GCD recurrence: |q_i * t_i| < 2p always holds).
+// For p < 2^60: 2p < 2^61 < 2^63, fits in long long. No overflow.
 __device__ inline long long mod_inv(long long a, long long p) {
   long long t = 0, nt = 1, r = p, nr = a % p;
   if (nr < 0)
@@ -226,47 +251,134 @@ __device__ inline long long det_mod(long long *a, int k, long long p) {
 }
 
 // =============================================================================
-// CUDA kernel — FLAT INDEX ARRAYS, CONSTANT MEMORY pow2_64
+// CUDA kernel — TEMPLATED, FLAT INDEX ARRAYS, CONSTANT MEMORY pow2_64
 //
-// d_row_idx: flat int array, num_row_sets × k ints packed contiguously
-// d_col_idx: flat int array, num_col_sets × k ints packed contiguously
-// Access pattern: set i, element j → d_row_idx[i * k + j]
+// Template parameter K = minor size (PM_SIZE + dev).
+// Each instantiation apm_kernel_k<K> has sub[K*K] — the compiler knows the
+// exact stack frame size, enabling optimal register allocation per K.
 //
-// V100 optimizations:
-//   - *d_found plain read (not atomicAdd) for early-exit check
-//   - mod_mul reads c_pow2_64 from __constant__ (no kernel param)
+// Stack frame per thread:
+//   k=4  →  128 bytes   (100% occupancy on V100)
+//   k=6  →  288 bytes   (100% occupancy on V100)
+//   k=10 →  800 bytes   (100% occupancy on V100)
+//   k=27 → 5832 bytes   (~68% occupancy on V100)
+//   k=50 → 20000 bytes  (~20% occupancy on V100)
+//
+// 47 template instantiations (k=4..50) are compiled via INSTANTIATE_KERNEL.
+// Host-side dispatch via launch_apm_kernel() switch.
 // =============================================================================
 
-__global__ void apm_kernel(const long long *d_matrix, int n,
-                           const int *d_row_idx,
-                           const int *d_col_idx,
-                           int num_row_sets, int num_col_sets,
-                           int k, long long prime,
-                           int *d_zero_flags, int *d_found) {
+template <int K>
+__global__ void apm_kernel_k(const long long *d_matrix, int n,
+                             const int *d_row_idx,
+                             const int *d_col_idx,
+                             int num_row_sets, int num_col_sets,
+                             long long prime,
+                             int *d_zero_flags, int *d_found) {
   long long tid = static_cast<long long>(blockIdx.x) * blockDim.x + threadIdx.x;
   long long total = static_cast<long long>(num_row_sets) * num_col_sets;
   if (tid >= total)
     return;
 
-  // Plain read of d_found — no atomic needed for a check.
-  // On Volta, global loads go through L1 cache.  The write side uses
-  // atomicExch which guarantees visibility across SMs.
+  // Plain read — no atomic needed for a check.
+  // On Volta, global loads go through L1 cache.
   if (*d_found != 0) return;
 
   int r = static_cast<int>(tid / num_col_sets);
   int c = static_cast<int>(tid % num_col_sets);
 
-  long long sub[MAX_IDX_STATIC * MAX_IDX_STATIC];
-  for (int i = 0; i < k; i++)
-    for (int j = 0; j < k; j++) {
-      long long v = d_matrix[d_row_idx[r * k + i] * n + d_col_idx[c * k + j]];
-      sub[i * k + j] = ((v % prime) + prime) % prime;
+  // K*K known at compile time — compiler allocates exact stack frame.
+  long long sub[K * K];
+  for (int i = 0; i < K; i++)
+    for (int j = 0; j < K; j++) {
+      long long v = d_matrix[d_row_idx[r * K + i] * n + d_col_idx[c * K + j]];
+      sub[i * K + j] = ((v % prime) + prime) % prime;
     }
 
-  int result = (det_mod(sub, k, prime) == 0LL) ? 1 : 0;
+  int result = (det_mod(sub, K, prime) == 0LL) ? 1 : 0;
   d_zero_flags[tid] = result;
   if (result) atomicExch(d_found, 1);
 }
+
+// -----------------------------------------------------------------------------
+// Explicit template instantiation for k = 4 through 60.
+// Each creates a separate kernel binary in the .cubin with optimal stack size.
+// 57 instantiations — compilation takes ~45-90s but runtime is optimal.
+// -----------------------------------------------------------------------------
+
+#define INSTANTIATE_KERNEL(K) template __global__ void apm_kernel_k<K>( \
+    const long long*, int, const int*, const int*, int, int,            \
+    long long, int*, int*);
+
+INSTANTIATE_KERNEL(4)  INSTANTIATE_KERNEL(5)  INSTANTIATE_KERNEL(6)
+INSTANTIATE_KERNEL(7)  INSTANTIATE_KERNEL(8)  INSTANTIATE_KERNEL(9)
+INSTANTIATE_KERNEL(10) INSTANTIATE_KERNEL(11) INSTANTIATE_KERNEL(12)
+INSTANTIATE_KERNEL(13) INSTANTIATE_KERNEL(14) INSTANTIATE_KERNEL(15)
+INSTANTIATE_KERNEL(16) INSTANTIATE_KERNEL(17) INSTANTIATE_KERNEL(18)
+INSTANTIATE_KERNEL(19) INSTANTIATE_KERNEL(20) INSTANTIATE_KERNEL(21)
+INSTANTIATE_KERNEL(22) INSTANTIATE_KERNEL(23) INSTANTIATE_KERNEL(24)
+INSTANTIATE_KERNEL(25) INSTANTIATE_KERNEL(26) INSTANTIATE_KERNEL(27)
+INSTANTIATE_KERNEL(28) INSTANTIATE_KERNEL(29) INSTANTIATE_KERNEL(30)
+INSTANTIATE_KERNEL(31) INSTANTIATE_KERNEL(32) INSTANTIATE_KERNEL(33)
+INSTANTIATE_KERNEL(34) INSTANTIATE_KERNEL(35) INSTANTIATE_KERNEL(36)
+INSTANTIATE_KERNEL(37) INSTANTIATE_KERNEL(38) INSTANTIATE_KERNEL(39)
+INSTANTIATE_KERNEL(40) INSTANTIATE_KERNEL(41) INSTANTIATE_KERNEL(42)
+INSTANTIATE_KERNEL(43) INSTANTIATE_KERNEL(44) INSTANTIATE_KERNEL(45)
+INSTANTIATE_KERNEL(46) INSTANTIATE_KERNEL(47) INSTANTIATE_KERNEL(48)
+INSTANTIATE_KERNEL(49) INSTANTIATE_KERNEL(50) INSTANTIATE_KERNEL(51)
+INSTANTIATE_KERNEL(52) INSTANTIATE_KERNEL(53) INSTANTIATE_KERNEL(54)
+INSTANTIATE_KERNEL(55) INSTANTIATE_KERNEL(56) INSTANTIATE_KERNEL(57)
+INSTANTIATE_KERNEL(58) INSTANTIATE_KERNEL(59) INSTANTIATE_KERNEL(60)
+
+#undef INSTANTIATE_KERNEL
+
+// -----------------------------------------------------------------------------
+// Host dispatch: launch the correct template instantiation for a given k.
+// Uses a compile-time switch — each case calls the right apm_kernel_k<K>.
+// Covers k=4..60 for groups 25-60.
+// -----------------------------------------------------------------------------
+
+#define DISPATCH_CASE(K)                                                       \
+  case K:                                                                      \
+    apm_kernel_k<K><<<grid, block>>>(d_matrix, n, d_row_idx, d_col_idx,        \
+                                     num_rows, num_cols, prime,                \
+                                     d_zero_flags, d_found);                  \
+    break;
+
+static void launch_apm_kernel(int k, int grid, int block,
+                              const long long *d_matrix, int n,
+                              const int *d_row_idx, const int *d_col_idx,
+                              int num_rows, int num_cols,
+                              long long prime,
+                              int *d_zero_flags, int *d_found) {
+  switch (k) {
+    DISPATCH_CASE(4)  DISPATCH_CASE(5)  DISPATCH_CASE(6)
+    DISPATCH_CASE(7)  DISPATCH_CASE(8)  DISPATCH_CASE(9)
+    DISPATCH_CASE(10) DISPATCH_CASE(11) DISPATCH_CASE(12)
+    DISPATCH_CASE(13) DISPATCH_CASE(14) DISPATCH_CASE(15)
+    DISPATCH_CASE(16) DISPATCH_CASE(17) DISPATCH_CASE(18)
+    DISPATCH_CASE(19) DISPATCH_CASE(20) DISPATCH_CASE(21)
+    DISPATCH_CASE(22) DISPATCH_CASE(23) DISPATCH_CASE(24)
+    DISPATCH_CASE(25) DISPATCH_CASE(26) DISPATCH_CASE(27)
+    DISPATCH_CASE(28) DISPATCH_CASE(29) DISPATCH_CASE(30)
+    DISPATCH_CASE(31) DISPATCH_CASE(32) DISPATCH_CASE(33)
+    DISPATCH_CASE(34) DISPATCH_CASE(35) DISPATCH_CASE(36)
+    DISPATCH_CASE(37) DISPATCH_CASE(38) DISPATCH_CASE(39)
+    DISPATCH_CASE(40) DISPATCH_CASE(41) DISPATCH_CASE(42)
+    DISPATCH_CASE(43) DISPATCH_CASE(44) DISPATCH_CASE(45)
+    DISPATCH_CASE(46) DISPATCH_CASE(47) DISPATCH_CASE(48)
+    DISPATCH_CASE(49) DISPATCH_CASE(50) DISPATCH_CASE(51)
+    DISPATCH_CASE(52) DISPATCH_CASE(53) DISPATCH_CASE(54)
+    DISPATCH_CASE(55) DISPATCH_CASE(56) DISPATCH_CASE(57)
+    DISPATCH_CASE(58) DISPATCH_CASE(59) DISPATCH_CASE(60)
+    default:
+      fprintf(stderr, "  [FATAL] k=%d exceeds MAX_IDX_STATIC=%d\n",
+              k, MAX_IDX_STATIC);
+      break;
+  }
+}
+
+#undef DISPATCH_CASE
 
 // =============================================================================
 // Host utilities
@@ -905,9 +1017,10 @@ search_matrix(GPUBufs &gpu, const long long *h_mat, int n, long long prime,
                     cudaMemcpyHostToDevice));
 
       int grid = static_cast<int>((total_jobs + 255LL) / 256LL);
-      apm_kernel<<<grid, BLOCK>>>(gpu.d_matrix, n, gpu.d_row_idx,
-                                  gpu.d_col_idx, num_sets, num_cols_this_chunk,
-                                  k, prime, gpu.d_zero_flags, gpu.d_found);
+      launch_apm_kernel(k, grid, BLOCK,
+                        gpu.d_matrix, n, gpu.d_row_idx, gpu.d_col_idx,
+                        num_sets, num_cols_this_chunk,
+                        prime, gpu.d_zero_flags, gpu.d_found);
       CK(cudaDeviceSynchronize());
 
       int h_found = 0;
@@ -1159,7 +1272,7 @@ static void print_gpu_info() {
 // =============================================================================
 
 int main(int argc, char **argv) {
-  int gmin = 25, gmax = 50;
+  int gmin = 25, gmax = 60;
   if (argc == 3) {
     gmin = atoi(argv[1]);
     gmax = atoi(argv[2]);
@@ -1173,18 +1286,24 @@ int main(int argc, char **argv) {
   }
 
   printf("=================================================================\n");
-  printf(" APM Brahma — V100-OPTIMIZED FLAT-ARRAY VERSION\n");
+  printf(" APM Brahma — V100-OPTIMIZED, TEMPLATED KERNEL VERSION\n");
   printf(" KERNEL_OUTPUT VERSION — prime groups from kernel_output/<g>/\n");
   printf(" GROUP-OUTER, DEVIATION-INNER LOOP\n");
   printf(" STOPS after the FIRST zero minor per matrix\n");
   printf(" EARLY STOP: skips remaining deviations once %d hits reached\n",
          EARLY_STOP_HIT);
   printf(" PM block size    : %d (fixed)\n", PM_SIZE);
-  printf(" Max index static : %d\n", MAX_IDX_STATIC);
-  printf(" Supports primes up to 2^50 (safe modular arithmetic)\n");
+  printf(" Max index static : %d (supports up to group 60)\n", MAX_IDX_STATIC);
+  printf(" Supports primes up to 2^60 (safe modular arithmetic)\n");
   printf(" Runtime VRAM detection via cudaMemGetInfo()\n");
-  printf(" V100 optimizations: __constant__ pow2_64, plain *d_found read,\n");
-  printf("   flat int[] arrays (~5-8x VRAM savings), reserve() host vectors\n");
+  printf(" V100 optimizations:\n");
+  printf("   - Templated kernel apm_kernel_k<K>: sub[K*K] exact stack frame\n");
+  printf("     k=4: 128B (100%% occ) | k=10: 800B (100%%) | k=27: 5.8KB (68%%)\n");
+  printf("   - Group-adaptive mod_mul: zero-loop for p<2^40 (groups 25-39)\n");
+  printf("   - __constant__ pow2_64 (L1-cached, zero param overhead)\n");
+  printf("   - Plain *d_found read (no atomic on check)\n");
+  printf("   - Flat int[] arrays (~5-8x VRAM savings)\n");
+  printf("   - reserve() host vectors, graceful OOM skip\n");
   printf("=================================================================\n\n");
   printf(" Group range     : %d to %d\n\n", gmin, gmax);
   fflush(stdout);
