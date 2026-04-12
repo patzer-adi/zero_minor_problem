@@ -101,6 +101,11 @@ all: $(BIN)
 	@echo "  Or:        make run_log          (live + saved to log)"
 	@echo ""
 
+# NOTE: Compilation takes longer (~45-90s) due to 57 template instantiations
+# (apm_kernel_k<4> through apm_kernel_k<60>). Each produces a separate kernel
+# binary with optimal stack frame size for that K value.
+# The --ptxas-options=-v flag shows register/spill/stack counts per kernel.
+
 $(BIN): $(SRC)
 	$(NVCC) $(NVCC_FLAGS) --ptxas-options=-v $(SRC) -o $(BIN)
 
