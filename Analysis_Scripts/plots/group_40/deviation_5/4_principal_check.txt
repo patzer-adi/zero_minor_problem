@@ -3,6 +3,6 @@ Group 40, Deviation 5
 Prime (p)          : 1099511627689
 Prime bit-size     : 40 bits
 ----------------------------------------
-Total hits         : 126
+Total hits         : 100
 Principal (row==col): 0  (0.00%)
-Non-principal       : 126  (100.00%)
+Non-principal       : 100  (100.00%)

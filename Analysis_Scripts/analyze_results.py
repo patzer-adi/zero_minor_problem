@@ -81,21 +81,55 @@ def spec_dir(grp, dev):
     return d
 
 # ---------------------------------------------------------------------------
+# Data source whitelist
+# Explicit mapping: which sub-folder inside Results_combined to use for each
+# group.  Anything NOT listed here is ignored (35.old, 38.old, 39.old, group
+# 33 from Results_hits_one_check_till_100, etc.)
+# ---------------------------------------------------------------------------
+SOURCES = {
+    # group : relative sub-path inside Results_combined
+    25: "Results_hits_one_check_till_100/25",
+    26: "Results_hits_one_check_till_100/26",
+    27: "Results_hits_one_check_till_100/27",
+    28: "Results_hits_one_check_till_100/28",
+    29: "Results_hits_one_check_till_100/29",
+    30: "Results_hits_one_check_till_100/30",
+    31: "Results_hits_one_check_till_100/31",
+    32: "Results_hits_one_check_till_100/32",
+    # 33 from Results_hits_one_check_till_100 is EXCLUDED
+    33: "Parambrahma_data_20April/Results_brahma_2/33",
+    34: "Parambrahma_data_20April/Results_brahma_2/34",
+    35: "Parambrahma_data_20April/Results_brahma_2/35",   # NOT 35.old
+    36: "Parambrahma_data_20April/Results_brahma/36",
+    37: "Parambrahma_data_20April/Results_brahma/37",
+    38: "Parambrahma_data_20April/Results_brahma/38",     # NOT 38.old
+    39: "Results_further/39",
+    40: "Results_further/40",
+}
+
+def iter_summary_files():
+    """Yield (group, dev, path) only from the whitelisted source folders."""
+    for grp, rel in SOURCES.items():
+        src = RESULTS_DIR / rel
+        if not src.exists():
+            print(f"  [MISSING] {rel}")
+            continue
+        for path in sorted(src.rglob("SUMMARY_detailed*.txt")):
+            dev_str = path.parts[-2]
+            if not dev_str.startswith("deviation_"):
+                continue
+            try:
+                dev = int(dev_str.split("_")[1])
+            except ValueError:
+                continue
+            yield grp, dev, path
+
+# ---------------------------------------------------------------------------
 # Step 1 — Parse SUMMARY_detailed into DataFrame
 # ---------------------------------------------------------------------------
 print("\n=== PARSING SUMMARY FILES ===")
 rows = []
-for path in sorted(RESULTS_DIR.rglob("SUMMARY_detailed*.txt")):
-    try:
-        grp = int(path.parts[-3])
-        dev_str = path.parts[-2]
-        if not dev_str.startswith("deviation_"):
-            continue
-        dev = int(dev_str.split("_")[1])
-    except (ValueError, IndexError):
-        print(f"  [SKIP] Cannot infer group/dev from path: {path}")
-        continue
-
+for grp, dev, path in iter_summary_files():
     text = path.read_text(errors="replace")
     for block in text.split("--- Zero Minor"):
         s_m  = re.search(r"Principal block s:\s*(\d+)", block)
@@ -124,30 +158,20 @@ for path in sorted(RESULTS_DIR.rglob("SUMMARY_detailed*.txt")):
         })
 
 if not rows:
-    print("[ERROR] No Zero Minor data found. Check that files contain '--- Zero Minor'.")
+    print("[ERROR] No Zero Minor data found.")
     sys.exit(1)
 
 df = pd.DataFrame(rows)
 groups = sorted(df["group"].unique())
-print(f"Loaded {len(df)} Zero Minor hits across groups: {groups}")
+print(f"Loaded {len(df)} Zero Minor hits across groups: {[int(g) for g in groups]}")
 
 # ---------------------------------------------------------------------------
-# Step 2 — Parse SUMMARY_detailed for per-group/dev totals (matrices, zero minors)
-# We extract the FOLDER TOTALS section which lists aggregate counts.
+# Step 2 — Aggregate matrix/zero_minor totals from the same whitelisted files
 # ---------------------------------------------------------------------------
 summary_rows = []
-for path in sorted(RESULTS_DIR.rglob("SUMMARY_detailed*.txt")):
-    try:
-        grp = int(path.parts[-3])
-        dev_str = path.parts[-2]
-        if not dev_str.startswith("deviation_"):
-            continue
-        dev = int(dev_str.split("_")[1])
-    except (ValueError, IndexError):
-        continue
-
+for grp, dev, path in iter_summary_files():
     text = path.read_text(errors="replace")
-    mat_m = re.search(r"(?:Matrices\s*:\s*(\d+))", text)
+    mat_m = re.search(r"Matrices\s*:\s*(\d+)", text)
     zm_m  = re.search(r"Zero minors\s*:\s*(\d+)", text)
     if mat_m and zm_m:
         summary_rows.append({
@@ -169,20 +193,114 @@ if not df_summary.empty:
 # GLOBAL PLOTS
 # ---------------------------------------------------------------------------
 
-# ---- 1. Min deviation per group ----------------------------------------
+# ---- 0a. KEY FINDING: Min deviation for 100% hit rate (step function) --
 print("\n=== GLOBAL PLOTS ===")
-print("1. Min deviation per group...")
-min_dev = df.groupby("group")["dev"].min().reset_index()
-fig, ax = plt.subplots(figsize=(10, 5))
-ax.plot(min_dev["group"], min_dev["dev"], marker="o", linewidth=2, color="#2c7bb6")
-ax.set_xlabel("Group (prime bit-size)")
-ax.set_ylabel("Minimum Deviation with a Hit")
-ax.set_title("Minimum Deviation Required for First Zero Minor Hit, by Group")
-ax.xaxis.set_major_locator(ticker.MultipleLocator(1))
-ax.grid(True, linestyle="--", alpha=0.6)
-save(fig, GLOBAL_DIR / "1_min_dev_per_group.png")
+print("0a. Key finding — min deviation for 100% hit rate...")
+if not df_summary.empty:
+    # Find the minimum deviation where hit_ratio == 1.0 for each group
+    full_hit = df_summary[df_summary["hit_ratio"] >= 1.0]
+    min_full  = full_hit.groupby("group")["dev"].min().reset_index()
+    min_full.columns = ["group", "min_dev_100pct"]
 
-# ---- 2. Hit ratio by deviation (from aggregated summary counts) --------
+    fig, ax = plt.subplots(figsize=(12, 5))
+    bars = ax.bar(min_full["group"], min_full["min_dev_100pct"],
+                  color=["#2c7bb6" if g <= 32 else "#d7191c" for g in min_full["group"]],
+                  edgecolor="black", width=0.7)
+    # Annotate bars
+    for bar, (_, row) in zip(bars, min_full.iterrows()):
+        ax.text(bar.get_x() + bar.get_width() / 2,
+                bar.get_height() + 0.05,
+                f"dev={int(row['min_dev_100pct'])}",
+                ha="center", va="bottom", fontsize=8, fontweight="bold")
+    ax.set_xlabel("Group (prime bit-size)")
+    ax.set_ylabel("Minimum Deviation for 100% Hit Rate")
+    ax.set_title("Minimum Deviation Guaranteeing a Zero Minor in Every Matrix\n"
+                 "(Blue = groups 25–32 at dev 4;  Red = groups 33–40 at dev 5)")
+    ax.set_xticks(min_full["group"])
+    ax.set_yticks(sorted(min_full["min_dev_100pct"].unique()))
+    ax.set_ylim(0, min_full["min_dev_100pct"].max() + 1)
+    ax.grid(True, axis="y", linestyle="--", alpha=0.5)
+    # Draw threshold line
+    ax.axhline(y=4, color="#2c7bb6", linestyle="--", alpha=0.6, label="dev = 4 (groups 25–32)")
+    ax.axhline(y=5, color="#d7191c", linestyle="--", alpha=0.6, label="dev = 5 (groups 33–40)")
+    ax.legend(fontsize=9)
+    fig.tight_layout()
+    save(fig, GLOBAL_DIR / "0a_key_finding_min_dev_100pct.png")
+
+# ---- 0b. Hit rate heatmap: group × deviation ----------------------------
+print("0b. Hit rate heatmap (group × deviation)...")
+if not df_summary.empty:
+    pivot = df_summary.pivot(index="group", columns="dev", values="hit_ratio").fillna(0)
+    fig, ax = plt.subplots(figsize=(10, 7))
+    im = ax.imshow(pivot.values, aspect="auto", cmap="RdYlGn", vmin=0, vmax=1)
+    ax.set_xticks(range(len(pivot.columns)))
+    ax.set_xticklabels([f"dev {d}" for d in pivot.columns])
+    ax.set_yticks(range(len(pivot.index)))
+    ax.set_yticklabels([f"Group {g}" for g in pivot.index])
+    ax.set_xlabel("Deviation")
+    ax.set_ylabel("Group (prime bit-size)")
+    ax.set_title("Hit Rate Heatmap (green = 100%, red = 0%)\nEach cell: zero minors found / matrices tested")
+    # Annotate each cell with the ratio
+    for i, grp in enumerate(pivot.index):
+        for j, dev in enumerate(pivot.columns):
+            val = pivot.loc[grp, dev]
+            ax.text(j, i, f"{val:.0%}", ha="center", va="center",
+                    fontsize=8, color="black" if 0.2 < val < 0.85 else "white")
+    plt.colorbar(im, ax=ax, label="Hit Ratio")
+    fig.tight_layout()
+    save(fig, GLOBAL_DIR / "0b_hit_rate_heatmap.png")
+
+# ---- 1. Min deviation per group (meaningful threshold) -----------------
+# Use hit_ratio >= 0.10 so 1-8 stray hits at dev 2 don't distort the curve.
+print("1. Min deviation per group (hit_ratio >= 10%)...")
+if not df_summary.empty:
+    meaningful = df_summary[df_summary["hit_ratio"] >= 0.10]
+    min_dev_meaningful = meaningful.groupby("group")["dev"].min().reset_index()
+    min_dev_meaningful.columns = ["group", "dev"]
+    fig, ax = plt.subplots(figsize=(10, 5))
+    ax.plot(min_dev_meaningful["group"], min_dev_meaningful["dev"],
+            marker="o", linewidth=2, color="#2c7bb6")
+    for _, row in min_dev_meaningful.iterrows():
+        ax.annotate(f"dev {int(row['dev'])}",
+                    xy=(row["group"], row["dev"]),
+                    xytext=(0, 8), textcoords="offset points",
+                    ha="center", fontsize=7, color="#555")
+    ax.set_xlabel("Group (prime bit-size)")
+    ax.set_ylabel("Minimum Deviation (≥ 10% hit rate)")
+    ax.set_title("Minimum Meaningful Deviation per Group\n"
+                 "(first deviation where ≥10% of matrices have a zero minor)")
+    ax.xaxis.set_major_locator(ticker.MultipleLocator(1))
+    ax.yaxis.set_major_locator(ticker.MultipleLocator(1))
+    ax.grid(True, linestyle="--", alpha=0.6)
+    fig.tight_layout()
+    save(fig, GLOBAL_DIR / "1_min_dev_per_group.png")
+# ---- 0c. Overall row-index heatmap: group × matrix index ---------------
+print("0c. Overall row-index frequency heatmap...")
+# Build a 2D array: rows = groups, cols = matrix index 0..max_idx
+max_idx = max(i for tup in df["row_idx"] for i in tup)
+grp_list = sorted(df["group"].unique())
+heat = pd.DataFrame(0, index=grp_list,
+                    columns=range(max_idx + 1), dtype=float)
+for grp in grp_list:
+    sub = df[df["group"] == grp]
+    all_idx = [i for tup in sub["row_idx"] for i in tup]
+    counts = Counter(all_idx)
+    total = len(sub)  # normalise by number of hits
+    for idx, cnt in counts.items():
+        heat.loc[grp, idx] = cnt / total  # fraction of hits containing this index
+
+fig, ax = plt.subplots(figsize=(16, 7))
+im = ax.imshow(heat.values, aspect="auto", cmap="YlOrRd", vmin=0)
+ax.set_yticks(range(len(grp_list)))
+ax.set_yticklabels([f"G{g}" for g in grp_list], fontsize=8)
+ax.set_xlabel("Matrix Row Index")
+ax.set_ylabel("Group")
+ax.set_title("Row Index Frequency Heatmap (across all deviations)\n"
+             "Each cell = fraction of hits for that group containing this index")
+plt.colorbar(im, ax=ax, label="Fraction of hits")
+fig.tight_layout()
+save(fig, GLOBAL_DIR / "0c_row_index_heatmap.png")
+
 print("2. Hit ratio by deviation...")
 if not df_summary.empty:
     fig, ax = plt.subplots(figsize=(10, 5))
@@ -334,4 +452,54 @@ for grp in groups:
             save(fig, d / "9_scatter_indices.png")
 
 # ---------------------------------------------------------------------------
-print(f"\n=== DONE — all plots in {OUTPUT_DIR.relative_to(BASE_DIR)} ===\n")
+# EXPORT DATASETS
+# ---------------------------------------------------------------------------
+print("\n=== EXPORTING DATASETS ===")
+DATA_DIR = BASE_DIR / "Analysis_Scripts" / "data"
+DATA_DIR.mkdir(parents=True, exist_ok=True)
+
+# Flatten row_idx / col_idx tuples to comma-separated strings for CSV
+df_export = df.copy()
+df_export["row_idx"] = df_export["row_idx"].apply(lambda t: ",".join(map(str, t)))
+df_export["col_idx"] = df_export["col_idx"].apply(lambda t: ",".join(map(str, t)))
+df_export["prime"]   = df_export["group"].map(PRIMES)
+
+# 1. Full hits dataset (every Zero Minor hit as one row)
+full_path = DATA_DIR / "all_hits.csv"
+df_export.to_csv(full_path, index=False)
+print(f"  saved -> Analysis_Scripts/data/all_hits.csv  ({len(df_export)} rows)")
+
+# 2. Summary dataset (one row per group/deviation: hit count, time stats)
+agg = (
+    df.groupby(["group", "dev"])
+    .agg(
+        prime        = ("group", lambda x: PRIMES.get(int(x.iloc[0]), None)),
+        total_hits   = ("s", "count"),
+        time_min_ms  = ("time_ms", "min"),
+        time_max_ms  = ("time_ms", "max"),
+        time_mean_ms = ("time_ms", "mean"),
+        minors_mean  = ("minors_tested", "mean"),
+        principal_pct= ("is_principal", lambda x: round(x.mean() * 100, 2)),
+        anchor_s_mode= ("s", lambda x: int(x.mode().iloc[0])),
+    )
+    .reset_index()
+)
+if not df_summary.empty:
+    agg = agg.merge(
+        df_summary[["group", "dev", "matrices", "zero_minors", "hit_ratio"]],
+        on=["group", "dev"], how="left"
+    )
+summary_path = DATA_DIR / "summary_per_group_dev.csv"
+agg.to_csv(summary_path, index=False)
+print(f"  saved -> Analysis_Scripts/data/summary_per_group_dev.csv  ({len(agg)} rows)")
+
+# 3. Per-group CSV files inside each group folder
+for grp in sorted(df["group"].unique()):
+    sub = df_export[df_export["group"] == grp]
+    grp_path = DATA_DIR / f"group_{grp}_hits.csv"
+    sub.to_csv(grp_path, index=False)
+    print(f"  saved -> Analysis_Scripts/data/group_{grp}_hits.csv  ({len(sub)} rows)")
+
+# ---------------------------------------------------------------------------
+print(f"\n=== DONE — all plots in {OUTPUT_DIR.relative_to(BASE_DIR)} ===")
+print(f"=== DONE — all data  in {DATA_DIR.relative_to(BASE_DIR)} ===\n")
