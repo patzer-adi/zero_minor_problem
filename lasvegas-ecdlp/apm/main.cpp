@@ -287,7 +287,7 @@ void fun_ZZp() {
       "input/exp/34_1.txt",   "input/exp/35_1.txt"};*/
 
 std::vector<std::string> inputFiles = {
-    "input/36_40/36_1.txt","input/36_40/37_1.txt","input/36_40/38_1.txt","input/36_40/39_1.txt","input/36_40/40_1.txt"};
+    "input/41_50/41_1.txt","input/41_50/42_1.txt","input/41_50/43_1.txt","input/41_50/44_1.txt","input/41_50/45_1.txt","input/41_50/46_1.txt","input/41_50/47_1.txt","input/41_50/48_1.txt","input/41_50/49_1.txt","input/41_50/50_1.txt"};
 
   for (const std::string &fileName : inputFiles) {
     if (processorId == MASTER_NODE)
