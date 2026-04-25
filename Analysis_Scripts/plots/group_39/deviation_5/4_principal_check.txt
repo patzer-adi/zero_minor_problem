@@ -1,0 +1,5 @@
+Group 39, Deviation 5
+========================================
+Total hits        : 170
+Principal (row==col): 0  (0.00%)
+Non-principal      : 170  (100.00%)

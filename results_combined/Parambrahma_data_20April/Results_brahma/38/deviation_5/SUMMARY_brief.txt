@@ -1,0 +1,20 @@
+============================================================
+APM Brief Summary
+============================================================
+Prime group      : 38
+Prime (p)        : 274877906837
+Deviation level  : 5
+Minor size       : 7 x 7
+PM block size    : 2
+Matrix size (n)  : 39
+Input folder     : kernel_output/38/
+Output folder    : Results_brahma/38/deviation_5
+------------------------------------------------------------
+Total matrices   : 100
+Matrices hit     : 100      (at least one zero minor)
+Hit ratio        : 100/100 = 100.00%
+Total minors tested  : 28412107767351
+Total zero minors    : 100
+Total time           : 287465.398 s
+Avg time per matrix  : 2874.654 s
+============================================================

@@ -1,0 +1,5 @@
+Group 37, Deviation 5
+========================================
+Total hits        : 100
+Principal (row==col): 0  (0.00%)
+Non-principal      : 100  (100.00%)

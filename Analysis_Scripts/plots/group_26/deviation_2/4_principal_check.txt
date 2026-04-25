@@ -1,0 +1,5 @@
+Group 26, Deviation 2
+========================================
+Total hits        : 2
+Principal (row==col): 0  (0.00%)
+Non-principal      : 2  (100.00%)

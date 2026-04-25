@@ -1,0 +1,15 @@
+============================================================
+APM Result  (optimized_further)
+============================================================
+Prime group      : 40
+Kernel range     : 26 to 50
+Deviation        : 5
+Matrices in run  : 25
+Matrices hit     : 25
+Hit ratio        : 100.0%
+------------------------------------------------------------
+Mode             : FIXED DEVIATION (parallel chunk)
+Status           : All 25 matrices hit at deviation 5.
+Note             : This is a partial result.
+                   Run merge_summaries.py to combine all chunks.
+============================================================

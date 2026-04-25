@@ -1,0 +1,42 @@
+APM Summary
+Deviation level : 2
+Prime group     : 29
+Input folder    : kernel_output/29/
+File prefix     : kernel_29_
+Prime           : 536856223
+Matrix size n   : 30
+PM block size   : 2
+Matrices        : 100
+======================================================
+
+------------------------------------------------------------
+[39/100] kernel_29_43.txt
+  time=0.0403 s | tested=811188 | zeros=1
+
+  --- Zero Minor #1 ---
+  Minor size (k)   : 4
+  Deviation        : 2
+  Principal block s: 5  (indices {5, 6})
+  Row indices [4]  : 4 5 6 9
+  Col indices [4]  : 5 6 11 19
+  Time found       : 40.2810 ms
+  Minors tested    : 811188  (tested before finding this zero)
+
+  Principal 2x2 block (s=5, rows/cols {5,6}):
+    [ 141685169  266366956 ]
+    [ 230726314  189163501 ]
+
+  Extracted 4x4 submatrix  (det mod p = 0):
+                5*         6*        11         19 
+        ---------- ---------- ---------- ----------
+    4  |  26565669   66282532   34759146  535394905 
+    5* |[141685169][266366956] 308837385  280942057 
+    6* |[230726314][189163501] 384643196  267846620 
+    9  | 428626740   88645313  358533137   56097992 
+
+======================================================
+FOLDER TOTALS
+Total time     : 22.8870 s
+Matrices       : 100
+Minors tested  : 411031152
+Zero minors    : 1

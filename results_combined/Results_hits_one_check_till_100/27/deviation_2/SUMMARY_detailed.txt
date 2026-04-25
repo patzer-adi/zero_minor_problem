@@ -1,0 +1,17 @@
+APM Summary
+Deviation level : 2
+Prime group     : 27
+Input folder    : kernel_output/27/
+File prefix     : kernel_27_
+Prime           : 134218103
+Matrix size n   : 28
+PM block size   : 2
+Matrices        : 100
+======================================================
+
+======================================================
+FOLDER TOTALS
+Total time     : 17.2242 s
+Matrices       : 100
+Minors tested  : 285187500
+Zero minors    : 0

@@ -1,0 +1,9 @@
+============================================================
+APM Early-Stop Result  (check_till_100)
+============================================================
+Prime group      : 31
+Best deviation   : 4
+Matrices hit     : 100  (reached 100 — EARLY STOP)
+Status           : All matrices hit at deviation 4.
+                   No further deviations were checked.
+============================================================

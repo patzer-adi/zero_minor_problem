@@ -1,0 +1,67 @@
+APM Summary
+Deviation level : 2
+Prime group     : 26
+Input folder    : kernel_output/26/
+File prefix     : kernel_26_
+Prime           : 44914307
+Matrix size n   : 27
+PM block size   : 2
+Matrices        : 100
+======================================================
+
+------------------------------------------------------------
+[23/100] kernel_26_29.txt
+  time=0.0917 s | tested=1786800 | zeros=1
+
+  --- Zero Minor #1 ---
+  Minor size (k)   : 4
+  Deviation        : 2
+  Principal block s: 19  (indices {19, 20})
+  Row indices [4]  : 14 19 20 23
+  Col indices [4]  : 0 17 19 20
+  Time found       : 91.7000 ms
+  Minors tested    : 1786800  (tested before finding this zero)
+
+  Principal 2x2 block (s=19, rows/cols {19,20}):
+    [  1624617  14615677 ]
+    [ 11821431  34751083 ]
+
+  Extracted 4x4 submatrix  (det mod p = 0):
+               0        17        19*       20*
+        --------- --------- --------- ---------
+   14  | 21742425  32703818  43456981  24243142 
+   19* |  4996479  14665078 [ 1624617][14615677]
+   20* | 10077604  31485621 [11821431][34751083]
+   23  | 40526872    882464  39643070  26272877 
+
+------------------------------------------------------------
+[88/100] kernel_26_88.txt
+  time=0.0363 s | tested=706800 | zeros=1
+
+  --- Zero Minor #1 ---
+  Minor size (k)   : 4
+  Deviation        : 2
+  Principal block s: 7  (indices {7, 8})
+  Row indices [4]  : 7 8 16 21
+  Col indices [4]  : 7 8 11 15
+  Time found       : 36.2700 ms
+  Minors tested    : 706800  (tested before finding this zero)
+
+  Principal 2x2 block (s=7, rows/cols {7,8}):
+    [ 29083186  37224139 ]
+    [ 12538515  19153672 ]
+
+  Extracted 4x4 submatrix  (det mod p = 0):
+               7*        8*       11        15 
+        --------- --------- --------- ---------
+    7* |[29083186][37224139] 18250810  41392443 
+    8* |[12538515][19153672] 42469660   1356224 
+   16  | 38652064  35603728  37402297  24132244 
+   21  | 37282935  14588143  16812620   4387290 
+
+======================================================
+FOLDER TOTALS
+Total time     : 15.6376 s
+Matrices       : 100
+Minors tested  : 231813600
+Zero minors    : 2

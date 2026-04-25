@@ -1,0 +1,17 @@
+APM Summary
+Deviation level : 2
+Prime group     : 30
+Input folder    : kernel_output/30/
+File prefix     : kernel_30_
+Prime           : 1073680219
+Matrix size n   : 31
+PM block size   : 2
+Matrices        : 100
+======================================================
+
+======================================================
+FOLDER TOTALS
+Total time     : 27.5169 s
+Matrices       : 100
+Minors tested  : 494508000
+Zero minors    : 0

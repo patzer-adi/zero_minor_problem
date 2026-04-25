@@ -1,0 +1,9 @@
+============================================================
+APM Early-Stop Result  (brahma_2)
+============================================================
+Prime group      : 33
+Best deviation   : 5
+Matrices hit     : 100  (reached 100 -- EARLY STOP)
+Status           : All matrices hit at deviation 5.
+                   No further deviations were checked.
+============================================================

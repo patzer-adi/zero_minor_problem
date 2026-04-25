@@ -1,0 +1,5 @@
+Group 40, Deviation 5
+========================================
+Total hits        : 126
+Principal (row==col): 0  (0.00%)
+Non-principal      : 126  (100.00%)
