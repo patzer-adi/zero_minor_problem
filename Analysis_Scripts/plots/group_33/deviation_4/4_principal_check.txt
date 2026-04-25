@@ -1,5 +1,8 @@
 Group 33, Deviation 4
 ========================================
-Total hits        : 163
+Prime (p)          : 8589934583
+Prime bit-size     : 33 bits
+----------------------------------------
+Total hits         : 163
 Principal (row==col): 0  (0.00%)
-Non-principal      : 163  (100.00%)
+Non-principal       : 163  (100.00%)

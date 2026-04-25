@@ -1,5 +1,8 @@
 Group 30, Deviation 3
 ========================================
-Total hits        : 28
+Prime (p)          : 1073741789
+Prime bit-size     : 30 bits
+----------------------------------------
+Total hits         : 28
 Principal (row==col): 0  (0.00%)
-Non-principal      : 28  (100.00%)
+Non-principal       : 28  (100.00%)

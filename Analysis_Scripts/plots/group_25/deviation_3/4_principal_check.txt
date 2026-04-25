@@ -1,5 +1,8 @@
 Group 25, Deviation 3
 ========================================
-Total hits        : 97
+Prime (p)          : 33554393
+Prime bit-size     : 25 bits
+----------------------------------------
+Total hits         : 97
 Principal (row==col): 0  (0.00%)
-Non-principal      : 97  (100.00%)
+Non-principal       : 97  (100.00%)

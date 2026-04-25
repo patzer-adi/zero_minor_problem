@@ -1,5 +1,8 @@
 Group 29, Deviation 2
 ========================================
-Total hits        : 1
+Prime (p)          : 536870909
+Prime bit-size     : 29 bits
+----------------------------------------
+Total hits         : 1
 Principal (row==col): 0  (0.00%)
-Non-principal      : 1  (100.00%)
+Non-principal       : 1  (100.00%)

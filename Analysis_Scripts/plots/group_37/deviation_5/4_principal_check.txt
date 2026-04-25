@@ -1,5 +1,8 @@
 Group 37, Deviation 5
 ========================================
-Total hits        : 100
+Prime (p)          : 137438953097
+Prime bit-size     : 37 bits
+----------------------------------------
+Total hits         : 100
 Principal (row==col): 0  (0.00%)
-Non-principal      : 100  (100.00%)
+Non-principal       : 100  (100.00%)

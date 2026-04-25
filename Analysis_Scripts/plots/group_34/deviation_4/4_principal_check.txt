@@ -1,5 +1,8 @@
 Group 34, Deviation 4
 ========================================
-Total hits        : 96
+Prime (p)          : 17179869143
+Prime bit-size     : 34 bits
+----------------------------------------
+Total hits         : 96
 Principal (row==col): 0  (0.00%)
-Non-principal      : 96  (100.00%)
+Non-principal       : 96  (100.00%)

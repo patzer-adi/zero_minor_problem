@@ -46,6 +46,26 @@ for d in [OUTPUT_DIR, GLOBAL_DIR]:
     d.mkdir(parents=True, exist_ok=True)
 
 # ---------------------------------------------------------------------------
+# Prime lookup: group (bit-size) -> prime
+# ---------------------------------------------------------------------------
+PRIMES = {
+    10: 1021,               11: 2029,               12: 4079,
+    13: 8111,               14: 16273,              15: 32749,
+    16: 65413,              17: 131071,              18: 262103,
+    19: 524257,             20: 1048573,             21: 2097147,
+    22: 4194217,            23: 8388449,             24: 16777099,
+    25: 33554393,           26: 44923183,            27: 134217689,
+    28: 268435399,          29: 536870909,           30: 1073741789,
+    31: 2147483647,         32: 4294967291,          33: 8589934583,
+    34: 17179869143,        35: 34359738337,         36: 68719476503,
+    37: 137438953097,       38: 274877906837,        39: 549755813657,
+    40: 1099511627689,      41: 2199023255531,       42: 4398046511093,
+    43: 8796093022151,      44: 17592186044399,      45: 35184372088777,
+    46: 70368744177643,     47: 140737488355213,     48: 281474976710597,
+    49: 562949953421231,    50: 1125899906842597,
+}
+
+# ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
 sns.set_theme(style="whitegrid", palette="tab10")
@@ -269,12 +289,16 @@ for grp in groups:
 
         # ---- 4. Principal submatrix check (text file) ------------------
         pct = sub["is_principal"].mean() * 100
+        prime = PRIMES.get(int(grp), "unknown")
         with open(d / "4_principal_check.txt", "w") as f:
             f.write(f"Group {grp}, Deviation {dev}\n")
             f.write("=" * 40 + "\n")
-            f.write(f"Total hits        : {len(sub)}\n")
+            f.write(f"Prime (p)          : {prime}\n")
+            f.write(f"Prime bit-size     : {grp} bits\n")
+            f.write("-" * 40 + "\n")
+            f.write(f"Total hits         : {len(sub)}\n")
             f.write(f"Principal (row==col): {sub['is_principal'].sum()}  ({pct:.2f}%)\n")
-            f.write(f"Non-principal      : {(~sub['is_principal']).sum()}  ({100-pct:.2f}%)\n")
+            f.write(f"Non-principal       : {(~sub['is_principal']).sum()}  ({100-pct:.2f}%)\n")
 
         # ---- 5. Index recurrence (bar) ----------------------------------
         all_idx = [i for tup in sub["row_idx"] for i in tup]
