@@ -1,0 +1,8 @@
+Group 35, Deviation 5
+========================================
+Prime (p)          : 34359738337
+Prime bit-size     : 35 bits
+----------------------------------------
+Total hits         : 100
+Principal (row==col): 0  (0.00%)
+Non-principal       : 100  (100.00%)

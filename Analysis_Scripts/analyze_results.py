@@ -99,7 +99,7 @@ SOURCES = {
     # 33 from Results_hits_one_check_till_100 is EXCLUDED
     33: "Parambrahma_data_20April/Results_brahma_2/33",
     34: "Parambrahma_data_20April/Results_brahma_2/34",
-    35: "Parambrahma_data_20April/Results_brahma_2/35",   # NOT 35.old
+    35: "35",                                               # new full data (deviation_5, 100% hit)
     36: "Parambrahma_data_20April/Results_brahma/36",
     37: "Parambrahma_data_20April/Results_brahma/37",
     38: "Parambrahma_data_20April/Results_brahma/38",     # NOT 38.old
